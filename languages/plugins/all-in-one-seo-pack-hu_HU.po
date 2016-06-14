@@ -1,0 +1,3226 @@
+# Translation of Stable (latest release) in Hungarian
+# This file is distributed under the same license as the Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2016-05-02 23:22:21+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/2.1.0-alpha\n"
+"Project-Id-Version: Stable (latest release)\n"
+
+#: admin/meta_import.php:69 admin/meta_import.php:74
+msgid "Sorry, you can't do that. Please choose a platform and then click Analyze or Convert."
+msgstr "Bocsánat, ezt nem teheted. Kérlek, válassz platformot, majd kattints az Analizálásra, vagy Konvertálásra."
+
+#: admin/meta_import.php:176
+msgid "Analyze"
+msgstr "Analizáld"
+
+#: admin/meta_import.php:177
+msgid "Convert"
+msgstr "Konvertálás"
+
+#: aioseop_class.php:398
+msgid "Capitalize Tag and Search Titles:"
+msgstr "Tagek és keresések címének nagybetűs írása: "
+
+#: aioseop_class.php:1224
+msgid "New in 2.4: Improved support for taxonomies, Woocommerce and massive performance improvements under the hood! Please review your settings on each options page!"
+msgstr "Új a 2.4-es verzióban: Jobb taxonómia támogatás, Woocommerce, és masszív teljesítményjavulás! Kérlek, nézd át a beállításokat az opciók oldalain!"
+
+#: admin/meta_import.php:164
+msgid "Themes"
+msgstr "Sablonok"
+
+#: admin/meta_import.php:136
+msgid "Use the drop down below to choose which plugin or theme you wish to import SEO data from."
+msgstr "Használd a legördülő menüt a bővítmény, vagy sablon kiválasztására, amelyből importálni szeretnéd a SEO adatokat."
+
+#: admin/meta_import.php:138
+msgid "Click \"Analyze\" for a list of SEO data that can be imported into All in One SEO Pack, along with the number of records that will be imported."
+msgstr "Klikkelj az \"Analízis\" gombra az összes SEO adat listázásához, amelyet az All in One SEO Packbe lehet importálni, a feljegyzések számával együtt."
+
+#: admin/meta_import.php:140
+msgid "Please Note: "
+msgstr "Vedd figyelembe:"
+
+#: admin/meta_import.php:140
+msgid "Some plugins and themes do not share similar data, or they store data in a non-standard way. If we cannot import this data, it will remain unchanged in your database. Any compatible SEO data will be displayed for you to review. If a post or page already has SEO data in All in One SEO Pack, we will not import data from another plugin/theme."
+msgstr "Bizonyos bővítmények és sablonok  nem osztanak meg hasonló adatokat, vagy ezeket nem standard módon tárolják. Ha nem tudjuk importálni az adatokat, akkor változatlanul marad az adatbázisodban. Minden kompatibilis SEO adatot átnézhetsz. Ha egy bejegyzés, vagy oldal már rendelkezik adatokkal az All in One SEO Packban, akkor nem importálunk semmit más sablonokból/bővítményekből."
+
+#: admin/meta_import.php:142
+msgid "Click \"Convert\" to perform the import. After the import has completed, you will be alerted to how many records were imported, and how many records had to be ignored, based on the criteria above."
+msgstr "Kattints a \"Konvertálásra\" az importáláshoz. Az importálás befejezése után értesítünk arról, hány bejegyzésről van szó, hány darabot kellett figyelmen kívül hagyni a fenti kritériumok alapján."
+
+#: admin/meta_import.php:144
+msgid "Before performing an import, we strongly recommend that you make a backup of your site. We use and recommend %s BackupBuddy %s for backups."
+msgstr "Importálás előtt ajánljuk, hogy készíts biztonsági másolatot. A %s BackupBuddy-t %s használjuk erre a célra, és ajánluk neked is."
+
+#: admin/meta_import.php:154
+msgid "Import SEO data from:"
+msgstr "SEO adatok importálása:"
+
+#: admin/meta_import.php:156
+msgid "Choose platform:"
+msgstr "Válassz egy platformot:"
+
+#: admin/meta_import.php:158
+msgid "Plugins"
+msgstr "Bővítmény"
+
+#: admin/meta_import.php:82
+msgid "Analysis Results"
+msgstr "Analízis eredmények"
+
+#: admin/meta_import.php:86 admin/meta_import.php:108
+msgid "Sorry, something went wrong. Please try again"
+msgstr "Sajnos valami hiba történt. Kérlek, próbáld újra!"
+
+#: admin/meta_import.php:90
+msgid "<p>Analyzing records in a %s to %s conversion&hellip;"
+msgstr "<p>Analizálom a feljegyzéseket a %s  %s konverzióig&hellip;"
+
+#: admin/meta_import.php:94
+msgid "Compatible data:"
+msgstr "Kompatibilis adatok"
+
+#: admin/meta_import.php:104
+msgid "Conversion Results"
+msgstr "Konvertálás eredményei"
+
+#: admin/meta_import.php:134
+msgid "Import SEO Settings"
+msgstr "SEO beállítások importálása"
+
+#: admin/meta_import.php:23
+msgid "The plugin Yoast SEO has been detected. Do you want to %simport its settings%s into All in One SEO Pack?"
+msgstr " Yoast SEO bővítményt detektáltuk. Szeretnéd %simportálni a beállításokat%s az All in One SEO Packbe?"
+
+#: admin/meta_import.php:28
+msgid "The plugin All-In-One-SEO has been detected. Do you want to %simport its settings%s?"
+msgstr "Az  All-In-One-SEO bővítményt detektáltuk. Szeretnéd  %simportálni a beállításokat%s?"
+
+#: admin/meta_import.php:35
+msgid "All in One SEO has been deactivated"
+msgstr "All in One SEO deaktiválva lett"
+
+#: admin/meta_import.php:54
+msgid "Import SEO Data"
+msgstr "SEO adatok importálása"
+
+#: admin/meta_import.php:54
+msgid "SEO Data Import"
+msgstr "SEO adatok importálása"
+
+#: modules/aioseop_feature_manager.php:49
+msgid "Pro Version Only"
+msgstr "Csak a Pro verzióban:"
+
+#: aioseop_class.php:1769
+msgid "We've detected you're running WooCommerce."
+msgstr "Észleltük, hogy WooCommerce-t használsz."
+
+#: aioseop_class.php:1770
+msgid "%s Upgrade%s to All in One SEO Pack Pro for increased SEO compatibility for your products."
+msgstr "%s Frissíts %s az All in One SEO Pack Prora a termékeid jobb  SEO kompatibilitása érdekében."
+
+#: modules/aioseop_performance.php:260
+msgid "Check For Updates"
+msgstr "Frissítések keresése"
+
+#. Description of the plugin/theme
+msgid "Out-of-the-box SEO for your WordPress blog. Features like XML Sitemaps, SEO for custom post types, SEO for blogs or business sites, SEO for ecommerce sites, and much more. Almost 30 million downloads since 2007."
+msgstr "Alapból kész SEO a Wordpress blogodhoz. XML webhelytérképek, SEO az egyedi bejegyzéstípusokhoz, SEO blogokhoz, üzleti oldalakhoz, SEO e-kereskedelmi oldalakhoz, és még sok más. Majdnem 30 milló letöltés 2007 óta. "
+
+#: inc/commonstrings.php:26
+msgid "Manage Licenses"
+msgstr "Licencek kezelése"
+
+#: modules/aioseop_bad_robots.php:18
+msgid "Block Referral Spam using HTTP."
+msgstr "HTTP alkalmazásával blokkolja a referer spam-et."
+
+#: modules/aioseop_bad_robots.php:28
+msgid "Block Bad Bots using HTTP"
+msgstr "HTTP alkalmazásával blokkold a káros botokat."
+
+#: modules/aioseop_bad_robots.php:29
+msgid "Block Referral Spam using HTTP"
+msgstr "HTTP alkalmazásával blokkold a referer spam-et"
+
+#: modules/aioseop_bad_robots.php:31
+msgid "Block Bad Bots using .htaccess"
+msgstr "A .htaccess alkalmazásával blokkold a a káros botokat."
+
+#: modules/aioseop_bad_robots.php:32
+msgid "Use Custom Blocklists"
+msgstr "Alkalmazzon felhasználói blokk listát."
+
+#: modules/aioseop_feature_manager.php:40
+msgid "Image SEO"
+msgstr "Kép SEO"
+
+#: modules/aioseop_feature_manager.php:43
+msgid "Create and manage your Video Sitemap using this feature and submit your Video Sitemap to Google, Bing/Yahoo and Ask.com."
+msgstr "Hozz létre és kezeld a videó webhelytérképeket ezzel a funkcióval, és küldd el a webhelytérképeket a Google-nek, Bing/Yahoo-nak, és az Ask.com-nak."
+
+#: modules/aioseop_performance.php:239
+msgid "%s has checked for updates."
+msgstr "%s már kerestem frissítést."
+
+#: inc/commonstrings.php:19
+msgid "Finished scanning posts"
+msgstr "Bejegyzések vizsgálatának vége."
+
+#: inc/commonstrings.php:22
+msgid "Purchase one now"
+msgstr "Vásárolj most!"
+
+#: inc/commonstrings.php:23
+msgid "License Key is not set yet or invalid. "
+msgstr "A licenckulcs nincs beállítva, illetve nem megfelelő."
+
+#: inc/commonstrings.php:24
+msgid " Need a license key?"
+msgstr "Szeretnél egy licenckulcsot?"
+
+#: inc/commonstrings.php:25
+msgid "Notice: "
+msgstr "Figyelmeztetés:"
+
+#: inc/commonstrings.php:12
+msgid "Press the Scan button to scan your posts for videos! Do this if video content from a post or posts is not showing up in your sitemap."
+msgstr "Kattints a scan gombra, hogy a videóval rendelkező bejegyzéseket keressük. Ezt akkor végezze, ha valameliyk bejegyzés vagy a bejegyzések videó tartalma nem látható az oldaltérképen."
+
+#: inc/commonstrings.php:13
+msgid "If checked, only posts that have videos in them will be displayed on the sitemap."
+msgstr "Ha be van jelölve, akkor csak a videóval rendelkező bejegyzések szerepelnek az oldaltérképen."
+
+#: inc/commonstrings.php:14
+msgid "Enable this option to only allow access to your sitemap by site administrators and major search engines."
+msgstr "Engedélyezd ezt az opciót, ha csak az adminisztrátornak, vagy a nagyobb keresőmotoroknak akarsz hozzáférést adni az oldaltérképhez."
+
+#: inc/commonstrings.php:15
+msgid "You do not have access to this page; try logging in as an administrator."
+msgstr "Nincs hozzáférésed az oldalhoz. Jelentkezz be adminisztrátorként."
+
+#: inc/commonstrings.php:16
+msgid "Scan"
+msgstr "Vizsgálódás"
+
+#: all_in_one_seo_pack.php:225
+msgid "Amazon Wishlist"
+msgstr "Amazon Kívánságlista"
+
+#: inc/commonstrings.php:9
+msgid "Show Only Posts With Videos"
+msgstr "Csak a videóval rendelkező bejegyzést mutassa."
+
+#: inc/commonstrings.php:10
+msgid "Scan Posts For Videos"
+msgstr "Keressen videóval rendelkező bejegyzéseket."
+
+#: inc/commonstrings.php:11
+msgid "Restrict Access to Video Sitemap"
+msgstr "Hozzáférés csak a video oldaltérképhez."
+
+#: all_in_one_seo_pack.php:279
+msgid "Upgrade to Pro"
+msgstr "Frissítés a Pro verzióra"
+
+#: all_in_one_seo_pack.php:268
+msgid "Documentation"
+msgstr "Dokumentáció"
+
+#: all_in_one_seo_pack.php:258
+msgid "SEO Settings"
+msgstr "SEO beállítások"
+
+#: aioseop_class.php:1193
+msgid "%taxonomy_title% - The original title of the taxonomy"
+msgstr "%taxonomy_title% - A taxonómia eredeti címe"
+
+#: aioseop_class.php:1194
+msgid "%taxonomy_description% - The description of the taxonomy"
+msgstr "%taxonomy_description% - A taxonómia leírása"
+
+#: aioseop_class.php:1217
+msgid "Thank you for running the latest and greatest All in One SEO Pack Pro ever! Please review your settings, as we're always adding new features for you!"
+msgstr "Köszönjük, hogy a legújabb és legjobb All in One SEO Pack Pro futtatod! Kérünk, nézd át a beállításokat, mindig új funkciókat teszünk elérhetővé neked!"
+
+#: admin/display/general-metaboxes.php:75
+msgid "We need your help translating All in One SEO Pack into your language! Click Here to help make the translation complete and fix any errors."
+msgstr "A segítséged kérjük az All in one SEO bővítmény fordításához. Kattints ide, hogy segíthess a fordítást teljessé tenni, vagy a hibákat kijavítani."
+
+#: aioseop_class.php:1962
+msgid "Debug String"
+msgstr "Hibakeresési karakterlánc"
+
+#: aioseop_class.php:3477
+msgid "About"
+msgstr "Magunkról"
+
+#: aioseop_class.php:462
+msgid "SEO on only these taxonomies:"
+msgstr "SEO csak ezeken a taxonómiákon"
+
+#: aioseop_class.php:713 all_in_one_seo_pack.php:263
+msgid "Support Forum"
+msgstr "Támogató fórum"
+
+#: aioseop_class.php:1185
+msgid "Taxonomy Title Format:"
+msgstr "Taxonómia címének formátuma"
+
+#: aioseop_class.php:73
+msgid "This will be the license key received when the product was purchased. This is used for automatic upgrades."
+msgstr "Ez lesz a licenckulcs, amikor a terméket megvetted. Az automatikus frissítésekkor jön jól."
+
+#: aioseop_class.php:175
+msgid "Use these checkboxes to select which Taxonomies you want to use All in One SEO Pack with."
+msgstr "Használd ezeket a jelölőnégyzeteket a taxonómiák kiválasztására, amelyekkel All in One SEO Packot használni szeretnéd."
+
+#: aioseop_class.php:323
+msgid "License Key:"
+msgstr "Licenckulcs"
+
+#: aioseop_class.php:1747
+msgid "Warning: You're blocking access to search engines."
+msgstr "Figyelmeztetés:Jelenleg blokkolod a keresőmotorok elérését."
+
+#: aioseop_class.php:1748
+msgid "You can %s click here%s to go to your reading settings and toggle your blog visibility."
+msgstr "Ide  %s klikkelhetsz %s az olvasási beállításokhoz, és a blog láthatóságának ki-, és bekapcsolásához."
+
+#: modules/aioseop_opengraph.php:80
+msgid "Enter your Facebook Admin ID here. Information about how to get your Facebook Admin ID can be found at https://developers.facebook.com/docs/platforminsights/domains"
+msgstr "Add meg a Facebook Admin ID-ed.  Facebook Admin ID megszerzéséhez  keresd fel a    https://developers.facebook.com/docs/platforminsights/domains oldalt."
+
+#: modules/aioseop_opengraph.php:81
+msgid "Enter your Facebook App ID here. Information about how to get your Facebook App ID can be found at https://developers.facebook.com/docs/platforminsights/domains"
+msgstr "Itt adhatod meg a  Facebook App ID-t. A  Facebook App ID megtalálásához keresd fel a https://developers.facebook.com/docs/platforminsights/domains  oldalt."
+
+#: modules/aioseop_opengraph.php:156
+msgid "Facebook Admin ID"
+msgstr "Facebook Admin ID"
+
+#: modules/aioseop_opengraph.php:157
+msgid "Facebook App ID"
+msgstr "Facebook App ID"
+
+#: modules/aioseop_sitemap.php:48
+msgid "Tells search engines not to index the sitemap file itself."
+msgstr "Mondd meg a keresőmotoroknak, hogy ne indexeljék a webhelytérkép fájlját."
+
+#: modules/aioseop_sitemap.php:49
+msgid "Use rewrites to generate your sitemap on the fly. NOTE: This is required for WordPress Multisite."
+msgstr "Használj rewrite-okat a webhelytérkép folytatólagos létrehozásához. Figyelem: WordPress Multisite-ra lesz szükség."
+
+#: modules/aioseop_sitemap.php:50
+msgid "URL to the page."
+msgstr "URL az oldalhoz."
+
+#: modules/aioseop_sitemap.php:51
+msgid "The priority of the page."
+msgstr "Az oldal prioritása."
+
+#: modules/aioseop_sitemap.php:52
+msgid "The frequency of the page."
+msgstr "Az oldal gyakorisága."
+
+#: modules/aioseop_sitemap.php:53
+msgid "Last modified date of the page."
+msgstr "Az oldal utolsó módosításának dátuma."
+
+#: modules/aioseop_sitemap.php:54
+msgid "Entries from these categories will be excluded from the sitemap."
+msgstr "A bejegyzések ezekből a kategóriákból ki lesznek zárva a webhelytérképből."
+
+#: modules/aioseop_sitemap.php:55
+msgid "Use page slugs or page IDs, seperated by commas, to exclude pages from the sitemap."
+msgstr "Használj oldal slugokat, vagy ID-ket, vesszővel elválasztva, a webhelytérképből való kizáráshoz."
+
+#: modules/aioseop_sitemap.php:79
+msgid "Filename Prefix"
+msgstr "Fájlnév prefix"
+
+#: modules/aioseop_sitemap.php:81
+msgid "Notify Google"
+msgstr "Értesítsd a  Google-t"
+
+#: modules/aioseop_sitemap.php:82
+msgid "Notify Bing"
+msgstr "Értesítsd a  Binget"
+
+#: modules/aioseop_sitemap.php:83
+msgid "Schedule Updates"
+msgstr "Frissítések ütemezése"
+
+#: modules/aioseop_sitemap.php:84
+msgid "No Schedule"
+msgstr "Nincs ütemezés"
+
+#: modules/aioseop_sitemap.php:85
+msgid "Daily"
+msgstr "Naponta"
+
+#: modules/aioseop_sitemap.php:86
+msgid "Weekly"
+msgstr "Hetente"
+
+#: modules/aioseop_sitemap.php:87
+msgid "Monthly"
+msgstr "Hónaponta"
+
+#: modules/aioseop_sitemap.php:89
+msgid "Enable Sitemap Indexes"
+msgstr "Webhelytérkép indexek aktiválása"
+
+#: modules/aioseop_sitemap.php:90
+msgid "Paginate Sitemap Indexes"
+msgstr "Webhelytérkép indexek oldaltörése"
+
+#: modules/aioseop_sitemap.php:92
+msgid "Maximum Posts Per Sitemap"
+msgstr "Bejegyzések maximális száma webhelytérképenként"
+
+#: modules/aioseop_sitemap.php:95
+msgid "Post Types"
+msgstr "Bejegyzéstípusok"
+
+#: modules/aioseop_sitemap.php:97
+msgid "Taxonomies"
+msgstr "Taxonómiák"
+
+#: modules/aioseop_sitemap.php:99
+msgid "Include Date Archive Pages"
+msgstr "Tartalmazza a dátum archívum oldalait is"
+
+#: modules/aioseop_sitemap.php:100
+msgid "Include Author Pages"
+msgstr "Tartalmazza a szerzői oldalakat is"
+
+#: modules/aioseop_sitemap.php:101
+msgid "Create Compressed Sitemap"
+msgstr "Hozz létre tömörített webhelytérképet"
+
+#: modules/aioseop_sitemap.php:102
+msgid "Link From Virtual Robots.txt"
+msgstr "Hivatkozás a virtuális Robots.txt-ből"
+
+#: modules/aioseop_sitemap.php:103
+msgid "Dynamically Generate Sitemap"
+msgstr "Dinamikusan hozd létre a webhelytérképet "
+
+#: modules/aioseop_sitemap.php:104
+msgid "Noindex Sitemap file"
+msgstr "Noindex webhelytérkép fájl"
+
+#: modules/aioseop_sitemap.php:110
+msgid "Debug Log"
+msgstr "Debug Log"
+
+#: modules/aioseop_sitemap.php:115
+msgid "Sitemap Status"
+msgstr "Webhelytérkép állapota"
+
+#: modules/aioseop_sitemap.php:130
+msgid "Do Not Override"
+msgstr "Ne írd felül"
+
+#: modules/aioseop_sitemap.php:131
+msgid "Select Individual"
+msgstr "Egyediek kiválasztása"
+
+#: modules/aioseop_sitemap.php:140
+msgid "priority"
+msgstr "prioritás"
+
+#: modules/aioseop_sitemap.php:140
+msgid "frequency"
+msgstr "gyakoriság"
+
+#: modules/aioseop_sitemap.php:143
+msgid "homepage"
+msgstr "főoldal"
+
+#: modules/aioseop_sitemap.php:144
+msgid "posts"
+msgstr "bejegyzések"
+
+#: modules/aioseop_sitemap.php:145
+msgid "taxonomies"
+msgstr "taxonómiák"
+
+#: modules/aioseop_sitemap.php:146
+msgid "archive pages"
+msgstr "archívum oldalak"
+
+#: modules/aioseop_sitemap.php:147
+msgid "author pages"
+msgstr "szerző oldalak"
+
+#: modules/aioseop_sitemap.php:155
+msgid "Manually set the %s of your %s."
+msgstr "A  %s  %s -od kézi beállítása."
+
+#: modules/aioseop_sitemap.php:162
+msgid "Enter information below for any additional links for your sitemap not already managed through WordPress."
+msgstr "Adj meg információkat további hivatkozásokról a webhelytérképedhez, amelyeket nem a Wordpress kezel."
+
+#: modules/aioseop_sitemap.php:163
+msgid "Page URL"
+msgstr "Oldal URL"
+
+#: modules/aioseop_sitemap.php:164
+msgid "Page Priority"
+msgstr "Oldal prioritás"
+
+#: modules/aioseop_sitemap.php:165
+msgid "Page Frequency"
+msgstr "Oldal gyakoriság"
+
+#: modules/aioseop_sitemap.php:166
+msgid "Last Modified"
+msgstr "Utolsó módosítás"
+
+#: modules/aioseop_sitemap.php:167 modules/aioseop_sitemap.php:177
+msgid "Additional Pages"
+msgstr "További oldalak"
+
+#: modules/aioseop_sitemap.php:168
+msgid "Add URL"
+msgstr "URL hozzáadása"
+
+#: modules/aioseop_sitemap.php:172
+msgid "Excluded Categories"
+msgstr "Kizárt kategóriák"
+
+#: modules/aioseop_sitemap.php:173
+msgid "Excluded Pages"
+msgstr "Kizárt oldalak"
+
+#: modules/aioseop_sitemap.php:183
+msgid "Excluded Items"
+msgstr "Kizárt tételek"
+
+#: modules/aioseop_sitemap.php:189
+msgid "Priorities"
+msgstr "Prioritások"
+
+#: modules/aioseop_sitemap.php:195
+msgid "Frequencies"
+msgstr "Gyakoriság"
+
+#: modules/aioseop_sitemap.php:218
+msgid "Once Weekly"
+msgstr "Egyszer hetente"
+
+#: modules/aioseop_sitemap.php:222
+msgid "Once Monthly"
+msgstr "Egyszer hónaponta"
+
+#: modules/aioseop_sitemap.php:236
+msgid "Daily scheduled sitemap check has finished."
+msgstr "A webhelytérkép napi felülvizsgálata befejeződött."
+
+#: modules/aioseop_sitemap.php:294
+msgid "Media / Attachments"
+msgstr "Média/ Csatolmányok"
+
+#: modules/aioseop_sitemap.php:295
+msgid "All Post Types"
+msgstr "Minden bejegyzéstípus"
+
+#: modules/aioseop_sitemap.php:296
+msgid "All Taxonomies"
+msgstr "Minden taxonómia"
+
+#: modules/aioseop_sitemap.php:300
+msgid "Manually set the priority for the "
+msgstr "A prioritások kézi beállítása"
+
+#: modules/aioseop_sitemap.php:301
+msgid "Manually set the frequency for the "
+msgstr "A gyakoriság kézi beállítása"
+
+#: modules/aioseop_sitemap.php:302
+msgid " Post Type"
+msgstr "Bejegyzés típusa"
+
+#: modules/aioseop_sitemap.php:303
+msgid " Taxonomy"
+msgstr "Taxonómia"
+
+#: modules/aioseop_sitemap.php:334 modules/aioseop_sitemap.php:366
+msgid "Update Sitemap"
+msgstr "Webhelytérkép frissítése"
+
+#: modules/aioseop_sitemap.php:364
+msgid "Please review your settings below and click %s to build your sitemap; then, %s."
+msgstr "Kérünk, nézd át a beállításaidat alul, és klikkelj %s a webhelytérképed létrehozására; majd %s."
+
+#: modules/aioseop_sitemap.php:367
+msgid "view your sitemap"
+msgstr "tekintsd meg a webhelytérképedet"
+
+#: modules/aioseop_sitemap.php:370
+msgid "Note: you are using dynamic sitemap generation to keep your sitemap current; this will not generate a static sitemap file."
+msgstr "Figyelmeztetés: dinamikusan webhelytérkép generálást használsz, amely állandóan frissítődik. Ez a funkció nem hoz létre egy statikus webhelytérkép fájlt."
+
+#: modules/aioseop_sitemap.php:374
+msgid "Dynamic sitemap generation appears to be using the correct rewrite rules."
+msgstr "A dinamikus webhelytérkép generálás úgy tűnik a megfelelő újraírási szabályokat használja."
+
+#: modules/aioseop_sitemap.php:376
+msgid "Dynamic sitemap generation does not appear to be using the correct rewrite rules; please disable any other sitemap plugins or functionality on your site and reset your permalinks."
+msgstr "A dinamikus webhelytérkép generálás úgy tűnik nem a megfelelő újraírási szabályokat használja.Kérünk, kapcsold ki más webhelytérképpel kapcsolatos bővítményeket, vagy az oldaladon futó funkciókat, illetve állítsd vissza a permalinkeket. "
+
+#: modules/aioseop_sitemap.php:381
+msgid "Reading Settings"
+msgstr "Olvasási beállítások"
+
+#: modules/aioseop_sitemap.php:383
+msgid "Privacy Settings"
+msgstr "Adatvédelmi beállítások"
+
+#: modules/aioseop_sitemap.php:385
+msgid "Warning: your privacy settings are configured to ask search engines to not index your site; you can change this under %s for your blog."
+msgstr "Figyelmeztetés: az adatvédelmi beállításaid úgy vannak konfigurálva, hogy a keresőmotorok ne tudják indexelni az oldaladat. Ezt  %s tudod megváltoztatni a blogodon."
+
+#: modules/aioseop_sitemap.php:506
+msgid "Warning: dynamic sitemap generation must have permalinks enabled."
+msgstr "Figyelmeztetés: a dinamikus webhelytérkép létrehozásához szükség van permalinkek beállítására."
+
+#: modules/aioseop_sitemap.php:519
+msgid "Deleted %s."
+msgstr "Törölve %s."
+
+#: modules/aioseop_sitemap.php:528
+msgid "Couldn't rename file %s!"
+msgstr "Nem tudom átnevezni a  %s fájlt!"
+
+#: modules/aioseop_sitemap.php:532
+msgid "Renamed %s to %s."
+msgstr "A %s átnevezve %s."
+
+#: modules/aioseop_sitemap.php:534
+msgid "Couldn't find file %s!"
+msgstr "Nem tudom megtalálni a %s fájlt!"
+
+#: modules/aioseop_sitemap.php:586
+msgid "Warning: a static sitemap '%s' generated by All in One SEO Pack %s on %s already exists that may conflict with dynamic sitemap generation."
+msgstr "Figyelmeztetés:: a '%s' statikus webhelytérkép, amelyet a All in One SEO Pack hozott létre %s  %s akadályozhatja a dinamikus webhelytérkép készítést."
+
+#: modules/aioseop_sitemap.php:591
+msgid "Potential conflict with unknown file %s."
+msgstr "Potenciális konfliktus az ismeretlen %s fájllal."
+
+#: modules/aioseop_sitemap.php:610
+msgid "Rename Conflicting Files"
+msgstr "A konfliktusban lévő fájlok átnevezése"
+
+#: modules/aioseop_sitemap.php:611
+msgid "Delete Conflicting Files"
+msgstr "Töröld a konfliktusban lévő fájlokat"
+
+#: modules/aioseop_sitemap.php:700
+msgid "compressed"
+msgstr "tömörített"
+
+#: modules/aioseop_sitemap.php:702
+msgid "dynamic"
+msgstr "dinamikus"
+
+#: modules/aioseop_sitemap.php:704
+msgid "static"
+msgstr "statikus"
+
+#: modules/aioseop_sitemap.php:770
+msgid "dynamically"
+msgstr "dinamikusan"
+
+#: modules/aioseop_sitemap.php:794
+msgid "Successfully notified %s about changes to your sitemap at %s."
+msgstr "Sikeresen értesítve %s a webhelytérképed frissítéséről a %s -nél."
+
+#: modules/aioseop_sitemap.php:796
+msgid "Failed to notify %s about changes to your sitemap at %s, error code %s."
+msgstr "Nem sikerült értesíteni %s a webhelytérképed frissítéséről a %s -nél, hibakód %s."
+
+#: modules/aioseop_sitemap.php:799
+msgid "Failed to notify %s about changes to your sitemap at %s, unable to access via wp_remote_get()."
+msgstr "Nem sikerült értesíteni %s a webhelytérkép változásairól  %s, nem elérhető wp_remote_get() -tel."
+
+#: modules/aioseop_sitemap.php:802
+msgid "Did not notify %s about changes to your sitemap."
+msgstr "Nem értesítettük %s a webhelytérképed változásairól."
+
+#: modules/aioseop_sitemap.php:829 modules/aioseop_sitemap.php:971
+#: modules/aioseop_sitemap.php:989
+msgid "file '%s' statically"
+msgstr "fájl '%s' statikusan"
+
+#: modules/aioseop_sitemap.php:841
+msgid "Updated sitemap settings."
+msgstr "Frissített webhelytérkép beállítások."
+
+#. Plugin Name of the plugin/theme
+msgid "All In One SEO Pack"
+msgstr "All In One SEO Pack"
+
+#. Plugin URI of the plugin/theme
+msgid "http://semperfiwebdesign.com"
+msgstr "http://semperfiwebdesign.com"
+
+#. Author of the plugin/theme
+msgid "Michael Torbert"
+msgstr "Michael Torbert"
+
+#. Author URI of the plugin/theme
+msgid "http://michaeltorbert.com"
+msgstr "http://michaeltorbert.com"
+
+#: aioseop_class.php:789
+msgid "Noindex Settings"
+msgstr "Noindex beállítások"
+
+#: aioseop_class.php:794
+msgid "Advanced Settings"
+msgstr "Haladó beállítások"
+
+#: aioseop_class.php:1134
+msgid "Front Page"
+msgstr "Főoldal"
+
+#: aioseop_class.php:1134
+msgid "Everywhere Else"
+msgstr "Bárhol máshol"
+
+#: aioseop_class.php:1142
+msgid "Title Format:"
+msgstr "Cím formátuma:"
+
+#: aioseop_class.php:1150
+msgid "%post_title% - The original title of the post."
+msgstr "%post_title% - A bejegyzés eredeti címe."
+
+#: aioseop_class.php:1154
+msgid "%%tax_%s%% - This post's associated %s taxonomy title"
+msgstr "%%tax_%s%% - A bejegyzés   %s taxonómia címe "
+
+#: aioseop_class.php:1216 aioseop_class.php:1233
+msgid "Welcome to Version %s!"
+msgstr "Üdvözöllek a  %s verziónál! "
+
+#: aioseop_class.php:1234
+msgid "Thank you for running the latest and greatest All in One SEO Pack ever! Please review your settings, as we're always adding new features for you!"
+msgstr "Köszönjük, hogy a legújabb és legjobb All in One SEO Packet futtatod! Kérünk, nézd át a beállításokat, mert mindig új funkciókat adunk hozzá!"
+
+#: aioseop_class.php:1223 aioseop_class.php:1240
+msgid "Review Your Settings"
+msgstr "Nézd át a beállításokat"
+
+#: aioseop_class.php:1241
+msgid "Thank you for running the latest and greatest All in One SEO Pack ever! New since 2.2: Control who accesses your site with the new Robots.txt Editor and File Editor modules!  Enable them from the Feature Manager.  Remember to review your settings, we have added some new ones!"
+msgstr "Köszönjük, hogy a legújabb és legjobb All in One SEO Packet futtatod! Újdonságok a 2.2-es óta: Ellenőrizd ki érheti el az oldaladat az új  Robots.txt és fájlszerkesztő modulokkal! Aktiváld őket a funkciókezelőből. Ne felejtsd el átnézni a beállításokat, újakat is adtunk hozzá!"
+
+#: aioseop_class.php:1261
+msgid "Reset General Settings to Defaults"
+msgstr "Általános beállítások alaphelyzetbe"
+
+#: aioseop_class.php:1262
+msgid "Reset ALL Settings to Defaults"
+msgstr "Minden beállítás alaphelyzetbe"
+
+#: aioseop_class.php:1379
+msgid "Default - noindex"
+msgstr "Alapbeállítás - noindex"
+
+#: aioseop_class.php:1379
+msgid "index"
+msgstr "index"
+
+#: aioseop_class.php:1379
+msgid "noindex"
+msgstr "noindex"
+
+#: aioseop_class.php:1383
+msgid "Default - nofollow"
+msgstr "Alapértelmezett - nofollow"
+
+#: aioseop_class.php:1383
+msgid "follow"
+msgstr "follow"
+
+#: aioseop_class.php:1383
+msgid "nofollow"
+msgstr "nofollow"
+
+#: aioseop_class.php:1387
+msgid "Default - noodp"
+msgstr "Alapértelmezett - noodp"
+
+#: aioseop_class.php:1387
+msgid "odp"
+msgstr "odp"
+
+#: aioseop_class.php:1387
+msgid "noodp"
+msgstr "noodp"
+
+#: aioseop_class.php:1391
+msgid "Default - noydir"
+msgstr "Alapértelmezett - noydir"
+
+#: aioseop_class.php:1391
+msgid "ydir"
+msgstr "ydir"
+
+#: aioseop_class.php:1391
+msgid "noydir"
+msgstr "noydir"
+
+#: admin/display/general-metaboxes.php:25
+msgid "by %s of %s."
+msgstr "by %s of %s."
+
+#: admin/display/general-metaboxes.php:36
+msgid "Reset Dismissed Notices"
+msgstr "Az elutasított figyelmeztetések visszaállítása"
+
+#: admin/display/general-metaboxes.php:41
+msgid "Pro Version"
+msgstr "Pro verzió"
+
+#: admin/display/general-metaboxes.php:41 aioseop_class.php:709
+msgid "UPGRADE TO PRO VERSION"
+msgstr "FRISSÍTÉS A PRO VERZIÓRA"
+
+#: admin/display/general-metaboxes.php:63 all_in_one_seo_pack.php:220
+msgid "Donate"
+msgstr "Járulj hozzá"
+
+#: admin/display/general-metaboxes.php:65
+msgid "Donate with Paypal"
+msgstr "Paypal donációk"
+
+#: admin/display/general-metaboxes.php:67
+msgid "My Amazon Wish List"
+msgstr "Amazon kívánságlistám"
+
+#: admin/display/general-metaboxes.php:70
+msgid "Follow us on Facebook"
+msgstr "Kövess a Facebookon"
+
+#: admin/display/general-metaboxes.php:71
+msgid "Follow us on Twitter"
+msgstr "Kövess a Twitteren"
+
+#: admin/display/general-metaboxes.php:87
+msgid "Join our mailing list for tips, tricks, and WordPress secrets."
+msgstr "Íratkozz fel levelezési listánkra tippekért, trükkökért, és Wordpress titkokért!"
+
+#: admin/display/general-metaboxes.php:88
+msgid "Sign up today and receive a free copy of the e-book 5 SEO Tips for WordPress ($39 value)."
+msgstr "Íratkozz fel ma, és fogadd el tőlünk  a 5 SEO Tips for WordPress e-könyvet ($39 értékben)"
+
+#: admin/display/general-metaboxes.php:97
+msgid "Read the All in One SEO Pack user guide"
+msgstr "Olvasd el a  All in One SEO Pack felhasználói utasításait"
+
+#: admin/display/general-metaboxes.php:98
+msgid "All in One SEO Pro Plugin Support Forum"
+msgstr "All in One SEO Pro bővítmény támogatási fórum"
+
+#: admin/display/general-metaboxes.php:99
+msgid "Access our Premium Support Forums"
+msgstr "Access our Premium támogatási fórum"
+
+#: admin/display/general-metaboxes.php:100
+msgid "All in One SEO Pro Plugin Changelog"
+msgstr "All in One SEO Pro bővítmény Changelog"
+
+#: admin/display/general-metaboxes.php:101
+msgid "View the Changelog"
+msgstr "Changelog megtekintése"
+
+#: admin/display/general-metaboxes.php:102
+msgid "Watch video tutorials"
+msgstr "Nézd meg  videóismertetőinket"
+
+#: admin/display/general-metaboxes.php:103
+msgid "Getting started? Read the Beginners Guide"
+msgstr "Most kezdesz? Olvasd el a Kezdők kézikönyvét"
+
+#: aioseop_class.php:1941
+msgid "Debug Warning: All in One SEO Pack meta data was included again from %s filter. Called %s times!"
+msgstr "Hibakeresési figyelmeztetés:Az All in One SEO Pack meta adatokat %s szűrő újra hozzáadta. Hívva %s -szer/ször!"
+
+#: inc/deprecated.php:122
+msgid "Disconnect From Google Analytics"
+msgstr "Lekapcsolódás a Google Analytics-ről"
+
+#: inc/deprecated.php:123
+msgid "Remove Stored Credentials"
+msgstr "Tárolt hitelesítési információk eltávolítása"
+
+#: inc/deprecated.php:130
+msgid "Connect With Google Analytics"
+msgstr "Kapcsolódás a Google Analytics-hez"
+
+#: inc/deprecated.php:145 inc/deprecated.php:163 inc/deprecated.php:195
+msgid "Google Analytics"
+msgstr "Google Analytics"
+
+#: aioseop_class.php:3320
+msgid "SEO"
+msgstr "SEO"
+
+#: aioseop_class.php:3331
+msgid "Edit SEO"
+msgstr "SEO szerkesztése"
+
+#: aioseop_class.php:3323
+msgid "Upgrade To Pro"
+msgstr "Frissítés a Pro verzióra"
+
+#: aioseop_class.php:3393
+msgid "All in One SEO"
+msgstr "All in One SEO"
+
+#: aioseop_class.php:3437
+msgid "Thank you!"
+msgstr "Köszönjük!"
+
+#: aioseop_class.php:3438
+msgid "Thank you for your donation, it helps keep this plugin free and actively developed!"
+msgstr "Köszönjük a donációt, ez segít nekünk a bővítményt ingyen kínálni, és továbbfejleszteni!"
+
+#: aioseop_class.php:3475
+msgid "Join Our Mailing List"
+msgstr "Csatlakozz a levelezési listánkhoz"
+
+#: aioseop_class.php:3481
+msgid "Support"
+msgstr "Segítség"
+
+#: aioseop_class.php:3481
+msgid "Version"
+msgstr "Verzió"
+
+#: admin/aioseop_module_class.php:1449 admin/aioseop_module_class.php:1639
+#: admin/aioseop_module_class.php:1834 aioseop_class.php:3504
+#: aioseop_class.php:3516
+msgid "Help"
+msgstr "Segítség"
+
+#: aioseop_class.php:3528
+msgid "Main Settings"
+msgstr "Fő beállítások"
+
+#: modules/aioseop_feature_manager.php:14
+msgid "Feature Manager"
+msgstr "Funkciókezelő"
+
+#: modules/aioseop_feature_manager.php:19
+msgid "XML Sitemaps"
+msgstr "XML webhelytérképek"
+
+#: modules/aioseop_feature_manager.php:20
+msgid "Create and manage your XML Sitemaps using this feature and submit your XML Sitemap to Google, Bing/Yahoo and Ask.com."
+msgstr "Hozd létre és kezeld az XML webhelytérképeidet ezzel a funkcióval, és küldd el őket a Google-nek, Bing/Yahoo-nak, és Ask.com-nak."
+
+#: modules/aioseop_feature_manager.php:21 modules/aioseop_opengraph.php:14
+msgid "Social Meta"
+msgstr "Szociális meta"
+
+#: modules/aioseop_feature_manager.php:22
+msgid "Activate this feature to add Social Meta data to your site to deliver closer integration between your website/blog and Facebook, Twitter, and Google+."
+msgstr "Aktiváld ezt a funkciót szociális metaadatok hozzáadására az oldaladhoz, hogy jobban integráld a weboldaladat/blogodat a Facebookkal, Twitterrel, és Google+-szal."
+
+#: modules/aioseop_feature_manager.php:23 modules/aioseop_robots.php:12
+#: modules/aioseop_robots.php:91
+msgid "Robots.txt"
+msgstr "Robots.txt"
+
+#: modules/aioseop_feature_manager.php:24
+msgid "Generate and validate your robots.txt file to guide search engines through your site."
+msgstr "Hozd létre és ellenőrizd a robots.txt, hogy megkönnyítsd a keresőmotorok munkáját az oldaladon."
+
+#: modules/aioseop_feature_manager.php:25 modules/aioseop_file_editor.php:12
+msgid "File Editor"
+msgstr "Fájlszerkesztő"
+
+#: modules/aioseop_feature_manager.php:26
+msgid "Edit your robots.txt file and your .htaccess file to fine-tune your site."
+msgstr "Szerkeszd a robots.txt és .htaccess fájlokat az oldalad finomhangolásához."
+
+#: modules/aioseop_feature_manager.php:30
+msgid "Stop badly behaving bots from slowing down your website."
+msgstr "Akadályozd meg, hogy a rosszul viselkedő botok lassítsák a weboldaladat."
+
+#: modules/aioseop_feature_manager.php:31 modules/aioseop_performance.php:14
+msgid "Performance"
+msgstr "Teljesítmény"
+
+#: modules/aioseop_feature_manager.php:32
+msgid "Optimize performance related to SEO and check your system status."
+msgstr "Optimizáld a SEO-val kapcsolatos teljesítményt, és ellenőrizd a rendszered álapotát."
+
+#: modules/aioseop_feature_manager.php:27
+#: modules/aioseop_importer_exporter.php:12
+msgid "Importer & Exporter"
+msgstr "Importer & Exporter"
+
+#: modules/aioseop_feature_manager.php:28
+msgid "Exports and imports your All in One SEO Pack plugin settings."
+msgstr "Exportálja és importálja az All in One SEO Pack bővítmény beállításait."
+
+#: modules/aioseop_feature_manager.php:39
+msgid "Coming Soon..."
+msgstr "Nemsokára..."
+
+#: inc/commonstrings.php:8 modules/aioseop_feature_manager.php:42
+#: modules/aioseop_feature_manager.php:48
+msgid "Video Sitemap"
+msgstr "Video webhelytérkép"
+
+#: modules/aioseop_feature_manager.php:102
+msgid "Update Features"
+msgstr "Funkciók frissítése"
+
+#: modules/aioseop_feature_manager.php:104
+msgid "Reset Features"
+msgstr "Funkciók visszaállítása"
+
+#: modules/aioseop_file_editor.php:22 modules/aioseop_robots.php:21
+msgid "Robots.txt editor"
+msgstr "Robots.txt szerkesztő"
+
+#: modules/aioseop_file_editor.php:23
+msgid ".htaccess editor"
+msgstr ".htaccess szerkesztő"
+
+#: modules/aioseop_file_editor.php:26
+msgid "Edit Robots.txt"
+msgstr "Szerkeszd a Robots.txt fájlt"
+
+#: modules/aioseop_file_editor.php:28 modules/aioseop_file_editor.php:47
+msgid "Edit .htaccess"
+msgstr "Szerkeszd a .htaccess fájlt"
+
+#: modules/aioseop_file_editor.php:36
+msgid "robots.txt"
+msgstr "robots.txt"
+
+#: modules/aioseop_file_editor.php:37
+msgid ".htaccess"
+msgstr ".htaccess"
+
+#: modules/aioseop_file_editor.php:42
+msgid "Edit robots.txt"
+msgstr "Szerkeszd a robots.txt fájlt"
+
+#: modules/aioseop_file_editor.php:70
+msgid "Update robots.txt"
+msgstr "Frissítsd robots.txt fájlt"
+
+#: modules/aioseop_file_editor.php:72
+msgid "Update .htaccess"
+msgstr "Frissítsd  .htaccess fájlt"
+
+#: inc/aioseop_functions.php:146
+msgid "SEO Title"
+msgstr "SEO cím"
+
+#: inc/aioseop_functions.php:147
+msgid "SEO Description"
+msgstr "SEO leírás"
+
+#: inc/aioseop_functions.php:149
+msgid "SEO Keywords"
+msgstr "SEO kulcsszavak"
+
+#: inc/aioseop_functions.php:207 inc/aioseop_functions.php:286
+#: inc/aioseop_functions.php:564
+msgid "Edit"
+msgstr "Szerkesztés"
+
+#: inc/aioseop_functions.php:207
+msgid "Post"
+msgstr "Bejegyzés"
+
+#: inc/aioseop_functions.php:207
+msgid "Save"
+msgstr "Mentés"
+
+#: inc/aioseop_functions.php:207
+msgid "Cancel"
+msgstr "Mégsem"
+
+#: inc/aioseop_functions.php:208
+msgid "Please wait..."
+msgstr "Kérlek várj..."
+
+#: inc/aioseop_functions.php:208
+msgid "Slug may not be empty!"
+msgstr "A slug nem lehet üres!"
+
+#: inc/aioseop_functions.php:209
+msgid "Revisions"
+msgstr "Revíziók"
+
+#: inc/aioseop_functions.php:209
+msgid "Insert time"
+msgstr "Idő megadása"
+
+#: inc/aioseop_functions.php:282 inc/aioseop_functions.php:560
+#: modules/aioseop_performance.php:155 modules/aioseop_performance.php:157
+#: modules/aioseop_performance.php:159 modules/aioseop_performance.php:172
+msgid "No"
+msgstr "Nem"
+
+#: inc/aioseop_functions.php:303
+msgid "Unauthorized access; try reloading the page."
+msgstr "Illetéktelen hozzáférés; töltsd be újra az oldalt."
+
+#: inc/aioseop_functions.php:377
+msgid "Row %s not found; no rows were deleted."
+msgstr "A  %s sor nem található ; egyetlen sor sem lett törölve."
+
+#: inc/aioseop_functions.php:439
+msgid "Duplicate %s Meta"
+msgstr "Duplikált %s Meta"
+
+#: inc/aioseop_functions.php:441
+msgid "No duplicate meta tags found."
+msgstr "Nem találtunk dupla meta tageket."
+
+#: inc/aioseop_functions.php:444
+msgid "What Does This Mean?"
+msgstr "Mit jelent ez?"
+
+#: inc/aioseop_functions.php:445
+msgid "All in One SEO Pack has detected that a plugin(s) or theme is also outputting social meta tags on your site.  You can view this social meta in the source code of your site (check your browser help for instructions on how to view source code)."
+msgstr "Az All in One SEO Pack észlelte, hogy más bővítmények/sablonok is hozzáadnak szociális meta tageket az oldaladhoz. Ezeket az oldalad forráskódjában nézheted meg (nézd át a böngésződ felhasználási utasítását, abban megtalálod a forráskód lekérésére vonatkozó információkat )."
+
+#: inc/aioseop_functions.php:446
+msgid "You may prefer to use the social meta tags that are being output by the other plugin(s) or theme.  If so, then you should deactivate this Social Meta feature in All in One SEO Pack Feature Manager."
+msgstr "Lehetséges, hogy előnyben részesítenéd azokat a szociális metákat, amelyeket más bővítmények, vagy sablonok hoztak létre. Ha ez így van, akkor ki kell kapcsolni a szociális meta funkciót az  All in One SEO Pack  funkciókezelőjében."
+
+#: inc/aioseop_functions.php:447
+msgid "You should avoid duplicate social meta tags.  You can use these free tools from Facebook, Google and Twitter to validate your social meta and check for errors:"
+msgstr "Lehetőség szerint el kell kerülni a kettőzött szociális meta tageket. A Facebook, Google, és Twitter ingyenes eszközeit használhatod az ellenőrzésükre, és hibakeresésre."
+
+#: inc/aioseop_functions.php:452
+msgid "Please refer to the document for each tool for help in using these to debug your social meta."
+msgstr "Kérünk, olvasd el a megfelelő eszköz dokumentációját a segítségért a szociális meták hibakeresésél."
+
+#: inc/aioseop_functions.php:675
+msgid "Google+"
+msgstr "Google+"
+
+#: inc/aioseop_functions.php:680
+msgid "Twitter"
+msgstr "Twitter"
+
+#: inc/aioseop_functions.php:682
+msgid "Facebook"
+msgstr "Facebook"
+
+#: modules/aioseop_importer_exporter.php:17
+msgid "Select a valid All in One SEO Pack ini file and click 'Import' to import options from a previous state or install of All in One SEO Pack.<br /><a href='http://semperplugins.com/documentation/importer-exporter-module/' target='_blank'>Click here for documentation on this setting</a>"
+msgstr "Válassz ki egy megfelelő All in One SEO Pack ini fájlt, és klikkelj az 'Import' -ra az előző állapot importálási opcióért, vagy telepítsd All in One SEO Packet.<br /><a href='http://semperplugins.com/documentation/importer-exporter-module/' target='_blank'>Klikkelj a beállítás dokumentációjáért</a>"
+
+#: modules/aioseop_importer_exporter.php:18
+msgid "You may choose to export settings from active modules, and content from post data.<br /><a href='http://semperplugins.com/documentation/importer-exporter-module/' target='_blank'>Click here for documentation on this setting</a>"
+msgstr "Exportálhatod a beállításokat az aktív modulokból, és tartalmakat a bejegyzések adataiból.<br /><a href='http://semperplugins.com/documentation/importer-exporter-module/' target='_blank'>Klikkelj a beállítás dokumentációjáért</a>"
+
+#: modules/aioseop_importer_exporter.php:19
+msgid "Select which Post Types you want to export your All in One SEO Pack meta data for.<br /><a href='http://semperplugins.com/documentation/importer-exporter-module/' target='_blank'>Click here for documentation on this setting</a>"
+msgstr "Válaszd ki milyen bejegyzéstípusoknál szeretnéd exportálni az All in One SEO Pack meta adatait.<br /><a href='http://semperplugins.com/documentation/importer-exporter-module/' target='_blank'>Klikkelj a beállítás dokumentációjáért</a>"
+
+#: modules/aioseop_importer_exporter.php:23
+#: modules/aioseop_importer_exporter.php:57
+msgid "Import"
+msgstr "Import"
+
+#: modules/aioseop_importer_exporter.php:24
+msgid "Export Settings"
+msgstr "Export beállítások"
+
+#: modules/aioseop_importer_exporter.php:28
+msgid "Export Post Types:"
+msgstr "Bejegyzéstípusok exportálása"
+
+#: modules/aioseop_importer_exporter.php:32
+msgid "Note: If General Settings is checked, the General Settings, the Feature Manager settings, and the following currently active modules will have their settings data exported:"
+msgstr "Megjegyzés: ha az általános beállítások  van bejelölve, az általános beállítások, a funkciókezelő, és a következő aktív modulok adatai kerülnek exportálásra: "
+
+#: modules/aioseop_importer_exporter.php:60
+msgid "Export"
+msgstr "Export"
+
+#: modules/aioseop_importer_exporter.php:80
+msgid "There are no other modules currently loaded!"
+msgstr "Jelenleg nincs más modul betöltve!"
+
+#: modules/aioseop_importer_exporter.php:82
+msgid "You may change this by activating or deactivating modules in the Feature Manager."
+msgstr "Ezt megváltoztathatod a Feature Managerből modulok ki-, és bekapcsolásával."
+
+#: modules/aioseop_importer_exporter.php:247
+msgid "<b>Warning:</b> Line not matched: <b>\"%s\"</b>, On Line: <b>%s</b>"
+msgstr "<b>Figyelmeztetés:</b> Sor nem egyezik: <b>\"%s\"</b>, Soron: <b>%s</b>"
+
+#: modules/aioseop_importer_exporter.php:270
+msgid "<b>Warning:</b> This following post could not be found: <b>\"%s\"</b>"
+msgstr "<b>Figyelmeztetés:</b> A következő bejegyzés nem található: <b>\"%s\"</b>"
+
+#: modules/aioseop_importer_exporter.php:298
+msgid "Settings export file for All in One SEO Pack"
+msgstr "All in One SEO Pack beállításainak exportálására szolgáló fájl"
+
+#: admin/aioseop_module_class.php:1208
+msgid "Click here for documentation on this setting"
+msgstr "A beállítás dokumentációjához klikkelj ide"
+
+#: admin/aioseop_module_class.php:1586
+msgid " characters. Most search engines use a maximum of %s chars for the %s."
+msgstr "karakterek. A legtöbb keresőmotor maximum  %s karaktert használ a  %s"
+
+#: admin/aioseop_module_class.php:1612
+msgid "Click for Help!"
+msgstr "Kattints a segítségért!"
+
+#: admin/aioseop_module_class.php:1757 modules/aioseop_sitemap.php:510
+msgid "Security Check - If you receive this in error, log out and back in to WordPress"
+msgstr "Biztonsági ellenőrzés - Ha ezt a hibát látod, lépj ki, majd jelentkezz be a WordPress-be"
+
+#: admin/aioseop_module_class.php:1759
+msgid "Options Reset."
+msgstr "Opciók visszaállítása."
+
+#: admin/aioseop_module_class.php:1768
+msgid "All in One SEO Options Updated."
+msgstr "Az All in One SEO Options frissítve lett."
+
+#: admin/aioseop_module_class.php:1814
+msgid "Update Options"
+msgstr "Opciók frissítése"
+
+#: modules/aioseop_opengraph.php:19
+msgid "Activity"
+msgstr "Aktivitás"
+
+#: modules/aioseop_opengraph.php:20
+msgid "Sport"
+msgstr "Sport"
+
+#: modules/aioseop_opengraph.php:23
+msgid "Bar"
+msgstr "Bar"
+
+#: modules/aioseop_opengraph.php:24
+msgid "Company"
+msgstr "Vállalat"
+
+#: modules/aioseop_opengraph.php:25
+msgid "Cafe"
+msgstr "Cafe"
+
+#: modules/aioseop_opengraph.php:26
+msgid "Hotel"
+msgstr "Hotel"
+
+#: modules/aioseop_opengraph.php:27
+msgid "Restaurant"
+msgstr "Étterem"
+
+#: modules/aioseop_opengraph.php:30
+msgid "Cause"
+msgstr "Cél"
+
+#: modules/aioseop_opengraph.php:31
+msgid "Sports League"
+msgstr "Sport liga"
+
+#: modules/aioseop_opengraph.php:32
+msgid "Sports Team"
+msgstr "Csapat"
+
+#: modules/aioseop_opengraph.php:35
+msgid "Band"
+msgstr "Zenekar"
+
+#: modules/aioseop_opengraph.php:36
+msgid "Government"
+msgstr "Kormányzat"
+
+#: modules/aioseop_opengraph.php:37
+msgid "Non Profit"
+msgstr "Non Profit"
+
+#: modules/aioseop_opengraph.php:38
+msgid "School"
+msgstr "Iskola"
+
+#: modules/aioseop_opengraph.php:39
+msgid "University"
+msgstr "Egyetem"
+
+#: modules/aioseop_opengraph.php:42
+msgid "Actor"
+msgstr "Színész"
+
+#: modules/aioseop_opengraph.php:43
+msgid "Athlete"
+msgstr "Atléta"
+
+#: modules/aioseop_opengraph.php:44
+msgid "Author"
+msgstr "Szerző"
+
+#: modules/aioseop_opengraph.php:45
+msgid "Director"
+msgstr "Rendező"
+
+#: modules/aioseop_opengraph.php:46
+msgid "Musician"
+msgstr "Zenész"
+
+#: modules/aioseop_opengraph.php:47
+msgid "Politician"
+msgstr "Politikus"
+
+#: modules/aioseop_opengraph.php:48
+msgid "Profile"
+msgstr "Profil"
+
+#: modules/aioseop_opengraph.php:49
+msgid "Public Figure"
+msgstr "Közéleti személyiség"
+
+#: modules/aioseop_opengraph.php:52
+msgid "City"
+msgstr "Város"
+
+#: modules/aioseop_opengraph.php:53
+msgid "Country"
+msgstr "Ország"
+
+#: modules/aioseop_opengraph.php:54
+msgid "Landmark"
+msgstr "Nevezetesség"
+
+#: modules/aioseop_opengraph.php:55
+msgid "State Province"
+msgstr "Tartomány"
+
+#: modules/aioseop_opengraph.php:58
+msgid "Album"
+msgstr "Album"
+
+#: modules/aioseop_opengraph.php:59
+msgid "Book"
+msgstr "Könyv"
+
+#: modules/aioseop_opengraph.php:60
+msgid "Drink"
+msgstr "Ital"
+
+#: modules/aioseop_opengraph.php:61
+msgid "Food"
+msgstr "Étel"
+
+#: modules/aioseop_opengraph.php:62
+msgid "Game"
+msgstr "Játék"
+
+#: modules/aioseop_opengraph.php:63
+msgid "Movie"
+msgstr "Film"
+
+#: modules/aioseop_opengraph.php:64
+msgid "Product"
+msgstr "Termék"
+
+#: modules/aioseop_opengraph.php:65
+msgid "Song"
+msgstr "Dal"
+
+#: modules/aioseop_opengraph.php:66
+msgid "TV Show"
+msgstr "TV program"
+
+#: modules/aioseop_opengraph.php:67
+msgid "Episode"
+msgstr "Epizód"
+
+#: modules/aioseop_opengraph.php:69 modules/aioseop_opengraph.php:76
+msgid "Article"
+msgstr "Cikk"
+
+#: modules/aioseop_opengraph.php:70 modules/aioseop_opengraph.php:76
+msgid "Blog"
+msgstr "Blog"
+
+#: modules/aioseop_opengraph.php:71 modules/aioseop_opengraph.php:76
+msgid "Website"
+msgstr "Weboldal"
+
+#: modules/aioseop_opengraph.php:79
+msgid "Checking this box will use the Home Title and Home Description set in All in One SEO Pack, General Settings as the Open Graph title and description for your home page."
+msgstr "A négyzet bejelölésével az All in One SEO Packben  beállított főldalcím és leírás kerül felhasználásra, mint  az Open Graph főoldal cím, és leírás általános beállítása."
+
+#: modules/aioseop_opengraph.php:82
+msgid "Run shortcodes that appear in social title meta tags."
+msgstr "Futtass rövidkódokat, amelyek a szociális címtagekben jelennek meg."
+
+#: modules/aioseop_opengraph.php:83
+msgid "Run shortcodes that appear in social description meta tags."
+msgstr "Futtass rövidkódokat, amelyek a szociális leírás tagjeiben jelennek meg."
+
+#: modules/aioseop_opengraph.php:84
+msgid "The Site Name is the name that is used to identify your website."
+msgstr "A webhelynév, a név, amellyel a weboldaladat azonosítják."
+
+#: modules/aioseop_opengraph.php:85
+msgid "The Home Title is the Open Graph title for your home page."
+msgstr "A főoldal címe lesz azonosítva a főoldalad Open Graph címével."
+
+#: modules/aioseop_opengraph.php:86
+msgid "The Home Description is the Open Graph description for your home page."
+msgstr "A főoldal leírása lesz azonosítva a főoldalad Open Graph leírásával."
+
+#: modules/aioseop_opengraph.php:87
+msgid "The Home Image is the Open Graph image for your home page."
+msgstr "A főoldal képe lesz azonosítva a főoldalad Open Graph képével."
+
+#: modules/aioseop_opengraph.php:88
+msgid "The Home Tag allows you to add a list of keywords that best describe your home page content."
+msgstr "A főoldal tag funkció lehetővé teszi, hogy kulcsszavak listáját add meg, amelyek a legjobban leírják a főoldalad tartalmát."
+
+#: modules/aioseop_opengraph.php:89
+msgid "Check this and your Open Graph descriptions will be auto-generated from your content."
+msgstr "Jelöld ezt be, és az Open Graph leírásod automatikusan kerül létrehozásra a tartalomból."
+
+#: modules/aioseop_opengraph.php:90
+msgid "This option lets you choose which image will be displayed by default for the Open Graph image. You may override this on individual posts."
+msgstr "Ez az opció lehetővé teszi a kép kiválasztását, amely alapeállításban Open Graph képként fog szerepelni. Ezt  minden egyes ejegyzésnél felülírhatod."
+
+#: modules/aioseop_opengraph.php:91
+msgid "This option lets you fall back to the default image if no image could be found above."
+msgstr "Ez az opció lehetővé teszi a visszatérést az alapvető képhez, ha felül nincs megadva kép."
+
+#: modules/aioseop_opengraph.php:92
+msgid "This option sets a default image that can be used for the Open Graph image. You can upload an image, select an image from your Media Library or paste the URL of an image here."
+msgstr "Ez az opció megadja az alapvető képet, amelyet Open Graph képként lehet használni. Feltölthetsz egy képet , kiválaszthatsz egyet a médiakönyvtárból, illetve  beilleszthetsz egy URL-t."
+
+#: modules/aioseop_opengraph.php:93
+msgid "This option lets you set a default width for your images, where unspecified."
+msgstr "Ez az opció lehetővé teszi a képek alapszélességének megadását, amikor nincs külön megadva."
+
+#: modules/aioseop_opengraph.php:94
+msgid "This option lets you set a default height for your images, where unspecified."
+msgstr "Ez az opció lehetővé teszi a képek alapmagasságának megadását, amikor nincs külön megadva."
+
+#: modules/aioseop_opengraph.php:95
+msgid "Enter the name of a custom field (or multiple field names separated by commas) to use that field to specify the Open Graph image on Pages or Posts."
+msgstr "Add meg az egyedi mező nevét(avagy több mezőt, vesszővel elválasztva), amellyel megadod a bejegyzés, vagy oldal  Open Graph képét."
+
+#: modules/aioseop_opengraph.php:96
+msgid "Set the Open Graph type for your website as either a blog or a website."
+msgstr "Add meg a weboldalad Open Graph típusát (lehetségesek: weboldal és blog)."
+
+#: modules/aioseop_opengraph.php:97
+msgid "This option lets you select the Open Graph image that will be used for this Page or Post, overriding the default settings."
+msgstr "Ez az opció lehetővé teszi a bejegyzésed, vagy oldalad Open Graph képének kiválasztását, és az alapbeállítás felülírását."
+
+#: modules/aioseop_opengraph.php:98
+msgid "This option lets you upload an image to use as the Open Graph image for this Page or Post."
+msgstr "Ez az opció lehetővé teszi egy kép feltöltését Open Graph képként a bejegyzésedhez, vagy oldaladhoz."
+
+#: modules/aioseop_opengraph.php:99
+msgid "Enter the width for your Open Graph image in pixels (i.e. 600)."
+msgstr "Add meg az Open Graph képed szélességét pixelekben  (pl. 600)."
+
+#: modules/aioseop_opengraph.php:100
+msgid "Enter the height for your Open Graph image in pixels (i.e. 600)."
+msgstr "Add meg az Open Graph képed magasságát pixelekben  (pl. 600)."
+
+#: modules/aioseop_opengraph.php:101
+msgid "This option lets you specify a link to the Open Graph video used on this Page or Post."
+msgstr "Ez az opció lehetővé teszi   hivatkozás megadását az Open Graph videóhoz, amelyet a bejegyzésedben, vagy oldaladon használtál. "
+
+#: modules/aioseop_opengraph.php:102
+msgid "Enter the width for your Open Graph video in pixels (i.e. 600)."
+msgstr "Add meg az Open Graph videód szélességét pixelekben (pl. 600)."
+
+#: modules/aioseop_opengraph.php:103
+msgid "Enter the height for your Open Graph video in pixels (i.e. 600)."
+msgstr "Add meg az Open Graph videód magasságát pixelekben (pl. 600)."
+
+#: modules/aioseop_opengraph.php:104 modules/aioseop_opengraph.php:105
+msgid "Select the default type of Twitter card to display."
+msgstr "Válaszd ki az alapvető Twitter kártya típusát a megjelenítéshez."
+
+#: modules/aioseop_opengraph.php:106
+msgid "Enter the Twitter username associated with your website here."
+msgstr "Itt adhatod  meg az oldalhoz kapcsolódó Twitter felhasználónevet."
+
+#: modules/aioseop_opengraph.php:107
+msgid "Allows your authors to be identified by their Twitter usernames as content creators on the Twitter cards for their posts."
+msgstr "Lehetővé teszi, hogy a szerzőket Twitter felhasználónevük alapján identifikálják tartalomkészítőként a bejegyzéseik Twitter kártyáin."
+
+#: modules/aioseop_opengraph.php:108
+msgid "Enter the name of your website here."
+msgstr "Add meg a weboldal nevét."
+
+#: modules/aioseop_opengraph.php:109
+msgid "Automatically generate article tags for Facebook type article when not provided."
+msgstr "Automatikusan hozz létre cikk tageket a Facebook típusúakhoz, amikor nincsenek megadva."
+
+#: modules/aioseop_opengraph.php:110
+msgid "Use keywords in generated article tags."
+msgstr "Használj kulcsszavakat a létrehozott cikk tagekben."
+
+#: modules/aioseop_opengraph.php:111
+msgid "Use catergories in generated article tags."
+msgstr "Használj kategóriákat a létrehozott cikk tagekben."
+
+#: modules/aioseop_opengraph.php:112
+msgid "Use post tags in generated article tags."
+msgstr "Használj bejegyzés tageket a létrehozott cikk tagekben."
+
+#: modules/aioseop_opengraph.php:113
+msgid "Select which Post Types you want to use All in One SEO Pack to set Open Graph meta values for."
+msgstr "Válaszd ki mely bejegyzéstípusokat szeretnél használni a  All in One SEO Packban, hogy beállítsd az Open Graph meta értékeket."
+
+#: modules/aioseop_opengraph.php:114
+msgid "This is the Open Graph title of this Page or Post."
+msgstr "Ez az Open Graph címe az oldalnak, vagy bejegyzésnek."
+
+#: modules/aioseop_opengraph.php:115
+msgid "This is the Open Graph description of this Page or Post."
+msgstr "Ez az Open Graph leírása az oldalnak, vagy bejegyzésnek."
+
+#: modules/aioseop_opengraph.php:116
+msgid "Select the Open Graph type that best describes the content of this Page or Post."
+msgstr "Válaszd ki az Open Graph típust, amely legjobban leírja ezt az oldalt, vagy bejegyzést."
+
+#: modules/aioseop_opengraph.php:117
+msgid "Press this button to have Facebook re-fetch and debug this page."
+msgstr "Nyomd meg ezt a gombot, hogy a Facebook újratöltse és ellenőrizze ezt az oldalt."
+
+#: modules/aioseop_opengraph.php:118
+msgid "This Open Graph meta allows you to add a general section name that best describes this content."
+msgstr "Ez  az Open Graph meta lehetővé teszi, hogy egy általános szekciónevet válassz,  amely legjobban leírja ezt az oldalt, vagy bejegyzést."
+
+#: modules/aioseop_opengraph.php:119
+msgid "This Open Graph meta allows you to add a list of keywords that best describe this content."
+msgstr "Ez  az Open Graph meta lehetővé teszi, hogy egy kulcsszólistát adj meg,  amely legjobban leírja ezt az oldalt, vagy bejegyzést."
+
+#: modules/aioseop_opengraph.php:120
+msgid "Link articles to the Facebook page associated with your website."
+msgstr "Helyezz el hivatkozásokat a weboldalad Facebook oldalára."
+
+#: modules/aioseop_opengraph.php:121
+msgid "Allows your authors to be identified by their Facebook pages as content authors on the Opengraph meta for their articles."
+msgstr "Lehetővé teszi a szerzők azonosítását Facebook oldalukról tartalmak szerzőjeként az Open Graph metán a cikkeikre."
+
+#: modules/aioseop_opengraph.php:122
+msgid "Are the social profile links for your website for a person or an organization?"
+msgstr "A weboldalad szociális profilja személyhez, vagy szervezethez kötődik? "
+
+#: modules/aioseop_opengraph.php:123
+msgid "Add URLs for your website's social profiles here (Facebook, Twitter, Google+, Instagram, LinkedIn), one per line."
+msgstr "Add meg a weboldalad szociális profiljait (Facebook, Twitter, Google+, Instagram, LinkedIn), egyet soronként."
+
+#: modules/aioseop_opengraph.php:124
+msgid "Add the name of the person or organization who owns these profiles."
+msgstr "Add meg a személyek nevét, vagy a szervezetet, amelyek ezeknek a profiloknak tulajdonosai."
+
+#: modules/aioseop_opengraph.php:152
+msgid " characters. Open Graph allows up to a maximum of %s chars for the %s."
+msgstr "karakterek. Open Grap maximum  %s karaktert enged meg a %s -re."
+
+#: modules/aioseop_opengraph.php:154
+msgid "Scan Header"
+msgstr "Fejléc szkennelése"
+
+#: modules/aioseop_opengraph.php:155
+msgid "Use AIOSEO Title and Description"
+msgstr "Használd az AIOSEO címet és leírást"
+
+#: modules/aioseop_opengraph.php:158
+msgid "Run Shortcodes In Title"
+msgstr "Futtass rövidkódokat a címben"
+
+#: modules/aioseop_opengraph.php:159
+msgid "Run Shortcodes In Description"
+msgstr "Futtass rövidkódokat a leírásban"
+
+#: modules/aioseop_opengraph.php:160
+msgid "Site Name"
+msgstr "Oldalnév"
+
+#: modules/aioseop_opengraph.php:161
+msgid "Home Title"
+msgstr "Főoldal címe"
+
+#: modules/aioseop_opengraph.php:163
+msgid "Home Description"
+msgstr "Főoldal leírása"
+
+#: modules/aioseop_opengraph.php:165
+msgid "Home Image"
+msgstr "Főoldal képe"
+
+#: modules/aioseop_opengraph.php:167
+msgid "Home Article Tags"
+msgstr "Főoldal cikk tagjei"
+
+#: modules/aioseop_opengraph.php:169
+msgid "Autogenerate OG Descriptions"
+msgstr "OG leírások automatikus létrehozása"
+
+#: modules/aioseop_opengraph.php:170
+msgid "Select OG:Image Source"
+msgstr "Válaszd ki az OG:Image forrást"
+
+#: modules/aioseop_opengraph.php:170
+msgid "Default Image"
+msgstr "Alapértelmezett kép"
+
+#: modules/aioseop_opengraph.php:170
+msgid "Featured Image"
+msgstr "Kiemelt kép"
+
+#: modules/aioseop_opengraph.php:170
+msgid "First Attached Image"
+msgstr "Első csatolt kép"
+
+#: modules/aioseop_opengraph.php:170
+msgid "First Image In Content"
+msgstr "Első kép a tartalomban"
+
+#: modules/aioseop_opengraph.php:170
+msgid "Image From Custom Field"
+msgstr "Kép egyedi mezőből"
+
+#: modules/aioseop_opengraph.php:170
+msgid "Post Author Image"
+msgstr "Bejegyzés szerzőjének képe"
+
+#: modules/aioseop_opengraph.php:170
+msgid "First Available Image"
+msgstr "Első elérhető kép"
+
+#: modules/aioseop_opengraph.php:171
+msgid "Use Default If No Image Found"
+msgstr "Használd az alapértelmezettet, ha nem található kép"
+
+#: modules/aioseop_opengraph.php:172
+msgid "Default OG:Image"
+msgstr "Alapértelmezett OG:Image"
+
+#: modules/aioseop_opengraph.php:173
+msgid "Default Image Width"
+msgstr "Alapértelmezett képszélesség"
+
+#: modules/aioseop_opengraph.php:175
+msgid "Default Image Height"
+msgstr "Alapértelmezett képmagasság"
+
+#: modules/aioseop_opengraph.php:177
+msgid "Use Custom Field For Image"
+msgstr "Használj egyedi mezőt a képhez"
+
+#: modules/aioseop_opengraph.php:178 modules/aioseop_opengraph.php:214
+msgid "Facebook Object Type"
+msgstr "Facebook objektum típus"
+
+#: modules/aioseop_opengraph.php:180
+msgid "Image"
+msgstr "Kép"
+
+#: modules/aioseop_opengraph.php:182
+msgid "Custom Image"
+msgstr "Egyedi kép"
+
+#: modules/aioseop_opengraph.php:184
+msgid "Specify Image Width"
+msgstr "Add meg a képszélességet"
+
+#: modules/aioseop_opengraph.php:186
+msgid "Specify Image Height"
+msgstr "Add meg a képmagasságot"
+
+#: modules/aioseop_opengraph.php:188
+msgid "Custom Video"
+msgstr "Egyedi videó"
+
+#: modules/aioseop_opengraph.php:190
+msgid "Specify Video Width"
+msgstr "Add meg a videó szélességét"
+
+#: modules/aioseop_opengraph.php:192
+msgid "Specify Video Height"
+msgstr "Add meg a videó magasságát"
+
+#: modules/aioseop_opengraph.php:194
+msgid "Default Twitter Card"
+msgstr "Alapértelmezett Twitter kártya"
+
+#: modules/aioseop_opengraph.php:195 modules/aioseop_opengraph.php:197
+msgid "Summary"
+msgstr "Összefoglaló"
+
+#: modules/aioseop_opengraph.php:195 modules/aioseop_opengraph.php:197
+msgid "Summary Large Image"
+msgstr "A összefoglaló nagy kép "
+
+#: modules/aioseop_opengraph.php:196
+msgid "Twitter Card Type"
+msgstr "Twitter kártyatípus"
+
+#: modules/aioseop_opengraph.php:198
+msgid "Twitter Site"
+msgstr "Twitter oldal"
+
+#: modules/aioseop_opengraph.php:200
+msgid "Show Twitter Author"
+msgstr "Twitter szerző megjelenítése"
+
+#: modules/aioseop_opengraph.php:201
+msgid "Twitter Domain"
+msgstr "Twitter domén"
+
+#: modules/aioseop_opengraph.php:203
+msgid "Automatically Generate Article Tags"
+msgstr "Cikk tagek automatikus létrehozása"
+
+#: modules/aioseop_opengraph.php:204
+msgid "Use Keywords In Article Tags"
+msgstr "Kulcsszavak használata a cikk tagekben"
+
+#: modules/aioseop_opengraph.php:205
+msgid "Use Categories In Article Tags"
+msgstr "Kategóriák használata a cikk tagekben"
+
+#: modules/aioseop_opengraph.php:206
+msgid "Use Post Tags In Article Tags"
+msgstr "Bejegyzés tagek használata a cikk tagekben"
+
+#: modules/aioseop_opengraph.php:207
+msgid "Enable Facebook Meta for"
+msgstr "Facebook Meta engedélyezése"
+
+#: modules/aioseop_opengraph.php:219
+msgid "Facebook Debug"
+msgstr "Facebook hibakeresés"
+
+#: modules/aioseop_opengraph.php:232
+msgid "Debug This Post"
+msgstr "Bejegyzés hibakeresése"
+
+#: modules/aioseop_opengraph.php:235
+msgid "Article Section"
+msgstr "Cikk szekció"
+
+#: modules/aioseop_opengraph.php:237
+msgid "Article Tags"
+msgstr "Cikk tagek"
+
+#: modules/aioseop_opengraph.php:239
+msgid "Show Facebook Publisher on Articles"
+msgstr "A cikk Facebook irójának megjelenítése"
+
+#: modules/aioseop_opengraph.php:240
+msgid "Show Facebook Author on Articles"
+msgstr "Jelenítsd meg a Facebook szerzőt a cikkeknél"
+
+#: modules/aioseop_opengraph.php:241 modules/aioseop_opengraph.php:282
+msgid "Social Profile Links"
+msgstr "Szociális profil hivatkozások"
+
+#: modules/aioseop_opengraph.php:242
+msgid "Person or Organization?"
+msgstr "Személy vagy szervezet?"
+
+#: modules/aioseop_opengraph.php:243
+msgid "Person"
+msgstr "Személy"
+
+#: modules/aioseop_opengraph.php:243
+msgid "Organization"
+msgstr "Szervezet"
+
+#: modules/aioseop_opengraph.php:244
+msgid "Associated Name"
+msgstr "Kapcsolódó név"
+
+#: modules/aioseop_opengraph.php:258
+msgid "Social Settings"
+msgstr "Szociális beállítások"
+
+#: modules/aioseop_opengraph.php:277
+msgid "Image Settings"
+msgstr "Kép beállítások"
+
+#: modules/aioseop_opengraph.php:287
+msgid "Facebook Settings"
+msgstr "Facebook beállítások"
+
+#: modules/aioseop_opengraph.php:292
+msgid "Twitter Settings"
+msgstr "Twitter beállítások"
+
+#: modules/aioseop_opengraph.php:297
+msgid "Scan Social Meta"
+msgstr "Szociális Meta szkennelése"
+
+#: modules/aioseop_opengraph.php:328
+msgid "Static front page detected, suggested Facebook Object Type is 'website'."
+msgstr "Statikus főoldalt észleltünk, az ajánlott Facebook objektumtípus \"weboldal\". "
+
+#: modules/aioseop_opengraph.php:333
+msgid "Blog on front page detected, suggested Facebook Object Type is 'blog'."
+msgstr "A főoldalon blogot észleltünk, az ajánlott Facebook objektumtípus \"blog\"."
+
+#: modules/aioseop_opengraph.php:380
+msgid "Default "
+msgstr "Alapértelmezett"
+
+#: modules/aioseop_opengraph.php:432
+msgid "Scan Now"
+msgstr "Keress most"
+
+#: modules/aioseop_opengraph.php:433
+msgid "Scan your site for duplicate social meta tags."
+msgstr "Szkenneld az oldalat a kettős szociális meta tagekért."
+
+#: modules/aioseop_opengraph.php:878
+msgid "Object Type"
+msgstr "Objektum  típus"
+
+#: modules/aioseop_opengraph.php:885
+msgid "Choose a default value that best describes the content of your post type."
+msgstr "Válaszd ki az alapértelmezett értéket, amely legjobban leírja a bejegyzéstípusod tartalmát."
+
+#: modules/aioseop_performance.php:20
+msgid "This setting allows you to raise your PHP memory limit to a reasonable value. Note: WordPress core and other WordPress plugins may also change the value of the memory limit."
+msgstr "Ez a beállítás lehetővé teszi a PHP memórialimit ésszerű megemelését. Megjegyzés: A Wordpress mag és más bővítmények megváltoztathatják ezt."
+
+#: modules/aioseop_performance.php:21
+msgid "This setting allows you to raise your PHP execution time to a reasonable value."
+msgstr "Ez a beállítás lehetővé teszi a PHP futtatási idő ésszerű meghosszabbítását."
+
+#: modules/aioseop_performance.php:22
+msgid "Use output buffering to ensure that the title gets rewritten. Enable this option if you run into issues with the title tag being set by your theme or another plugin."
+msgstr "Használj kimeneti puffert, hogy megbizonyosodj arról, hogy a cím újra lesz írva. Aktiváld ezt az opciót, ha a címtagedet a sablon, vagy más bővítmény állítja be."
+
+#: modules/aioseop_performance.php:26
+msgid "Raise memory limit"
+msgstr "Memóriahatár megemelése"
+
+#: modules/aioseop_performance.php:28 modules/aioseop_performance.php:31
+msgid "Use the system default"
+msgstr "Használd a rendszer alapértelmezettjét"
+
+#: modules/aioseop_performance.php:29
+msgid "Raise execution time"
+msgstr "Emeld a végrehajtási időt"
+
+#: modules/aioseop_performance.php:31
+msgid "No limit"
+msgstr "Nincs határ"
+
+#: modules/aioseop_performance.php:63
+msgid "System Status"
+msgstr "Rendszerállapot"
+
+#: modules/aioseop_performance.php:139
+msgid "Not set"
+msgstr "Nincs beállítva"
+
+#: modules/aioseop_performance.php:140 modules/aioseop_performance.php:142
+msgid "On"
+msgstr "Bekapcsolva"
+
+#: modules/aioseop_performance.php:141 modules/aioseop_performance.php:143
+msgid "Off"
+msgstr "Kikapcsolva"
+
+#: modules/aioseop_performance.php:145 modules/aioseop_performance.php:147
+#: modules/aioseop_performance.php:149 modules/aioseop_performance.php:151
+#: modules/aioseop_performance.php:153 modules/aioseop_performance.php:175
+msgid "N/A"
+msgstr "N/A"
+
+#: modules/aioseop_performance.php:152
+msgid " MByte"
+msgstr " MByte"
+
+#: modules/aioseop_performance.php:154 modules/aioseop_performance.php:156
+#: modules/aioseop_performance.php:158 modules/aioseop_performance.php:170
+msgid "Yes"
+msgstr "Igen"
+
+#: modules/aioseop_performance.php:182
+msgid "Operating System"
+msgstr "Operációs rendszer"
+
+#: modules/aioseop_performance.php:183
+msgid "Server"
+msgstr "Kiszolgáló"
+
+#: modules/aioseop_performance.php:184
+msgid "Memory usage"
+msgstr "Memóriafelhasználás"
+
+#: modules/aioseop_performance.php:185
+msgid "MYSQL Version"
+msgstr "MYSQL verzió"
+
+#: modules/aioseop_performance.php:186
+msgid "SQL Mode"
+msgstr "SQL mód"
+
+#: modules/aioseop_performance.php:187
+msgid "PHP Version"
+msgstr "PHP verzió"
+
+#: modules/aioseop_performance.php:188
+msgid "PHP Safe Mode"
+msgstr "PHP Biztonságos mód"
+
+#: modules/aioseop_performance.php:189
+msgid "PHP Allow URL fopen"
+msgstr "PHP Allow URL fopen"
+
+#: modules/aioseop_performance.php:190
+msgid "PHP Memory Limit"
+msgstr "PHP Memórialimit"
+
+#: modules/aioseop_performance.php:191
+msgid "PHP Max Upload Size"
+msgstr "PHP Max feltöltési méret"
+
+#: modules/aioseop_performance.php:192
+msgid "PHP Max Post Size"
+msgstr "PHP Max Post Size"
+
+#: modules/aioseop_performance.php:193
+msgid "PHP Max Script Execute Time"
+msgstr "PHP max szkript futtatási idő"
+
+#: modules/aioseop_performance.php:194
+msgid "PHP Exif support"
+msgstr "PHP Exif támogatás"
+
+#: modules/aioseop_performance.php:195
+msgid "PHP IPTC support"
+msgstr "PHP IPTC támogatás"
+
+#: modules/aioseop_performance.php:196
+msgid "PHP XML support"
+msgstr "PHP XML támogatás"
+
+#: modules/aioseop_performance.php:197
+msgid "Site URL"
+msgstr "Oldal URL"
+
+#: modules/aioseop_performance.php:198
+msgid "Home URL"
+msgstr "Főoldal URL"
+
+#: modules/aioseop_performance.php:199
+msgid "WordPress Version"
+msgstr "WordPress verzió"
+
+#: modules/aioseop_performance.php:200
+msgid "WordPress DB Version"
+msgstr "WordPress DB verzió"
+
+#: modules/aioseop_performance.php:201
+msgid "Multisite"
+msgstr "Multisite"
+
+#: modules/aioseop_performance.php:202
+msgid "Active Theme"
+msgstr "Aktív sablon"
+
+#: modules/aioseop_performance.php:217
+msgid "All in One SEO Pack Pro Debug Info"
+msgstr "All in One SEO Pack Pro Debug Info"
+
+#: modules/aioseop_performance.php:233
+msgid "Form submission error: verification check failed."
+msgstr "Hiba az űrlap elküldésénél : az ellenőrzés sikertelen."
+
+#: modules/aioseop_performance.php:245
+msgid "SFWD Debug Mail From Site %s."
+msgstr "SFWD debug mail  %s site-ról."
+
+#: modules/aioseop_performance.php:246
+msgid "Sent to %s."
+msgstr "Elküldve %s -nek."
+
+#: modules/aioseop_performance.php:248
+msgid "Failed to send to %s."
+msgstr "Nem sikerült elküldeni %s -nek."
+
+#: modules/aioseop_performance.php:251
+msgid "Error: please enter an e-mail address before submitting."
+msgstr "Hiba: kérünk, add meg az e-mail címedet a küldés előtt."
+
+#: modules/aioseop_performance.php:256
+msgid "E-mail debug information"
+msgstr "E-mail debug információ"
+
+#: modules/aioseop_performance.php:257
+msgid "Submit"
+msgstr "Beküldés"
+
+#: modules/aioseop_robots.php:18 modules/aioseop_robots.php:28
+msgid "Rule Type"
+msgstr "Szabály típusa"
+
+#: modules/aioseop_robots.php:19 modules/aioseop_robots.php:31
+msgid "User Agent"
+msgstr "User Agent"
+
+#: modules/aioseop_robots.php:20 modules/aioseop_robots.php:34
+msgid "Directory Path"
+msgstr "Direktórium elérési útja"
+
+#: modules/aioseop_robots.php:26
+msgid "Use the rule builder below to add rules to create a new Robots.txt file.  If you already have a Robots.txt file you should use the File Editor feature in All in One SEO Pack to edit it or you can delete your current Robots.txt file and start a new one with the rule builder below."
+msgstr "Használd a szabályszerkesztőt alul, a Robots.txt létrehozásához, és új szabályok hozzáadásához. Ha már van Robots.txt fájlod, akkor a All in One SEO Pack fájlszerkesztési funkcióját használhatod a szerkesztéséhez, vagy törléséhez, illetve a szabályszerkesztővel újat is kezdhetsz."
+
+#: modules/aioseop_robots.php:37
+msgid "Generate Robots.txt"
+msgstr "Hozd létre a Robots.txt-t"
+
+#: modules/aioseop_robots.php:40
+msgid "Add Rule"
+msgstr "Szabály hozzáadása"
+
+#: modules/aioseop_robots.php:41
+msgid "Save Robots.txt File"
+msgstr "Robots.txt mentése"
+
+#: modules/aioseop_robots.php:42
+msgid "Delete Robots.txt File"
+msgstr "Robots.txt törlése"
+
+#: modules/aioseop_robots.php:44
+msgid "Click the Optimize button below and All in One SEO Pack will analyze your Robots.txt file to make sure it complies with the standards for Robots.txt files.  The results will be displayed in a table below."
+msgstr "Kattints alul az Optimizáció gombra, és az All in One SEO Pack analizálja a Robots.txt fájlodat, hogy biztos lehess abban, hogy megfelel a szabványnak. Az eredményt az alsó táblázatban találhatod."
+
+#: modules/aioseop_robots.php:46
+msgid "Update Robots.txt File"
+msgstr "Robots.txt frissítése"
+
+#: modules/aioseop_robots.php:47
+msgid "Disregard Changes"
+msgstr "Változtatások figyelmen kívül hagyása"
+
+#: modules/aioseop_robots.php:48
+msgid "Optimize"
+msgstr "Optimizálás"
+
+#: modules/aioseop_robots.php:61
+msgid "Create a Robots.txt File"
+msgstr "Robots.txt létrehozása"
+
+#: modules/aioseop_robots.php:66
+msgid "Optimize your Robots.txt File"
+msgstr "Robots.txt optimizálása"
+
+#: modules/aioseop_robots.php:71
+msgid "Your Robots.txt file has been optimized.  Here are the results and recommendations.  Click the Update Robots.txt File button below to write these changes to your Robots.txt file.  Click the Disregard Changes button to ignore these recommendations and keep your current Robots.txt file."
+msgstr "A Robots.txt fájlodat optimizáltuk.  Ezek az eredmények és ajánlataink. Kattints a Robots.txt frissítése gombra a változtatások kiírására. Kattints a Változtatások figyelmen kívül hagyása gombra a jelenlegi Robots.txt  fájl megtartásához."
+
+#: modules/aioseop_robots.php:161 modules/aioseop_robots.php:163
+msgid "Current File"
+msgstr "Aktuális fájl"
+
+#: modules/aioseop_robots.php:161
+msgid "Proposed Changes"
+msgstr "Javasolt változtatások"
+
+#: modules/aioseop_robots.php:217
+msgid "Legend"
+msgstr "Jelmagyarázat"
+
+#: modules/aioseop_robots.php:219
+msgid "The yellow indicator means that a non-standard extension was recognized; not all crawlers may recognize it or interpret it the same way. The Allow and Sitemap directives are commonly used by Google and Yahoo."
+msgstr "A sárga jelölés azt jelenti, hogy egy nem standard kiterjesztést észleltünk, amelyet nem minden kereső ismer fel, vagy interpretál ugyanúgy. Az Allow és Sitemap direktívákat gyakran használja a Google és a  Yahoo."
+
+#: modules/aioseop_robots.php:220
+msgid "The red indicator means that the syntax is invalid for a robots.txt file."
+msgstr "A vörös jelzés azt jelenti, hogy a szintaxis nem felel meg egy robots.txt fájlban."
+
+#: modules/aioseop_robots.php:222
+msgid "More Information"
+msgstr "Több információ"
+
+#: modules/aioseop_sitemap.php:24
+msgid "XML Sitemap"
+msgstr "XML webhelytérkép"
+
+#: modules/aioseop_sitemap.php:31
+msgid "Sitemap %s generated by All in One SEO Pack %s by Michael Torbert of Semper Fi Web Design on %s"
+msgstr "A webhelytérképet a %s  All in One SEO Pack %s készítette  Michael Torberttől  Semper Fi Web Designban  %s"
+
+#: modules/aioseop_sitemap.php:34
+msgid "Specifies the name of your sitemap file. This will default to 'sitemap'."
+msgstr "A webhelytérkép nevét adja meg. Az alapértelmezett \"sitemap\"."
+
+#: modules/aioseop_sitemap.php:35
+msgid "Notify Google when you update your sitemap settings."
+msgstr "Jelezd a Google-nek, amikor a webhelytérkép beállításai megváltoznak."
+
+#: modules/aioseop_sitemap.php:36
+msgid "Notify Bing when you update your sitemap settings."
+msgstr "Jelezd a Bingnek, amikor a webhelytérkép beállításai megváltoznak."
+
+#: modules/aioseop_sitemap.php:37
+msgid "Notify search engines daily, and also update static sitemap daily if in use. (this uses WP-Cron, so make sure this is working properly on your server as well)"
+msgstr "Küldj jelentést naponta a keresőmotoroknak, valamint frissítsd a statikus webhelytérképet naponta ha használják ( ehhez szükség van a WP-Cron megfelelő konfigurálására a szerveren)."
+
+#: modules/aioseop_sitemap.php:38
+msgid "Organize sitemap entries into distinct files in your sitemap. Enable this only if your sitemap contains over 50,000 URLs or the file is over 5MB in size."
+msgstr "Rendezd a wehelytérkép bejegyzéseit külön fájlokba. Ez az opció akkor jön jól, ha a webhelytérkép több, mint 50 000 URL tartalmaz, vagy nagyobb, mint 5 MB."
+
+#: modules/aioseop_sitemap.php:39
+msgid "Split long sitemaps into separate files."
+msgstr "Oszd a hosszú webhelytérképeket külön fájlokba."
+
+#: modules/aioseop_sitemap.php:40
+msgid "Allows you to specify the maximum number of posts in a sitemap (up to 50,000)."
+msgstr "Lehetővé teszi a bejegyzések maximális számának meghatározását (50 000 -ig)."
+
+#: modules/aioseop_sitemap.php:41
+msgid "Select which Post Types appear in your sitemap."
+msgstr "Válaszd ki milyen bejegyzéstípusok jelenjenek meg a webhelytérképedben."
+
+#: modules/aioseop_sitemap.php:42
+msgid "Select which taxonomy archives appear in your sitemap"
+msgstr "Válaszd ki mely taxonómia archívumok jelenjenek meg a webhelytérképedben."
+
+#: modules/aioseop_sitemap.php:43
+msgid "Include Date Archives in your sitemap."
+msgstr "A webhelytérkép tartalmazza a dátumok archívumait."
+
+#: modules/aioseop_sitemap.php:44
+msgid "Include Author Archives in your sitemap."
+msgstr "A webhelytérkép tartalmazza szerző archívumokat."
+
+#: modules/aioseop_sitemap.php:45
+msgid "Create a compressed sitemap file in .xml.gz format."
+msgstr "Hozz létre egy tömörített  .xml.gz formátumú fájlt."
+
+#: modules/aioseop_sitemap.php:46
+msgid "Places a link to your Sitemap.xml into your virtual Robots.txt file."
+msgstr "Egy hivatkozást helyez el a Sitemap.xml-be  a virtuális Robots.txt fájlhoz."
+
+#: modules/aioseop_sitemap.php:47
+msgid "Places a link to the sitemap file in your virtual Robots.txt file which WordPress creates."
+msgstr "Egy hivatkozást helyez el a webhelytérkép fájlodba be a virtuális Robots.txt-hez, amelyet a Wordpress hoz létre."
+
+#: aioseop_class.php:166
+msgid "%request_url% - The original URL path, like \"/url-that-does-not-exist/\""
+msgstr "%request_url% - Az eredeti URL , például \"/nem-létező-URL/\""
+
+#: aioseop_class.php:167
+msgid "%request_words% - The URL path in human readable form, like \"Url That Does Not Exist\""
+msgstr "%request_words% - Az URL olvasható formában, például \"Nemlétező URL\""
+
+#: aioseop_class.php:168
+msgid "%404_title% - Additional 404 title input\""
+msgstr "%404_title% - Továbbbi 404 cím input\""
+
+#: aioseop_class.php:169
+msgid "This string gets appended/prepended to titles of paged index pages (like home or archive pages)."
+msgstr "Ez a karakterlánc a tördelt index oldalak címének elejére, vagy utána lesz adva (például a főoldal, vagy at archívum)."
+
+#: aioseop_class.php:170 aioseop_class.php:1147 aioseop_class.php:1190
+msgid "The following macros are supported:"
+msgstr "A következő makrók támogatottak:"
+
+#: aioseop_class.php:171
+msgid "%page% - The page number"
+msgstr "%page% - Oldalszám"
+
+#: aioseop_class.php:172
+msgid "Check this if you want to use All in One SEO Pack with any Custom Post Types on this site."
+msgstr "Jelöld ezt meg ha az All in One SEO Packet bármely egyedi bejegyzéstípusnál használni szeretnéd."
+
+#: aioseop_class.php:173
+msgid "This will show or hide the advanced options for SEO for Custom Post Types."
+msgstr "Ez az opció megjeleníti, vagy elrejti az egyedi bejegyzétípusok SEO-jának haladó beállításait."
+
+#: aioseop_class.php:174
+msgid "Use these checkboxes to select which Post Types you want to use All in One SEO Pack with."
+msgstr "Használd ezt a jelelőnégyzetet a bejegyzéstípusok kiválasztására, amelyeket az All in One SEO Packkel szeretnél használni."
+
+#: aioseop_class.php:176
+msgid "This allows you to set the title tags for each Custom Post Type."
+msgstr "Ez lehetővé teszi a címtagek beállítását minden egyedi bejegyzéstípushoz."
+
+#: aioseop_class.php:177
+msgid "This lets you select which screens display the SEO Title, SEO Keywords and SEO Description columns."
+msgstr "Lehetővé teszi a képernyők kiválasztását, amelyek a SEO címet, SEO kulcsszavat, illetve leírást mutatják."
+
+#: aioseop_class.php:178
+msgid "Check this to add All in One SEO Pack to the Admin Bar for easy access to your SEO settings."
+msgstr "Jelöld meg ezt, az All in One SEO Pack hozzáadásához az adminisztrációs csíkhoz a SEO beállítások egyszerű eléréséhez"
+
+#: aioseop_class.php:179
+msgid "Check this to move the All in One SEO Pack menu item to the top of your WordPress Dashboard menu."
+msgstr "Jelöld meg ezt az All in One SEO Pack menüpontjának a Wordpress irányítópult tetejére való mozgatásához."
+
+#: aioseop_class.php:180
+msgid "Enter your verification code here to verify your site with Google Webmaster Tools.<br /><a href='http://semperplugins.com/documentation/google-webmaster-tools-verification/' target='_blank'>Click here for documentation on this setting</a>"
+msgstr "Add meg az azonosítási kódot  a Google Webmester Eszközökkel való verifikációhoz.<br /><a href='http://semperplugins.com/documentation/google-webmaster-tools-verification/' target='_blank'>Klikk ide a beállítás dokumentációjához</a>"
+
+#: aioseop_class.php:181
+msgid "Enter your verification code here to verify your site with Bing Webmaster Tools.<br /><a href='http://semperplugins.com/documentation/bing-webmaster-verification/' target='_blank'>Click here for documentation on this setting</a>"
+msgstr "Add meg az azonosítási kódot  a Bing Webmaster Toolsszal való verifikációhoz.<br /><a href='http://semperplugins.com/documentation/bing-webmaster-verification/' target='_blank'>Klikk ide a beállítás dokumentációjához</a>"
+
+#: aioseop_class.php:182
+msgid "Enter your verification code here to verify your site with Pinterest.<br /><a href='http://semperplugins.com/documentation/pinterest-site-verification/' target='_blank'>Click here for documentation on this setting</a>"
+msgstr "Add meg az azonosítási kódot a Pinteresttel való verifikációhoz.<br /><a href='http://semperplugins.com/documentation/pinterest-site-verification/' target='_blank'>Klikk ide a beállítás dokumentációjához</a>"
+
+#: aioseop_class.php:183
+msgid "Enter your Google+ Profile URL here to add the rel=“author” tag to your site for Google authorship. It is recommended that the URL you enter here should be your personal Google+ profile.  Use the Advanced Authorship Options below if you want greater control over the use of authorship."
+msgstr "Add meg itt a Google+ profilodat a rel=“author” beírásához a Google Authorship számára. Ajánlott, hogy ez a saját Google+ profilod legyen. Használd az Advanced Authorship opciókat, ha nagyobb kontrollra van szükséged."
+
+#: aioseop_class.php:184
+msgid "Check this to remove the Google Plus field from the user profile screen."
+msgstr "Jelöld ezt meg a Google Plus mező eltávolításához a felhasználó profil képernyőjéről."
+
+#: aioseop_class.php:185
+msgid "Enable this to display advanced options for controlling Google Plus authorship information on your website."
+msgstr "Aktiváld ezt, ha Google Plus szerzőségi információkat haladóan szeretnéd irányítani a weboldaladon."
+
+#: aioseop_class.php:186
+msgid "This option allows you to control which types of pages you want to display rel=\"author\" on for Google authorship. The options include the Front Page (the homepage of your site), Posts, Pages, and any Custom Post Types. The Everywhere Else option includes 404, search, categories, tags, custom taxonomies, date archives, author archives and any other page template."
+msgstr "Ez az opció lehetővé teszi annak irányítását, hogy mely oldalakon szeretnél rel=\"author\" -t megjeleníteni a Google Authorship-nek. A lehetőségek magukba foglalják a főoldalt, a bejegyzéseket, oldalakat, és egyedi bejegyzéstípusokat. A bárhol máshol opció a 404-es, keresési, kategóriák, címkék, egyedi taxonómiák, dátum archívumok, szerzői archívumok, illetve minden más oldalt irányítanak."
+
+#: aioseop_class.php:187
+msgid "This option allows you to control whether rel=\"publisher\" is displayed on the homepage of your site. Google recommends using this if the site is a business website."
+msgstr "Ez az opció irányítja, hogy a  rel=\"publisher\" megjelenjen -e a főoldaladon. A Google ezt ajánlja, ha üzleti oldalról van szó."
+
+#: aioseop_class.php:188
+msgid "The Google+ profile you enter here will appear on your homepage only as the rel=\"publisher\" tag. It is recommended that the URL you enter here should be the Google+ profile for your business."
+msgstr "Google+ profil, amelyet itt adsz meg a főoldalon csak rel=\"publisher\" tagként jelenik meg. Ajánlott, hogy ez az üzleted Google+ profilja legyen."
+
+#: aioseop_class.php:189
+msgid "Add markup to display the Google Sitelinks Search Box next to your search results in Google."
+msgstr "Adj meg markupot Google Sitelinks keresési mező megjelenítésére, az oldaladra vonatkozó keresési eredmények mellett a Google-ben."
+
+#: aioseop_class.php:190
+msgid "Add markup to tell Google the preferred name for your website."
+msgstr "Add markupot, hogy a Google az általad előnyben részesített nevet használja a weboldaladhoz."
+
+#: aioseop_class.php:191
+msgid "Press the connect button to connect with Google Analytics; or if already connected, press the disconnect button to disable and remove any stored analytics credentials."
+msgstr "Nyomd meg a Kapcsolódás gombot a  Google Analytics-szel való kapcsolathoz. Ha már megtetted, a Lekapcsolódás gomb deaktiválja a követést, illetve eltávolítja az Analytics adatait."
+
+#: aioseop_class.php:192
+msgid "Enter your Google Analytics ID here to track visitor behavior on your site using Google Analytics."
+msgstr "Add meg a a Google Analytics ID itt, a felhasználók szokásainak Google Analytics-szal való követéséhez."
+
+#: aioseop_class.php:193
+msgid "Use the new Universal Analytics tracking code for Google Analytics."
+msgstr "Használd az új Universal Analytics követési kódot a  Google Analytics-hez."
+
+#: aioseop_class.php:194
+msgid "Check to use advanced Google Analytics options."
+msgstr "Jelöld meg a haladó Google Analytics opciókhoz."
+
+#: aioseop_class.php:195
+msgid "Enter your domain name without the http:// to set your cookie domain."
+msgstr "Add meg a domén nevet http://  nélkül a sütik beállításához."
+
+#: aioseop_class.php:196
+msgid "Use this option to enable tracking of multiple or additional domains."
+msgstr "Használd ezt az opciót több, vagy további domének követéséhez."
+
+#: aioseop_class.php:197
+msgid "Add a list of additional domains to track here.  Enter one domain name per line without the http://."
+msgstr "Add meg a további domének listáját a követéshez.  Egy domént kérünk soronként, a http:// nélkül."
+
+#: aioseop_class.php:198
+msgid "This enables support for IP Anonymization in Google Analytics."
+msgstr "Ez lehetővé teszi az IP anonimizációt a Google Analytics-ban."
+
+#: aioseop_class.php:199
+msgid "This enables support for the Display Advertiser Features in Google Analytics."
+msgstr "Ez lehetővé teszi  a Display Advertiser funkciót a Google Analytics-ben."
+
+#: aioseop_class.php:200
+msgid "Exclude logged-in users from Google Analytics tracking by role."
+msgstr "Zárd ki a bejelentkezett felhasználókat a Google Analytics követésből szerepek alapján."
+
+#: aioseop_class.php:201
+msgid "Check this if you want to track outbound links with Google Analytics."
+msgstr "Jelöld ezt be ha a kimenő linkeket is követni szeretnéd a Google Analytics-ben."
+
+#: aioseop_class.php:202
+msgid "This enables support for the Enhanced Link Attribution in Google Analytics."
+msgstr "Ez lehetővé teszi a az  Enhanced Link Attributiont Google Analytics-ben."
+
+#: aioseop_class.php:203
+msgid "This enables support for the Enhanced Ecommerce in Google Analytics."
+msgstr "Ez lehetővé teszi a az Enhanced Ecommerce-t Google Analytics-ben."
+
+#: aioseop_class.php:204
+msgid "Set the default NOINDEX setting for each Post Type."
+msgstr "Add meg az alapértelmezett NOINDEX beállítást  minden bejegyzéstípusra."
+
+#: aioseop_class.php:205
+msgid "Set the default NOFOLLOW setting for each Post Type."
+msgstr "Add meg az alapértelmezett NOFOLLOW beállítást minden bejegyzéstípusra."
+
+#: aioseop_class.php:206
+msgid "Check this to ask search engines not to index Category Archives. Useful for avoiding duplicate content."
+msgstr "Jelöld ezt meg, ha azt kéred a keresőmotorok ne indexeljék a kategóriák archívumait. Hasznos a többszörös tartalmak elkerülésére."
+
+#: aioseop_class.php:207
+msgid "Check this to ask search engines not to index Date Archives. Useful for avoiding duplicate content."
+msgstr "Jelöld ezt meg, ha azt kéred a keresőmotorok ne indexeljék a dátum archívumokat. Hasznos a többszörös tartalmak elkerülésére."
+
+#: aioseop_class.php:208
+msgid "Check this to ask search engines not to index Author Archives. Useful for avoiding duplicate content."
+msgstr "Jelöld ezt meg, ha azt kéred a keresőmotorok ne indexeljék a szerzői archívumokat. Hasznos a többszörös tartalmak elkerülésére."
+
+#: aioseop_class.php:209
+msgid "Check this to ask search engines not to index Tag Archives. Useful for avoiding duplicate content."
+msgstr "Jelöld ezt meg, ha azt kéred a keresőmotorok ne indexeljék a címkék archívumait. Hasznos a többszörös tartalmak elkerülésére."
+
+#: aioseop_class.php:210
+msgid "Check this to ask search engines not to index the Search page. Useful for avoiding duplicate content."
+msgstr "Jelöld ezt meg, ha azt kéred a keresőmotorok ne indexeljék a keresési oldalt. Hasznos a többszörös tartalmak elkerülésére."
+
+#: aioseop_class.php:211
+msgid "Check this to ask search engines not to index the 404 page."
+msgstr "Jelöld ezt meg, ha azt kéred a keresőmotorok ne indexeljék a 404-es oldalt. "
+
+#: aioseop_class.php:212
+msgid "Check this to ask search engines not to index custom Taxonomy archive pages. Useful for avoiding duplicate content."
+msgstr "Jelöld ezt meg, ha azt kéred a keresőmotorok ne indexeljék az egyedi taxonómiák archívumait. Hasznos a többszörös tartalmak elkerülésére."
+
+#: aioseop_class.php:213
+msgid "Check this to ask search engines not to index paginated pages/posts. Useful for avoiding duplicate content."
+msgstr "Jelöld ezt meg, ha azt kéred a keresőmotorok ne indexeljék a tördelt oldalakat/bejegyzéseket. Hasznos a többszörös tartalmak elkerülésére."
+
+#: aioseop_class.php:214
+msgid "Check this to ask search engines not to follow links from paginated pages/posts. Useful for avoiding duplicate content."
+msgstr "Jelöld ezt meg, ha azt kéred, hogy a keresőmotorok ne kövessék a hjvatkozásokat a tördelt oldalakról/bejegyzésekről. Hasznos a többszörös tartalmak elkerülésére."
+
+#: aioseop_class.php:215
+msgid "Check this box to ask search engines not to use descriptions from the Open Directory Project for your entire site."
+msgstr "Jelöld ezt meg, ha azt kéred, hogy a keresőmotorok ne használlják az Open Directory Project leírásait az egész oldalra."
+
+#: aioseop_class.php:216
+msgid "Set the default noodp setting for each Post Type."
+msgstr "Állítsd be az alapértelmezett noodp minden bejegyzéstípusra."
+
+#: aioseop_class.php:217
+msgid "Check this box to ask Yahoo! not to use descriptions from the Yahoo! directory for your entire site."
+msgstr "Jelöld ezt meg, ha azt kéred, hogy a keresőmotorok ne használlják az Yahoo! leírásait az egész oldalra."
+
+#: aioseop_class.php:218
+msgid "Set the default noydir setting for each Post Type."
+msgstr "Éllítsd be az alap noydir minden bejegyzéstípusra."
+
+#: aioseop_class.php:219
+msgid "Check this and your Meta Descriptions won't be generated from the excerpt."
+msgstr "Jelöld ezt meg, és a meta leírásokat nem a részletből hozzuk létre."
+
+#: aioseop_class.php:220
+msgid "Check this and your Meta Descriptions will be auto-generated from your excerpt or content."
+msgstr "Jelöld ezt meg, és a meta leírásokat  a részletből, vagy a tartalomból hozzuk létre."
+
+#: aioseop_class.php:221
+msgid "Check this and shortcodes will get executed for descriptions auto-generated from content."
+msgstr "Jelöld ezt meg, és rövidkódok hajtódnak végre az automatikusan létrehozott tartalmak leírásain."
+
+#: aioseop_class.php:222
+msgid "Check this and your Meta Descriptions will be removed from page 2 or later of paginated content."
+msgstr "Jelöld ezt meg, és a meta leírás el lesz távolítva a második, illetve későbbi tördelt oldalakról."
+
+#: aioseop_class.php:223
+msgid "Check this to prevent your Description from being truncated regardless of its length."
+msgstr "Jelöld ezt meg, hogy megakadályozd a leírás rövidítését a hosszától függetlenül."
+
+#: aioseop_class.php:224
+msgid "Check this to support Schema.org markup, i.e., itemprop on supported metadata."
+msgstr "Jelöld ezt meg a Schema.org  jelölőnyelv támogatására, vagyis  itemprop  a támogatott metaadatokon."
+
+#: aioseop_class.php:225
+msgid "Check this to unprotect internal postmeta fields for use with XMLRPC. If you don't know what that is, leave it unchecked."
+msgstr "Jelöld ezt meg a védelem visszavonására a belső bejegyzés meta mezőknél az XMLRPC-re. Ha nem tudod, mit jelent ez, hagyd jelöletlenül."
+
+#: aioseop_class.php:226
+msgid "Enter a comma separated list of pages here to be excluded by All in One SEO Pack.  This is helpful when using plugins which generate their own non-WordPress dynamic pages.  Ex: <em>/forum/, /contact/</em>  For instance, if you want to exclude the virtual pages generated by a forum plugin, all you have to do is add forum or /forum or /forum/ or and any URL with the word \"forum\" in it, such as http://mysite.com/forum or http://mysite.com/forum/someforumpage here and it will be excluded from All in One SEO Pack."
+msgstr "Add meg az oldalak vesszővel elválasztott listáját, amelyeeket nem az All in One SEO Pack kezel.  Ez hasznos az olyan bővítményeknél, amelyek saját dinamikusan generált Wordpress oldalukat használják.  PL: <em>/forum/, /contact/</em>  Például, ha ki szeretnéd zárni a fórum bővítmény által generált virtuális oldalakat, akkor hozzá kell adnod a forum, vagy  /forum, esetleg /forum/ URL-t,  így http://mysite.com/forum, vagy a http://mysite.com/forum/someforumpage-dzsel az All in One SEO Pack nem foglalkozik."
+
+#: aioseop_class.php:227
+msgid "What you enter here will be copied verbatim to the header of all Posts. You can enter whatever additional headers you want here, even references to stylesheets."
+msgstr "Amit ide írsz, egyenesen a  bejegyzéseid fejlécébe kerül. Megadhatsz bármilyen további fejlécet, akár referenciákat stíluslapokhoz is."
+
+#: aioseop_class.php:228
+msgid "What you enter here will be copied verbatim to the header of all Pages. You can enter whatever additional headers you want here, even references to stylesheets."
+msgstr "Amit ide írsz, egyenesen az oldalaid fejlécébe kerül. Megadhatsz bármilyen további fejlécet, akár referenciákat stíluslapokhoz is."
+
+#: aioseop_class.php:229
+msgid "What you enter here will be copied verbatim to the header of the front page if you have set a static page in Settings, Reading, Front Page Displays. You can enter whatever additional headers you want here, even references to stylesheets. This will fall back to using Additional Page Headers if you have them set and nothing is entered here."
+msgstr "Amit ide írsz, egyenesen az a főoldalad fejlécébe kerül, ha egy statikus oldalt adtál meg a  Settings, Reading, Front Page Displays menüpont alatt.Megadhatsz bármilyen további fejlécet, akár referenciákat stíluslapokhoz is. Ez visszaállítódik Additional Page Headers használatára, ha beállítottad őket, illetve ide semmit sem írtál."
+
+#: aioseop_class.php:230
+msgid "What you enter here will be copied verbatim to the header of the home page if you have Front page displays your latest posts selected in Settings, Reading.  It will also be copied verbatim to the header on the Posts page if you have one set in Settings, Reading. You can enter whatever additional headers you want here, even references to stylesheets."
+msgstr "Amit ide írsz, egyenesen az a főoldalad fejlécébe kerül, ha a Settings, Reading, Front Page Displays menüpontot választottad ki. Az utasítások szintén bekerülnek a bejegyzések oldal fejlécébe is, ha a legfrissebb bejegyzést adtad meg a  Settings, Readingnél. Megadhatsz bármilyen további fejlécet, akár referenciákat stíluslapokhoz is. "
+
+#: aioseop_class.php:305
+msgid "A preview of what this page might look like in search engine results."
+msgstr "Előnézet arról, hogyan is nézhet ki az oldal a keresőmotorok eredményei között."
+
+#: aioseop_class.php:306
+msgid "A custom title that shows up in the title tag for this page."
+msgstr "Egyedi cím, amely az oldal címtagjában tűnik fel."
+
+#: aioseop_class.php:307
+msgid "The META description for this page. This will override any autogenerated descriptions."
+msgstr "Az oldal META leírása. Ez minden automatikusan létrehozott leírást felülír."
+
+#: aioseop_class.php:308
+msgid "A comma separated list of your most important keywords for this page that will be written as META keywords."
+msgstr "A legfontosabb kulcsszavak vesszővel elválasztott listája, amelyet META kulcsszóként használunk."
+
+#: aioseop_class.php:309
+msgid "Override the canonical URLs for this post."
+msgstr "Az előnyben részesített URL-ek felülírása erre a bejegyzésre."
+
+#: aioseop_class.php:310
+msgid "Check this box to ask search engines not to index this page."
+msgstr "Jelöld meg ezt a négyzetet, ha nem akarod, hogy a keresőmotorok indexeljék ezt az oldalt."
+
+#: aioseop_class.php:311
+msgid "Check this box to ask search engines not to follow links from this page."
+msgstr "Jelöld meg ezt a négyzetet, ha nem akarod, hogy a keresőmotorok kövessék a hivatkozásokat erről az oldalról."
+
+#: aioseop_class.php:312
+msgid "Check this box to ask search engines not to use descriptions from the Open Directory Project for this page."
+msgstr "Jelöld meg ezt a négyzetet, ha nem akarod, hogy a keresőmotorok felhasználják  az oldal Open Directory Project  leírását."
+
+#: aioseop_class.php:313
+msgid "Check this box to ask Yahoo! not to use descriptions from the Yahoo! directory for this page."
+msgstr "Jelöld meg ezt a négyzetet, ha nem akarod, hogy a Yahoo! felhasználja az oldal Yahoo! directory  leírását."
+
+#: aioseop_class.php:314
+msgid "Set the title attribute for menu links."
+msgstr "Állítsd be a menühivatkozások címattribútumát."
+
+#: aioseop_class.php:315
+msgid "Set the label for this page menu item."
+msgstr "Állítsd be ennek a menüpontnak a címkéjét."
+
+#: aioseop_class.php:316
+msgid "Don't display this page in the sitemap."
+msgstr "Ne jelenítsd meg ezt az oldalt a webhelytérképben."
+
+#: aioseop_class.php:317
+msgid "Disable SEO on this page."
+msgstr "Kapcsold ki az SEO-t ezen az oldalon."
+
+#: aioseop_class.php:318
+msgid "Disable Google Analytics on this page."
+msgstr "Kapcsold ki a Google Analytics-t ezen az oldalon."
+
+#: aioseop_class.php:326
+msgid "I enjoy this plugin and have made a donation:"
+msgstr "Szeretem ezt a bővítményt, és küldtem hozzájárulást:"
+
+#: aioseop_class.php:328
+msgid "Home Title:"
+msgstr "Főoldal címe:"
+
+#: aioseop_class.php:333
+msgid "Home Description:"
+msgstr "Főoldal leírása:"
+
+#: aioseop_class.php:338
+msgid "Use Keywords:"
+msgstr "Használd a következő kulcsszavakat:"
+
+#: aioseop_class.php:341 aioseop_class.php:352 aioseop_class.php:379
+#: aioseop_class.php:387 aioseop_class.php:394 aioseop_class.php:453
+#: aioseop_class.php:469 aioseop_class.php:535 aioseop_class.php:546
+#: aioseop_class.php:566 modules/aioseop_performance.php:45
+msgid "Enabled"
+msgstr "Bekapcsolva"
+
+#: aioseop_class.php:342 aioseop_class.php:353 aioseop_class.php:380
+#: aioseop_class.php:388 aioseop_class.php:395 aioseop_class.php:454
+#: aioseop_class.php:470 aioseop_class.php:536 aioseop_class.php:547
+#: aioseop_class.php:567 modules/aioseop_performance.php:46
+msgid "Disabled"
+msgstr "Kikapcsolva"
+
+#: aioseop_class.php:345
+msgid "Home Keywords (comma separated):"
+msgstr "Főoldal kulcsszavai (vesszővel elválasztva):"
+
+#: aioseop_class.php:349
+msgid "Use Static Front Page Instead"
+msgstr "Használj statikus főoldalt"
+
+#: aioseop_class.php:356
+msgid "Canonical URLs:"
+msgstr "Előnyben részesített URL-ek:"
+
+#: aioseop_class.php:359
+msgid "No Pagination for Canonical URLs:"
+msgstr "Oldaltörés tiltása az előnyben részesített URL-ek esetében:"
+
+#: aioseop_class.php:363
+msgid "Enable Custom Canonical URLs:"
+msgstr "Egyedi előnyben részesített URL-ek aktiválása:"
+
+#: aioseop_class.php:367
+msgid "Set Protocol For Canonical URLs:"
+msgstr "Protokoll beállítása az előnyben részesített URL-ek számára:"
+
+#: aioseop_class.php:370
+msgid "Auto"
+msgstr "Auto"
+
+#: aioseop_class.php:371
+msgid "HTTP"
+msgstr "HTTP"
+
+#: aioseop_class.php:372
+msgid "HTTPS"
+msgstr "HTTPS"
+
+#: aioseop_class.php:376
+msgid "Rewrite Titles:"
+msgstr "Címek újraírása:"
+
+#: aioseop_class.php:383 modules/aioseop_performance.php:43
+msgid "Force Rewrites:"
+msgstr "Újraírás erőltetése:"
+
+#: aioseop_class.php:391
+msgid "Use Original Title:"
+msgstr "Használd az eredeti címet:"
+
+#: aioseop_class.php:400
+msgid "Capitalize Category Titles:"
+msgstr "Írd nagybetűvel a kategóriák címeit:"
+
+#: aioseop_class.php:402
+msgid "Home Page Title Format:"
+msgstr "Főoldal címének formátuma:"
+
+#: aioseop_class.php:406
+msgid "Page Title Format:"
+msgstr "Oldalak címének formátuma:"
+
+#: aioseop_class.php:410
+msgid "Post Title Format:"
+msgstr "Bejegyzések címének formátuma:"
+
+#: aioseop_class.php:414
+msgid "Category Title Format:"
+msgstr "Kategóriák címének formátuma:"
+
+#: aioseop_class.php:418
+msgid "Archive Title Format:"
+msgstr "Archívumok címének formátuma:"
+
+#: aioseop_class.php:422
+msgid "Date Archive Title Format:"
+msgstr "Dátum archívum címének formátuma:"
+
+#: aioseop_class.php:426
+msgid "Author Archive Title Format:"
+msgstr "Szerző archívum címének formátuma:"
+
+#: aioseop_class.php:430
+msgid "Tag Title Format:"
+msgstr "Tag címek formátuma:"
+
+#: aioseop_class.php:434
+msgid "Search Title Format:"
+msgstr "Keress címformátumot:"
+
+#: aioseop_class.php:438
+msgid "Description Format"
+msgstr "Leírás formátuma"
+
+#: aioseop_class.php:442
+msgid "404 Title Format:"
+msgstr "404 cím formátuma:"
+
+#: aioseop_class.php:446
+msgid "Paged Format:"
+msgstr "Paged formátuma:"
+
+#: aioseop_class.php:450
+msgid "SEO for Custom Post Types:"
+msgstr "SEO az egyedi bejegyzéstípusoknak:"
+
+#: aioseop_class.php:457
+msgid "SEO on only these post types:"
+msgstr "SEO csak ezeken a bejegyzéstípusokon::"
+
+#: aioseop_class.php:467
+msgid "Enable Advanced Options:"
+msgstr "Haladó opciók aktiválása:"
+
+#: aioseop_class.php:475
+msgid "Default to NOINDEX:"
+msgstr "Alapértelmezett NOINDEX:"
+
+#: aioseop_class.php:479
+msgid "Default to NOFOLLOW:"
+msgstr "Alapértelmezett NOFOLLOW:"
+
+#: aioseop_class.php:483
+msgid "Default to NOODP:"
+msgstr "Alapértelmezett NOODP:"
+
+#: aioseop_class.php:487
+msgid "Default to NOYDIR:"
+msgstr "Alapértelmezett NOYDIR:"
+
+#: aioseop_class.php:491
+msgid "Custom titles:"
+msgstr "Egyedi címek:"
+
+#: aioseop_class.php:496
+msgid "Show Column Labels for Custom Post Types:"
+msgstr "Jelenítsd meg az oszlopok neveit az egyedi bejegyzéstípusoknál: "
+
+#: aioseop_class.php:500
+msgid "Display Menu In Admin Bar:"
+msgstr "Menü megjelenítése az adminisztrációs csíkban:"
+
+#: aioseop_class.php:503
+msgid "Display Menu At The Top:"
+msgstr "Menü megjelenítése az oldaltetőn:"
+
+#: aioseop_class.php:506
+msgid "Google Webmaster Tools:"
+msgstr "Google Webmaster Tools:"
+
+#: aioseop_class.php:509
+msgid "Bing Webmaster Center:"
+msgstr "Bing Webmaster Center:"
+
+#: aioseop_class.php:512
+msgid "Pinterest Site Verification:"
+msgstr "Pinterest oldal verifikáció:"
+
+#: aioseop_class.php:515
+msgid "Google Plus Default Profile:"
+msgstr "Google Plus alapértelmezett profil:"
+
+#: aioseop_class.php:518
+msgid "Disable Google Plus Profile:"
+msgstr "Google Plus profil tiltása:"
+
+#: aioseop_class.php:521
+msgid "Display Sitelinks Search Box:"
+msgstr "Mutass oldalhivatkozásokat a keresési mezőben:"
+
+#: aioseop_class.php:524
+msgid "Set Preferred Site Name:"
+msgstr "Állítsd be az előnyben részesített oldalnevet:"
+
+#: aioseop_class.php:527
+msgid "Specify A Preferred Name:"
+msgstr "Add meg az előnyben részesített oldalnevet:"
+
+#: aioseop_class.php:533
+msgid "Advanced Authorship Options:"
+msgstr "Haladó szerzőségi opciók:"
+
+#: aioseop_class.php:540
+msgid "Display Google Authorship:"
+msgstr "Jelenítsd meg a Google Authorshipet:"
+
+#: aioseop_class.php:544
+msgid "Display Publisher Meta on Front Page:"
+msgstr "Jelenítsd meg a szerző metát a főoldalon:"
+
+#: aioseop_class.php:551
+msgid "Specify Publisher URL:"
+msgstr "Add meg a szerző URL-jét:"
+
+#: aioseop_class.php:556
+msgid "Google Analytics ID:"
+msgstr "Google Analytics ID:"
+
+#: aioseop_class.php:559
+msgid "Use Universal Analytics:"
+msgstr "Használj Universal Analytics-t:"
+
+#: aioseop_class.php:563
+msgid "Advanced Analytics Options:"
+msgstr "Haladó Analytics opciók:"
+
+#: aioseop_class.php:570
+msgid "Tracking Domain:"
+msgstr "Tracking Domain:"
+
+#: aioseop_class.php:574
+msgid "Track Multiple Domains:"
+msgstr "Több domén követése:"
+
+#: aioseop_class.php:578
+msgid "Additional Domains:"
+msgstr "További domének:"
+
+#: aioseop_class.php:582
+msgid "Anonymize IP Addresses:"
+msgstr "IP cím anonimizálása:"
+
+#: aioseop_class.php:586
+msgid "Display Advertiser Tracking:"
+msgstr "Jelenítsd meg a hirdetési követést:"
+
+#: aioseop_class.php:590
+msgid "Exclude Users From Tracking:"
+msgstr "Felhasználók kizárása a követésből:"
+
+#: aioseop_class.php:594
+msgid "Track Outbound Links:"
+msgstr "Kövesd a kimenő linkeket:"
+
+#: aioseop_class.php:598
+msgid "Enhanced Link Attribution:"
+msgstr "Továbbfejlesztett linkhozzárendelés:"
+
+#: aioseop_class.php:602
+msgid "Enhanced Ecommerce:"
+msgstr "Továbbfejlesztett e-kereskedelem:"
+
+#: aioseop_class.php:606
+msgid "Use Categories for META keywords:"
+msgstr "Használj kategóriákat a META kulcsszavakhoz: "
+
+#: aioseop_class.php:610
+msgid "Use Tags for META keywords:"
+msgstr "Használj tageket a META kulcsszavakhoz: "
+
+#: aioseop_class.php:614
+msgid "Dynamically Generate Keywords for Posts Page/Archives:"
+msgstr "Hozz létre kulcsszavakat dinamikusan a bejegyzések/oldalak archívumaihoz:"
+
+#: aioseop_class.php:618
+msgid "Use noindex for Categories:"
+msgstr "Használj noindex-et a kategóriákra:"
+
+#: aioseop_class.php:621
+msgid "Use noindex for Date Archives:"
+msgstr "Használj noindex-et a a dátum archívumokhoz:"
+
+#: aioseop_class.php:624
+msgid "Use noindex for Author Archives:"
+msgstr "Használj noindex-et a szerző archívumokhoz:"
+
+#: aioseop_class.php:627
+msgid "Use noindex for Tag Archives:"
+msgstr "Használj noindexet a tag archívumokhoz:"
+
+#: aioseop_class.php:630
+msgid "Use noindex for the Search page:"
+msgstr "Használj noindexet a keresési oldalhoz:"
+
+#: aioseop_class.php:633
+msgid "Use noindex for the 404 page:"
+msgstr "Használj noindexet a 404-es oldalhoz::"
+
+#: aioseop_class.php:636
+msgid "Use noindex for Taxonomy Archives:"
+msgstr "Használj noindexet a taxonómia archívumokra:"
+
+#: aioseop_class.php:641
+msgid "Use noindex for paginated pages/posts:"
+msgstr "Használj noindexet az oldaltöréses oldalakra/bejegyzésekre:"
+
+#: aioseop_class.php:644
+msgid "Use nofollow for paginated pages/posts:"
+msgstr "Használj nofollow-ot az oldaltöréses oldalakra/bejegyzésekre:"
+
+#: aioseop_class.php:647
+msgid "Exclude site from the Open Directory Project:"
+msgstr "Az oldal kizárása  az Open Directory Projectből:"
+
+#: aioseop_class.php:650
+msgid "Exclude site from Yahoo! Directory:"
+msgstr "Az oldal kizárása az Yahoo! Directoryból:"
+
+#: aioseop_class.php:653
+msgid "Avoid Using The Excerpt In Descriptions:"
+msgstr "Ne használja a kivonatot a leírásokban:"
+
+#: aioseop_class.php:656
+msgid "Autogenerate Descriptions:"
+msgstr "LeÍrások automatikus létrehozása:"
+
+#: aioseop_class.php:659
+msgid "Run Shortcodes In Autogenerated Descriptions:"
+msgstr "Futtass rövidkódot az automatikusan létrehozott leírásokban:"
+
+#: aioseop_class.php:663
+msgid "Remove Descriptions For Paginated Pages:"
+msgstr "Távolítsd el a leírást a tördelt oldalaknál:"
+
+#: aioseop_class.php:666
+msgid "Never Shorten Long Descriptions:"
+msgstr "Sose rövidítsd a hosszú leírásokat:"
+
+#: aioseop_class.php:669
+msgid "Use Schema.org Markup"
+msgstr "Használd Schema.org jelölőnyelvét"
+
+#: aioseop_class.php:672
+msgid "Unprotect Post Meta Fields:"
+msgstr "Bejegyzések meta mezői biztosításának visszavonása:"
+
+#: aioseop_class.php:675
+msgid "Exclude Pages:"
+msgstr "Oldalak kizárása:"
+
+#: aioseop_class.php:678
+msgid "Additional Post Headers:"
+msgstr "További bejegyzés fejlécek:"
+
+#: aioseop_class.php:681
+msgid "Additional Page Headers:"
+msgstr "További oldal fejlécek:"
+
+#: aioseop_class.php:684
+msgid "Additional Front Page Headers:"
+msgstr "További főoldal fejlécek:"
+
+#: aioseop_class.php:687
+msgid "Additional Blog Page Headers:"
+msgstr "További blog fejlécek:"
+
+#: aioseop_class.php:690
+msgid "Log important events:"
+msgstr "Fontos események naplózása:"
+
+#: aioseop_class.php:709
+msgid "Upgrade to All in One SEO Pack Pro Version"
+msgstr "Frissítés All in One SEO Pack Pro verzióra"
+
+#: aioseop_class.php:715
+msgid "Preview Snippet"
+msgstr "Kódrészlet előnézet"
+
+#: aioseop_class.php:728 modules/aioseop_opengraph.php:210
+msgid "Title"
+msgstr "Cím"
+
+#: aioseop_class.php:729 modules/aioseop_opengraph.php:212
+msgid "Description"
+msgstr "Leírás"
+
+#: aioseop_class.php:731
+msgid "Keywords (comma separated)"
+msgstr "Kulcsszavak (vesszővel elválasztva)"
+
+#: aioseop_class.php:732
+msgid "Custom Canonical URL"
+msgstr "Egyedi előnyben részesített URL"
+
+#: aioseop_class.php:733
+msgid "Robots Meta NOINDEX"
+msgstr "Robots Meta NOINDEX"
+
+#: aioseop_class.php:734
+msgid "Robots Meta NOFOLLOW"
+msgstr "Robots Meta NOFOLLOW"
+
+#: aioseop_class.php:735
+msgid "Robots Meta NOODP"
+msgstr "Robots Meta NOODP"
+
+#: aioseop_class.php:736
+msgid "Robots Meta NOYDIR"
+msgstr "Robots Meta NOYDIR"
+
+#: aioseop_class.php:737
+msgid "Title Attribute"
+msgstr "Cím attribútum"
+
+#: aioseop_class.php:738
+msgid "Menu Label"
+msgstr "Menücímke"
+
+#: aioseop_class.php:739
+msgid "Exclude From Sitemap"
+msgstr "Kizárás a webhelytérképből"
+
+#: aioseop_class.php:740
+msgid "Disable on this page/post"
+msgstr "Tiltás ezen az oldalon/bejegyzésnél"
+
+#: aioseop_class.php:741
+msgid "Disable Google Analytics"
+msgstr "Google Analytics tiltása"
+
+#: aioseop_class.php:756 modules/aioseop_opengraph.php:272
+msgid "Home Page Settings"
+msgstr "Főoldal beállítások"
+
+#: aioseop_class.php:799
+msgid "Keyword Settings"
+msgstr "Kulcsszó beállítások"
+
+#: aioseop_class.php:761
+msgid "Title Settings"
+msgstr "Cím beállítások"
+
+#: aioseop_class.php:767
+msgid "Custom Post Type Settings"
+msgstr "Egyedi bejegyzés típus beállítások"
+
+#: aioseop_class.php:772
+msgid "Display Settings"
+msgstr "Megjelenítési beállítások"
+
+#: aioseop_class.php:777
+msgid "Webmaster Verification"
+msgstr "Webmester verifikáció"
+
+#: aioseop_class.php:782
+msgid "Google Settings"
+msgstr "Google beállítások"
+
+#: aioseop_class.php:156
+msgid "%search% - What was searched for"
+msgstr "%search% - Mire kerestek rá"
+
+#: aioseop_class.php:157
+msgid "This controls the format of Meta Descriptions.The following macros are supported:"
+msgstr "Irányítja a meta leírások formátumát. A következő makrók támogatottak:"
+
+#: aioseop_class.php:160
+msgid "%description% - The original description as determined by the plugin, e.g. the excerpt if one is set or an auto-generated one if that option is set"
+msgstr "%description% - Az eredeti leírás a bővítmény szerint, vagyis egy részlet, ha meg van adva, vagy egy automatikusan létrehozott, ha úgy van beállítva"
+
+#: aioseop_class.php:162
+msgid "%wp_title% - The original wordpress title, e.g. post_title for posts"
+msgstr "%wp_title% - Az eredeti  Wordpress cím, vagyis post_title a bejegyzéseknél"
+
+#: aioseop_class.php:163
+msgid "This controls the format of the title tag for the 404 page.<br />The following macros are supported:"
+msgstr "Kontrollálja a címtagek formátumát a 404-es oldalaknál.<br />A következő makrók támogatottak:"
+
+#: aioseop_class.php:116
+msgid "%category_title% - The (main) category of the post"
+msgstr "%category_title% - A bejegyzés (fő) kategóriája"
+
+#: aioseop_class.php:117
+msgid "%category% - Alias for %category_title%"
+msgstr "%category% -  %category_title% másik neve"
+
+#: aioseop_class.php:118 aioseop_class.php:1156
+msgid "%post_author_login% - This post's author' login"
+msgstr "%post_author_login% - A bejegyzés szerzőjének loginja"
+
+#: aioseop_class.php:119 aioseop_class.php:1157
+msgid "%post_author_nicename% - This post's author' nicename"
+msgstr "%post_author_nicename% - A bejegyzés szerzőjének neve (nicename)"
+
+#: aioseop_class.php:120 aioseop_class.php:1158
+msgid "%post_author_firstname% - This post's author' first name (capitalized)"
+msgstr "%post_author_firstname% - A szerző keresztneve (nagy betűkkel)"
+
+#: aioseop_class.php:121 aioseop_class.php:1159
+msgid "%post_author_lastname% - This post's author' last name (capitalized)"
+msgstr "%post_author_lastname% - A szerző családneve (nagy betűkkel)"
+
+#: aioseop_class.php:124
+msgid "This controls the format of the title tag for Category Archives.<br />The following macros are supported:"
+msgstr "Irányítja a kategória archívumok címtagjainak formátumát. <br /> A következő makrók támogatottak:"
+
+#: aioseop_class.php:127
+msgid "%category_title% - The original title of the category"
+msgstr "%category_title% - A kategória eredeti címe"
+
+#: aioseop_class.php:128
+msgid "%category_description% - The description of the category"
+msgstr "%category_description% - Kategória leírása"
+
+#: aioseop_class.php:130
+msgid "This controls the format of the title tag for Custom Post Archives.<br />The following macros are supported:"
+msgstr "Irányítja az egyedi bejegyzések archívumok címtagjainak formátumát. <br /> A következő makrók támogatottak:"
+
+#: aioseop_class.php:133
+msgid "%archive_title - The original archive title given by wordpress"
+msgstr "%archive_title - Az eredeti archívumcím , amelyet a  Wordpress adott meg"
+
+#: aioseop_class.php:135
+msgid "This controls the format of the title tag for Date Archives.<br />The following macros are supported:"
+msgstr "Irányítja a dátum archívumok címtagjainak formátumát. <br /> A következő makrók támogatottak:"
+
+#: aioseop_class.php:138
+msgid "%date% - The original archive title given by wordpress, e.g. \"2007\" or \"2007 August\""
+msgstr "%date% -  Az eredeti archívumcím , amelyet a Wordpress adott meg, pl. \"2007\" , vagy \"2007 Augusztus\""
+
+#: aioseop_class.php:139
+msgid "%day% - The original archive day given by wordpress, e.g. \"17\""
+msgstr "%day% -  Az eredeti archívumcím , amelyet a Wordpress adott meg, pl. \"17\""
+
+#: aioseop_class.php:140
+msgid "%month% - The original archive month given by wordpress, e.g. \"August\""
+msgstr "%month% -  Az eredeti archívumcím , amelyet a Wordpress adott meg, pl. \"Augusztus\""
+
+#: aioseop_class.php:141
+msgid "%year% - The original archive year given by wordpress, e.g. \"2007\""
+msgstr "%year% -  Az eredeti archívumcím , amelyet a Wordpress adott meg, pl. \"2007\""
+
+#: aioseop_class.php:143
+msgid "This controls the format of the title tag for Author Archives.<br />The following macros are supported:"
+msgstr "Irányítja a szerzői archívumok címtagjainak formátumát. <br /> A következő makrók támogatottak:"
+
+#: aioseop_class.php:146
+msgid "%author% - The original archive title given by wordpress, e.g. \"Steve\" or \"John Smith\""
+msgstr "%author% -  Az eredeti archívumcím , amelyet a Wordpress adott meg, pl. \"István\" , vagy \"Kovács János\""
+
+#: aioseop_class.php:148
+msgid "This controls the format of the title tag for Tag Archives.<br />The following macros are supported:"
+msgstr "Irányítja a címke archívumok címtagjainak formátumát. <br /> A következő makrók támogatottak:"
+
+#: aioseop_class.php:151
+msgid "%tag% - The name of the tag"
+msgstr "%tag% - A címke neve"
+
+#: aioseop_class.php:153
+msgid "This controls the format of the title tag for the Search page.<br />The following macros are supported:"
+msgstr "Ez irányítja a címtag formátumát a keresési oldalon.<br /> A következő makrók támogatottak:"
+
+#: aioseop_class.php:94 aioseop_class.php:104 aioseop_class.php:114
+#: aioseop_class.php:126 aioseop_class.php:132 aioseop_class.php:137
+#: aioseop_class.php:145 aioseop_class.php:150 aioseop_class.php:155
+#: aioseop_class.php:159 aioseop_class.php:165 aioseop_class.php:1149
+#: aioseop_class.php:1192
+msgid "%blog_description% - Your blog description"
+msgstr "%blog_description% - Blogod leírása"
+
+#: aioseop_class.php:95 aioseop_class.php:105
+msgid "%page_title% - The original title of the page"
+msgstr "%page_title% - Az oldal eredeti neve"
+
+#: aioseop_class.php:96 aioseop_class.php:106
+msgid "%page_author_login% - This page's author' login"
+msgstr "%page_author_login% - Az oldal szerzőjének loginja"
+
+#: aioseop_class.php:97 aioseop_class.php:107
+msgid "%page_author_nicename% - This page's author' nicename"
+msgstr "%page_author_nicename% - A szerző nicename beállítása"
+
+#: aioseop_class.php:98 aioseop_class.php:108
+msgid "%page_author_firstname% - This page's author' first name (capitalized)"
+msgstr "%page_author_firstname% - Az oldal szerzőjének keresztneve (nagybetűkkel)"
+
+#: aioseop_class.php:99 aioseop_class.php:109
+msgid "%page_author_lastname% - This page's author' last name (capitalized)"
+msgstr "%page_author_lastname% - Az oldal szerzőjének családneve (nagybetűkkel) "
+
+#: aioseop_class.php:102
+msgid "This controls the format of the title tag for Pages.<br />The following macros are supported:"
+msgstr "Ez az oldalak címtagjének formátumát ellenőrzi.<br /> A következő makrók támogatottak:"
+
+#: aioseop_class.php:112
+msgid "This controls the format of the title tag for Posts.<br />The following macros are supported:"
+msgstr "Ez a bejegyzések címtagjének formátumát ellenőrzi.<br /> A következő makrók támogatottak:"
+
+#: aioseop_class.php:115 aioseop_class.php:161
+msgid "%post_title% - The original title of the post"
+msgstr "%post_title% - A bejegyzés eredeti címe"
+
+#: aioseop_class.php:76
+msgid "Checking this option will allow you to customize Canonical URLs for specific posts."
+msgstr "Az opció kijelölése lehetővé teszi a bejegyzések előnyben részesített URL-jeinek személyre szabását."
+
+#: aioseop_class.php:77
+msgid "Set protocol for canonical URLs."
+msgstr "Állítsd be a protokollt az előnyben részesített URL-ekhez."
+
+#: aioseop_class.php:78
+msgid "Use wp_title to get the title used by the theme; this is disabled by default. If you use this option, set your title formats appropriately, as your theme might try to do its own title SEO as well."
+msgstr "Használd a  wp_title funkciót, hogy meegkapd a sablon által használt címet; ez alapban ki van kapcsolva. Ha ezt az opciót használod, állítsd be a címformátumokat megfelelőképpen, mivel a sablon megpróbálkozhat a saját cím SEO-jával.."
+
+#: aioseop_class.php:79
+msgid "Check this and All in One SEO Pack will create a log of important events (all-in-one-seo-pack.log) in its plugin directory which might help debugging. Make sure this directory is writable."
+msgstr " Jelöld meg ezt, és az All in One SEO Pack naplózza a fontos eseményeket (all-in-one-seo-pack.log) a bővítmény direktóriumában, amely segítheti a hibakeresést. Bizonyosodj meg arról, hogy a direktórium írható."
+
+#: aioseop_class.php:80
+msgid "As the name implies, this will be the Meta Title of your homepage. This is independent of any other option. If not set, the default Site Title (found in WordPress under Settings, General, Site Title) will be used."
+msgstr "Ahogyan a név is mondja , ez lesz a főoldalad meta címe. Ez nem függ semmilyen más opciótól. Ha nincs beállítva, az alapbeállítás lesz használva (megtalálható a Wordpressben a Beállítások, Általános, Oldal címe alatt)."
+
+#: aioseop_class.php:81
+msgid "This will be the Meta Description for your homepage. This is independent of any other option. The default is no Meta Description at all if this is not set."
+msgstr "Ahogyan a név is mondja , ez lesz a főoldalad meta leírása. Ez nem függ semmilyen más opciótól. Az alapbeállítás szerint nem lesz semmilyen meta leírás, ha itt nem állítják be.  "
+
+#: aioseop_class.php:82
+msgid "Enter a comma separated list of your most important keywords for your site that will be written as Meta Keywords on your homepage. Don\\'t stuff everything in here."
+msgstr "Add meg a vesszővel elválasztott listáját a legfontosabb kulcsszavaknak, amelyeket meta kulcsszavakként írunk be a főoldaladba. Nem muszáj túlzásba vinni."
+
+#: aioseop_class.php:83
+msgid "Checking this option uses the title, description, and keywords set on your static Front Page."
+msgstr "Jelöld meg ezt az opciót ha a címet, leírást, kulcsszavakat statikus főoldalon szeretnéd használni."
+
+#: aioseop_class.php:84
+msgid "This option allows you to toggle the use of Meta Keywords throughout the whole of the site."
+msgstr "Ez az opció lehetővé teszi meta kulcsszavak használatát az egész szájton."
+
+#: aioseop_class.php:85
+msgid "Check this if you want your categories for a given post used as the Meta Keywords for this post (in addition to any keywords you specify on the Edit Post screen)."
+msgstr "Jelöld meg ezt az opciót ha azt szeretnéd, hogy a bejegyzés kategóriái meta kulcsszóként kerüljenek felhasználásra (azokon kívül, amelyeket már megadtál a bejegyzésszerkesztési képernyőn)."
+
+#: aioseop_class.php:86
+msgid "Check this if you want your tags for a given post used as the Meta Keywords for this post (in addition to any keywords you specify on the Edit Post screen)."
+msgstr "Jelöld ezt meg, ha azt szeretnéd, hogy egy bejegyzéshez tartozó tagek meta kulcsszóként legyenek felhasználva (azok mellett amelyeket a szerkesztési képernyőn adtál meg). "
+
+#: aioseop_class.php:87
+msgid "Check this if you want your keywords on your Posts page (set in WordPress under Settings, Reading, Front Page Displays) and your archive pages to be dynamically generated from the keywords of the posts showing on that page.  If unchecked, it will use the keywords set in the edit page screen for the posts page."
+msgstr "Jelöld ezt meg, ha azt szeretnéd, hogy a kulcsszavaid a bejegyzések oldalán ( a Wordpressben a Settings, Reading, Front Page Displays adhatsz meg), és az archívum oldalak dinamikusan legyenek létrehozva a bejegyzés kulcsszavaiból, amelyeket az oldalon olvashatunk.Ha az opció nincs kijelölve, akkor a szerkesztési oldalon megadott kulcsszavakat fogja használni a bejegyzések oldalra."
+
+#: aioseop_class.php:88
+msgid "Note that this is all about the title tag. This is what you see in your browser's window title bar. This is NOT visible on a page, only in the title bar and in the source code. If enabled, all page, post, category, search and archive page titles get rewritten. You can specify the format for most of them. For example: Using the default post title format below, Rewrite Titles will write all post titles as 'Post Title | Blog Name'. If you have manually defined a title using All in One SEO Pack, this will become the title of your post in the format string."
+msgstr "Vedd figyelembe, hogy ez a címtagről szól. Ez az, amit a böngésződ címsorában láthatsz. Ez NEM látható az oldalon, csak a címsorban, illetve a forráskódban. Ha aktiválod minden oldal, bejegyzés, kategória, keresési, és archívum oldal újra lesz írva. Nagyrészüknél megadhatod a formátumot. Például: Az alapértelmezett bejegyzésformátumot használva alul, a címek újraírása funkció megváltoztatja a bejegyzések címet a következőképpen:Bejegyzés címe | Blognév.  Ha manuálisan adtad meg a címet az All in One SEO Packkal, ez lesz a bejegyzésed címe a formátum karakterláncában."
+
+#: aioseop_class.php:89
+msgid "Check this and Search Page Titles and Tag Page Titles will have the first letter of each word capitalized."
+msgstr "Jelöld ezt meg, és a a keresési oldal, illetve a címkeoldalak  címeinek első betűje naggyal lesz írva."
+
+#: aioseop_class.php:90
+msgid "Check this and Category Titles will have the first letter of each word capitalized."
+msgstr "Jelöld ezt meg, és a kategória címek első betűje naggyal lesz írva."
+
+#: aioseop_class.php:92
+msgid "This controls the format of the title tag for your Home Page.<br />The following macros are supported:"
+msgstr "Ez a főoldal címtagjének formátumát ellenőrzi.<br /> A következő makrók támogatottak:"
+
+#: aioseop_class.php:93 aioseop_class.php:103 aioseop_class.php:113
+#: aioseop_class.php:125 aioseop_class.php:131 aioseop_class.php:136
+#: aioseop_class.php:144 aioseop_class.php:149 aioseop_class.php:154
+#: aioseop_class.php:158 aioseop_class.php:164 aioseop_class.php:1148
+#: aioseop_class.php:1191
+msgid "%blog_title% - Your blog title"
+msgstr "%blog_title% - A blogod címe"
+
+#: aioseop_class.php:72
+msgid "All donations support continued development of this free software."
+msgstr "Minden donáció ezt az ingyenes szoftver fejlesztését támogatja."
+
+#: aioseop_class.php:74
+msgid "This option will automatically generate Canonical URLs for your entire WordPress installation.  This will help to prevent duplicate content penalties by <a href=\\'http://googlewebmastercentral.blogspot.com/2009/02/specify-your-canonical.html\\' target=\\'_blank\\'>Google</a>."
+msgstr "Ez az opció előnyben részesített URL-ket hoz létre automatikusan  az egész Wordpress installációban. Ezzel megakadályozható az ismétlődő tartalmak szankcionálása <a href=\\'http://googlewebmastercentral.blogspot.com/2009/02/specify-your-canonical.html\\' target=\\'_blank\\'>Google</a> által."
+
+#: aioseop_class.php:75
+msgid "Checking this option will set the Canonical URL for all paginated content to the first page."
+msgstr "Az opció kijelölése beállítja az előnyben részesített URL-t minden tördelt tartalomra az első oldalon."
+
+#: modules/aioseop_bad_robots.php:11 modules/aioseop_feature_manager.php:29
+msgid "Bad Bot Blocker"
+msgstr "Bad Bot Blocker"
+
+#: modules/aioseop_bad_robots.php:17
+msgid "Block requests from user agents that are known to misbehave with 503."
+msgstr "Blokkold a kéréseket a user agentoktól, amelyek nem működnek jól az 503 kóddal."
+
+#: modules/aioseop_bad_robots.php:19
+msgid "Log and show recent requests from blocked bots."
+msgstr "Naplózd, és jelenítsd meg a kéréseket a blokkolt botoktól is."
+
+#: modules/aioseop_bad_robots.php:20
+msgid "Block bad robots via Apaache .htaccess rules. Warning: this will change your web server configuration, make sure you are able to edit this file manually as well."
+msgstr "Blokkold a rossz robotokat az Apache  .htaccess szabályain keresztül. Figyelem: Ez megváltoztatja a webszervered konfigurációját, bizonyosodj meg arról, hogy ezt a fájlt manuálisan is szerkeszteni tudod."
+
+#: modules/aioseop_bad_robots.php:21
+msgid "Check this to edit the list of disallowed user agents for blocking bad bots."
+msgstr "Jelöld ezt meg a nem engedélyezett user agentek listájának szerkesztéséhez, amellyel blokkolhatod a rosszul viselkedő botokat."
+
+#: modules/aioseop_bad_robots.php:22
+msgid "This is the list of disallowed user agents used for blocking bad bots."
+msgstr "Ez a visszautasított user agentek listája, a rossz botok blokkolására."
+
+#: modules/aioseop_bad_robots.php:23
+msgid "This is the list of disallowed referers used for blocking bad bots."
+msgstr "Ez a visszautasított referenciák listája, a rossz botok blokkolására."
+
+#: modules/aioseop_bad_robots.php:24
+msgid "Shows log of most recent requests from blocked bots. Note: this will not track any bots that were already blocked at the web server / .htaccess level."
+msgstr "Mutasd meg a legfrissebb kérések naplóját a blokkolt botokról. Megjegyzés: ez nem követi a botokat amelyek a webszerver / .htaccess szintjén már blokkolva lettek."
+
+#: modules/aioseop_bad_robots.php:30
+msgid "Track Blocked Bots"
+msgstr "A blokkolt botok követése"
+
+#: modules/aioseop_bad_robots.php:33
+msgid "User Agent Blocklist"
+msgstr "User Agent blokkolási lista"
+
+#: modules/aioseop_bad_robots.php:34
+msgid "Referer Blocklist"
+msgstr "Referenciák blokkolási listája"
+
+#: modules/aioseop_bad_robots.php:35
+msgid "Log Of Blocked Bots"
+msgstr "A blokkolt botok naplója"
+
+#: modules/aioseop_bad_robots.php:35
+msgid "No requests yet."
+msgstr "Nincsenek még lekérések."
+
+#: modules/aioseop_bad_robots.php:67
+msgid "Blocked bot with IP %s -- matched user agent %s found in blocklist."
+msgstr "Blokkolt botok IP-nként  %s -- egyező user agent %s található a bblokkolási listában."
+
+#: modules/aioseop_bad_robots.php:73
+msgid "Blocked bot with IP %s -- matched referer %s found in blocklist."
+msgstr "Blokkolt botok IP-nként %s -- egyező referencia %s található a blokkolási listában."
+
+#: modules/aioseop_bad_robots.php:95
+msgid "Apache module %s is required!"
+msgstr "%s Apache module  szükséges!"
+
+#: modules/aioseop_bad_robots.php:82 modules/aioseop_bad_robots.php:115
+msgid "Updated .htaccess rules."
+msgstr "Frissítettük a .htaccess szabályokat."
+
+#: modules/aioseop_bad_robots.php:84 modules/aioseop_bad_robots.php:117
+msgid "Failed to update .htaccess rules!"
+msgstr "Nem sikerült frissíteni .htaccess szabályokat!"
+
+#: modules/aioseop_bad_robots.php:120
+msgid "No rules to update!"
+msgstr "Nincsenek frissíthető szabályok!"
+
+#: aioseop_class.php:61
+msgid "%s Plugin Options"
+msgstr "%s bővítmények opciói"
+
+#: aioseop_class.php:62 aioseop_class.php:751 modules/aioseop_opengraph.php:267
+msgid "General Settings"
+msgstr "Általános beállítások"
