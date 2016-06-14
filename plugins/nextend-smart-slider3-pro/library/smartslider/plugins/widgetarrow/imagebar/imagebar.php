@@ -49,7 +49,10 @@ class N2SSPluginWidgetArrowImageBar extends N2SSPluginWidgetAbstract {
     }
 
     static function render($slider, $id, $params) {
-        N2CSS::addFile(N2Filesystem::translate(dirname(__FILE__) . DIRECTORY_SEPARATOR . 'imagebar' . DIRECTORY_SEPARATOR . 'style.min.css'), $id);
+
+        N2LESS::addFile(N2Filesystem::translate(dirname(__FILE__) . DIRECTORY_SEPARATOR . 'imagebar' . DIRECTORY_SEPARATOR . 'style.n2less'), $slider->cacheId, array(
+            "sliderid" => $slider->elementId
+        ), NEXTEND_SMARTSLIDER_ASSETS . '/less' . NDS);
         N2JS::addFile(N2Filesystem::translate(dirname(__FILE__) . '/imagebar/arrow.min.js'), $id);
     
 
@@ -120,7 +123,7 @@ class N2SSPluginWidgetArrowImageBar extends N2SSPluginWidgetAbstract {
 
         return N2Html::tag('div', $displayAttributes + $attributes + array(
                 'id'    => $id . '-arrow-' . $side,
-                'class' => $displayClass . 'nextend-arrow nextend-arrow-imagebar nextend-arrow-' . $side,
+                'class' => $displayClass . 'nextend-arrow nextend-arrow-imagebar n2-ib nextend-arrow-' . $side,
                 'style' => $style
             ), N2Html::tag('div', array(
                 'class' => 'nextend-arrow-image',

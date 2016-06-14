@@ -77,6 +77,7 @@
           <option value="stretch" image="$ss$/images/fillmode/stretch.png">Stretch</option>
           <option value="center" image="$ss$/images/fillmode/center.png">Center</option>
           <option value="tile" image="$ss$/images/fillmode/tile.png">Tile</option>
+          <option value="fixed" image="$ss$/images/fillmode/fixed.png">Fixed</option>
         </param>
       </params>
       <params name="slider-size-tablet" label="Slider size - Tablet" class="n2-expert">
@@ -215,7 +216,19 @@
     <params name="optimize" type="groupped" label="Optimize">
       <params name="optimize-images" label="Resize images">
         <param name="optimize" type="onoff" label="Optimize" default="0"/>
-        <param label="Thumbnail" type="group">
+        <param name="optimize-quality" type="number" label="Quality" default="70" min="0" max="100" style="width: 40px;">
+          <unit value="%">%</unit>
+        </param>
+        <param label="Background image size" type="group">
+          <param name="optimize-background-image-custom" type="onoff" label="Custom size" default="0"/>
+          <param name="optimize-background-image-width" type="text" style="width: 40px;" label="Width" default="800">
+            <unit value="px">px</unit>
+          </param>
+          <param name="optimize-background-image-height" type="text" style="width: 40px;" label="Height" default="600">
+            <unit value="px">px</unit>
+          </param>
+        </param>
+        <param label="Thumbnail size" type="group">
           <param name="optimizeThumbnailWidth" type="text" style="width: 40px;" label="Width" default="100">
             <unit value="px">px</unit>
           </param>
@@ -268,7 +281,7 @@
           <param name="randomize" type="onoff" label="Randomize" default="0"/>
           <param name="randomizeFirst" type="onoff" label="Randomize first" default="0"/>
           <param name="variations" type="number" label="Variations" default="5" style="width:40px;"/></param>
-        <param type="number" name="maximumslidecount" label="Maximum slide count" default="100" style="width:40px;"/>
+        <param type="number" name="maximumslidecount" label="Maximum slide count" default="1000" style="width:40px;"/>
       </params>
     </params>
     <params name="other" type="groupped" label="Other">

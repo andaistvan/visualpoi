@@ -1,8 +1,7 @@
 <?php
 
 
-class N2SmartsliderBackendSliderView extends N2ViewBase
-{
+class N2SmartsliderBackendSliderView extends N2ViewBase {
 
     public function _renderSlider($sliderId, $responsive = 'auto') {
 
@@ -66,7 +65,6 @@ class N2SmartsliderBackendSliderView extends N2ViewBase
                     ) + N2Form::tokenizeUrl()
                 ))
             ), N2Html::tag('i', array('class' => 'n2-i n2-i-a-refresh')));
-
             $buttons .= N2Html::tag('a', array(
                 'data-label' => n2_('Export slider as HTML'),
                 'href'       => $this->appType->router->createUrl(array(
@@ -86,6 +84,7 @@ class N2SmartsliderBackendSliderView extends N2ViewBase
                     ) + N2Form::tokenizeUrl()
                 ))
             ), N2Html::tag('i', array('class' => 'n2-i n2-i-a-export')));
+        
 
             $buttons .= N2Html::tag('a', array(
                 'data-label' => n2_('Duplicate slider'),

@@ -1,6 +1,5 @@
 <?php
-class N2SmartsliderBackendUpdateController extends N2SmartSliderController
-{
+class N2SmartsliderBackendUpdateController extends N2SmartSliderController {
 
     public function actionCheck() {
         if ($this->validateToken()) {
@@ -16,6 +15,7 @@ class N2SmartsliderBackendUpdateController extends N2SmartSliderController
         } else {
             $this->refresh();
         }
+    
     }
 
 
@@ -23,18 +23,21 @@ class N2SmartsliderBackendUpdateController extends N2SmartSliderController
         if ($this->validateToken()) {
             $status = N2SmartsliderUpdateModel::getInstance()
                                               ->update();
+            // Used when WP need to request FTP credentials
+            if ($status != 'CREDENTIALS') {
+                $hasError = N2SS3::hasApiError($status);
+                if (is_array($hasError)) {
+                    $this->redirect($hasError);
+                } else if ($hasError === false) {
+                    N2Message::success(n2_('Smart Slider 3 updated to the latest version!'));
+                }
 
-            $hasError = N2SS3::hasApiError($status);
-            if (is_array($hasError)) {
-                $this->redirect($hasError);
-            } else if ($hasError === false) {
-                N2Message::success(n2_('Smart Slider 3 updated to the latest version!'));
+                $this->redirectToSliders();
             }
-
-            $this->redirectToSliders();
         } else {
             $this->refresh();
         }
+    
     }
 
 }

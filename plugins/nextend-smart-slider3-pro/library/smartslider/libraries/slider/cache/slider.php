@@ -20,6 +20,10 @@ class N2CacheManifestSlider extends N2CacheManifest {
 
     protected function isCacheValid(&$manifestData) {
 
+        if (!isset($manifestData['version']) || $manifestData['version'] != N2SS3::$version) {
+            return false;
+        }
+
         if (N2SmartSliderHelper::getInstance()
                                ->isSliderChanged($this->parameters['slider']->sliderId, 1)
         ) {
@@ -46,6 +50,7 @@ class N2CacheManifestSlider extends N2CacheManifest {
 
         $manifestData['nextCacheRefresh'] = N2Pluggable::applyFilters('SSNextCacheRefresh', $this->parameters['slider']->slidesBuilder->getNextCacheRefresh(), array($this->parameters['slider']));
         $manifestData['currentPath']      = md5($this->currentPath);
+        $manifestData['version']          = N2SS3::$version;
 
         $variations = 1;
 

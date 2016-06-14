@@ -53,7 +53,10 @@ class N2SSPluginWidgetBarHorizontal extends N2SSPluginWidgetAbstract {
      * @return string
      */
     static function render($slider, $id, $params) {
-        N2CSS::addFile(N2Filesystem::translate(dirname(__FILE__) . DIRECTORY_SEPARATOR . 'horizontal' . DIRECTORY_SEPARATOR . 'style.min.css'), $id);
+
+        N2LESS::addFile(N2Filesystem::translate(dirname(__FILE__) . DIRECTORY_SEPARATOR . 'horizontal' . DIRECTORY_SEPARATOR . 'style.n2less'), $slider->cacheId, array(
+            "sliderid" => $slider->elementId
+        ), NEXTEND_SMARTSLIDER_ASSETS . '/less' . NDS);
         N2JS::addFile(N2Filesystem::translate(dirname(__FILE__) . '/horizontal/bar.min.js'), $id);
     
 
@@ -84,11 +87,14 @@ class N2SSPluginWidgetBarHorizontal extends N2SSPluginWidgetAbstract {
         $showDescription = intval($params->get(self::$key . 'show-description'));
         $slides          = array();
         for ($i = 0; $i < count($slider->slides); $i++) {
-            $slides[$i] = N2Html::tag('span', array('class' => $fontTitle), N2Translation::_($slider->slides[$i]->getTitle()));
+            $slides[$i] = array(
+                'html'    => N2Html::tag('span', array('class' => $fontTitle), N2Translation::_($slider->slides[$i]->getTitle())),
+                'hasLink' => $slider->slides[$i]->hasLink
+            );
 
             $description = $slider->slides[$i]->getDescription();
             if ($showDescription && !empty($description)) {
-                $slides[$i] .= N2Html::tag('span', array('class' => $fontDescription), $separator . N2Translation::_($description));
+                $slides[$i]['html'] .= N2Html::tag('span', array('class' => $fontDescription), $separator . N2Translation::_($description));
             }
         }
 
@@ -105,8 +111,8 @@ class N2SSPluginWidgetBarHorizontal extends N2SSPluginWidgetAbstract {
                 "style" => $style
             ), N2Html::tag("div", array(
             "class" => $styleClass,
-            "style" => $innerStyle
-        ), $slides[$slider->_activeSlide]));
+            "style" => $innerStyle . ($slides[$slider->_activeSlide]['hasLink'] ? 'cursor:pointer;' : '')
+        ), $slides[$slider->_activeSlide]['html']));
     }
 
     public static function prepareExport($export, $params) {

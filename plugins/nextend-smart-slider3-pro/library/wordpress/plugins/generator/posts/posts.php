@@ -47,6 +47,9 @@ if (N2Platform::$isWordpress) {
                     }
                 }
             }
+            
+            $list[self::$_group]['allcustomposts'] = N2GeneratorInfo::getInstance(self::$groupLabel, n2_('All custom posts'), $this->getPath() . 'allcustomposts')
+                                                            ->setType('article');                
         
         }
 

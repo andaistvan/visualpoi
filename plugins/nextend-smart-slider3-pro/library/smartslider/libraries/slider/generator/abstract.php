@@ -1,7 +1,6 @@
 <?php
 
-abstract class N2GeneratorAbstract
-{
+abstract class N2GeneratorAbstract {
 
     /** @var  N2GeneratorInfo */
     protected $info;
@@ -55,5 +54,13 @@ abstract class N2GeneratorAbstract
             "\n\r",
             "\r"
         ), "\n", $this->data->get('ids'))));
+    }
+
+    public function filterName($name) {
+        return $name;
+    }
+
+    public function hash($key) {
+        return md5($key);
     }
 }

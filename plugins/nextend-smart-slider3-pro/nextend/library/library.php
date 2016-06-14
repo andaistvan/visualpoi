@@ -13,6 +13,10 @@ defined('N2LIBRARYASSETS') || define('N2LIBRARYASSETS', realpath(N2LIBRARY . NDS
 
 defined('N2GSAP') || define('N2GSAP', 1);
 
+function n2_floatval($string) {
+    return json_encode(floatval($string));
+}
+
 require_once N2LIBRARY . NDS . 'loader.php';
 
 N2Loader::import("platform", "platform");
@@ -29,11 +33,8 @@ N2Loader::import("libraries.router.router");
 N2Loader::import('libraries.request');
 N2Loader::import('libraries.ajax.ajax');
 N2Loader::import("libraries.helpers.system");
-N2Loader::import("libraries.mvc.base.application");
-N2Loader::import("libraries.mvc.base.type");
 N2Loader::import("libraries.mvc.model");
 N2Loader::import("libraries.helpers.html");
-N2Loader::import('storage.storage');
 N2Loader::import('libraries.storage.section');
 N2Loader::import('settings');
 N2Loader::import('libraries.form.form');

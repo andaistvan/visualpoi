@@ -8,6 +8,8 @@ class N2Platform {
 
     public static $name;
 
+    private static $needCredentials = false;
+
     public static function init() {
         self::$isWordpress = get_bloginfo('version');
         if (basename($_SERVER['PHP_SELF']) == 'admin.php') {
@@ -33,7 +35,7 @@ class N2Platform {
 
     public static function getPublicDir() {
         $upload_dir = wp_upload_dir();
-        return $upload_dir['basedir'];
+        return str_replace('//', '/', $upload_dir['basedir']);
     }
 
     public static function getUserEmail() {
@@ -65,6 +67,12 @@ class N2Platform {
     }
 
     public static function updateFromZip($fileRaw, $updateInfo) {
+
+        add_filter('fs_ftp_connection_types', array(
+            'N2Platform',
+            'isFTPCredentialsNeeded'
+        ));
+
         N2Loader::import('libraries.zip.zip_read');
 
         $tmpHandle = tmpfile();
@@ -110,6 +118,11 @@ class N2Platform {
             'delete_old_plugin'
         ));
 
+        if (self::$needCredentials) {
+            fclose($tmpHandle);
+            return 'CREDENTIALS';
+        }
+
         // Force refresh of plugin update information
         wp_clean_plugins_cache(true);
         fclose($tmpHandle);
@@ -117,6 +130,11 @@ class N2Platform {
         include(ABSPATH . 'wp-admin/admin-footer.php');
 
         return true;
+    }
+
+    public static function isFTPCredentialsNeeded($types) {
+        self::$needCredentials = true;
+        return $types;
     }
 
 }

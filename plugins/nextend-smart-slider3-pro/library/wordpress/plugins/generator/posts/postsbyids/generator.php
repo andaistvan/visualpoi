@@ -6,8 +6,10 @@ class N2GeneratorPostsPostsByIDs extends N2GeneratorAbstract
 {
 
     protected function _getData($count, $startIndex) {
-        global $post;
-        $tmpPost = $post;
+        global $post, $wp_the_query;
+        $tmpPost         = $post;
+        $tmpWp_the_query = $wp_the_query;
+        $wp_the_query = null;
 
         $i    = 0;
         $data = array();
@@ -46,9 +48,14 @@ class N2GeneratorPostsPostsByIDs extends N2GeneratorAbstract
 
             if (class_exists('acf')) {
                 $fields = get_fields($post->ID);
-                if (count($fields) && !empty($fields)) {
+                if (count($fields) && is_array($fields) && !empty($fields)) {
                     foreach ($fields AS $k => $v) {
-                        $record[$k] = $v;
+                        $k = str_replace('-', '', $k);
+                        if (!is_array($v) && !is_object($v)) {
+                            $record[$k] = $v;
+                        } else if (!is_object($v) && isset($v['url'])) {
+                            $record[$k] = $v['url'];
+                        }
                     }
                 }
             }
@@ -57,6 +64,8 @@ class N2GeneratorPostsPostsByIDs extends N2GeneratorAbstract
             unset($record);
             $i++;
         }
+
+        $wp_the_query = $tmpWp_the_query;
 
         wp_reset_postdata();
         $post = $tmpPost;

@@ -23,7 +23,7 @@
 
   .nextend-arrow-grow .nextend-arrow-title {
     position: absolute;
-    left: 48px;
+    right: 48px;
     top: auto;
     white-space: nowrap;
     line-height: 48px !important;

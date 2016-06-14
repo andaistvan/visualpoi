@@ -54,8 +54,10 @@ class N2SmartSliderTypeAccordion extends N2SmartSliderType {
         echo $this->slider->staticHtml;
 
         foreach ($this->slider->slides AS $i => $slide) {
+            echo N2Html::openTag('div', $slide->attributes +array(
+                'class' => 'n2-ss-slide '.$slide->classes
+            ));
             ?>
-            <div class="n2-ss-slide <?php echo $slide->classes; ?>">
                 <?php
                 $font = N2FontRenderer::render($params->get('title-font'), 'accordionslidetitle', $this->slider->elementId, 'div#' . $this->slider->elementId . ' ');
 
@@ -72,7 +74,7 @@ class N2SmartSliderTypeAccordion extends N2SmartSliderType {
                 <?php echo N2Html::closeTag('div'); ?>
                 <div class="n2-accordion-slide" style="<?php echo $slide->style; ?>">
                     <?php
-                    echo N2Html::tag('div', $slide->attributes + array(
+                    echo N2Html::tag('div', array(
                             'class' => 'n2-ss-canvas',
                         ), $slide->background . $slide->getHTML());
                     ?>

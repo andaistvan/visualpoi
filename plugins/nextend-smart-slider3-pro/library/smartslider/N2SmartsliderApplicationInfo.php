@@ -75,6 +75,7 @@ class N2SmartsliderApplicationInfo extends N2ApplicationInfo {
 
     public function assetsFrontend() {
         N2JS::addInline('window.N2SSPRO=' . N2SSPRO . ';', true);
+        N2JS::addInline('window.N2SS3C="' . N2SS3::$campaign . '";', true);
 
         $path = $this->getAssetsPath();
         N2JS::addStaticGroup($path . '/dist/smartslider-frontend.min.js', 'smartslider-frontend');

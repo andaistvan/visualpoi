@@ -105,6 +105,8 @@ class N2SystemBackendBrowseControllerAjax extends N2BackendControllerAjax
                                            ->upload($_FILES['image'], $fileName);
                 $response['name'] = basename($file);
                 $response['url']  = N2ImageHelper::dynamic(N2Filesystem::pathToAbsoluteURL($file));
+
+                N2ImageHelper::onImageUploaded($file);
             }
         } catch (Exception $e) {
             N2Message::error($e->getMessage());
@@ -252,6 +254,7 @@ class N2BulletProof
 
         $listOfMimeTypes = array(
             1 => "gif",
+            "jpg",
             "jpeg",
             "png",
             "swf",

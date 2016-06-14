@@ -2,8 +2,7 @@
 N2Loader::import('libraries.plugins.N2SliderWidgetAbstract', 'smartslider');
 N2Loader::import('libraries.image.color');
 
-class N2SSPluginWidgetArrowText extends N2SSPluginWidgetAbstract
-{
+class N2SSPluginWidgetArrowText extends N2SSPluginWidgetAbstract {
 
     private static $key = 'widget-arrow-';
 
@@ -51,6 +50,10 @@ class N2SSPluginWidgetArrowText extends N2SSPluginWidgetAbstract
 
         list($displayClass, $displayAttributes) = self::getDisplayAttributes($params, self::$key);
 
+        N2LESS::addFile(N2Filesystem::translate(dirname(__FILE__) . DIRECTORY_SEPARATOR . 'text' . DIRECTORY_SEPARATOR . 'style.n2less'), $slider->cacheId, array(
+            "sliderid" => $slider->elementId
+        ), NEXTEND_SMARTSLIDER_ASSETS . '/less' . NDS);
+
         $font  = N2FontRenderer::render($params->get(self::$key . 'font'), 'link', $slider->elementId, 'div#' . $slider->elementId . ' ', $slider->fontSize);
         $style = N2StyleRenderer::render($params->get(self::$key . 'style'), 'heading', $slider->elementId, 'div#' . $slider->elementId . ' ');
 
@@ -62,15 +65,14 @@ class N2SSPluginWidgetArrowText extends N2SSPluginWidgetAbstract
         list($style, $attributes) = self::getPosition($params, self::$key . $side . '-');
 
         $html = N2Html::openTag("div", $displayAttributes + $attributes + array(
-                "class" => $displayClass . "nextend-arrow nextend-arrow-{$side} {$font}",
-                "style" => "display:inline-block;" . $style
+                "class" => $displayClass . " n2-ib nextend-arrow nextend-arrow-{$side} {$font}",
+                "style" => $style
             ));
 
 
         $html .= N2Html::link($params->get(self::$key . $side . '-label'), '#', array(
             "onclick" => $onClick,
-            "style"   => "display:inline-block;",
-            "class"   => $styleClass
+            "class"   => $styleClass . ' n2-ib'
         ));
 
         $html .= N2Html::closeTag("div");

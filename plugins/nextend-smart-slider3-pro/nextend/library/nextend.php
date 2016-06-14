@@ -6,7 +6,17 @@ class N2
     public static $version = '2.0.21';
     public static $api = 'http://secure.nextendweb.com/api/api.php';
 
-    public static function api($posts) {
+    public static function api($posts, $returnUrl = false) {
+
+        if($returnUrl){
+            $posts_default = array(
+                'platform' => N2Platform::getPlatform()
+            );
+            $posts_default['domain'] = parse_url(N2Uri::getBaseUri(), PHP_URL_HOST);
+        
+
+            return self::$api.'?'.http_build_query($posts + $posts_default);
+        }
 
         if (!isset($data)) {
             if (function_exists('curl_init') && N2Settings::get('curl', 1)) {
@@ -20,12 +30,17 @@ class N2
             
                 curl_setopt($ch, CURLOPT_POSTFIELDS, $posts + $posts_default);
                 curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-                curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 5);
+                curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 20);
                 curl_setopt($ch, CURLOPT_TIMEOUT, 30);
+
                 if (N2Settings::get('curl-clean-proxy', 0)) {
                     curl_setopt($ch, CURLOPT_PROXY, '');
                 }
                 $data            = curl_exec($ch);
+                if (curl_errno($ch) == 60) {
+                    curl_setopt($ch, CURLOPT_CAINFO, N2LIBRARY . '/cacert.pem');
+                    $data = curl_exec($ch);
+                }
                 $contentType     = curl_getinfo($ch, CURLINFO_CONTENT_TYPE);
                 $error           = curl_error($ch);
                 $curlErrorNumber = curl_errno($ch);

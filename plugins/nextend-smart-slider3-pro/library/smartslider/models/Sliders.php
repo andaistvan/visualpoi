@@ -233,7 +233,7 @@ class N2SmartsliderSlidersModel extends N2Model
         $slider = $this->get($id);
         unset($slider['id']);
 
-        $slider['title'] .= ' - copy';
+        $slider['title'] .= n2_(' - copy');
         $slider['time'] = date('Y-m-d H:i:s', N2Platform::getTime());
 
         try {

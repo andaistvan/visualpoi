@@ -16,8 +16,6 @@ class N2WP
         }
         add_action('admin_menu', 'N2WP::nextendApplicationInit');
 
-        register_activation_hook(__FILE__, 'N2WP::install');
-
     }
 
     public static function registerApplication() {
@@ -82,6 +80,16 @@ class N2WP
         ), array(true));
 
         $wpdb->prefix = $tmpPrefix;
+    }
+
+    public static function delete_blog($blog_id, $drop) {
+        if($drop){
+            
+            global $wpdb;
+            $prefix = $wpdb->get_blog_prefix($blog_id);
+            $wpdb->query('DROP TABLE IF EXISTS '.$prefix.'nextend2_image_storage, '.$prefix.'nextend2_section_storage;');
+          
+        }
     }
 }
 

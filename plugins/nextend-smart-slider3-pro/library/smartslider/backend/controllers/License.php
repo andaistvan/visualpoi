@@ -1,6 +1,5 @@
 <?php
-class N2SmartsliderBackendLicenseController extends N2SmartSliderController
-{
+class N2SmartsliderBackendLicenseController extends N2SmartSliderController {
 
     public function actionDeAuthorize() {
         $status = N2SmartsliderLicenseModel::getInstance()
@@ -14,3 +13,4 @@ class N2SmartsliderBackendLicenseController extends N2SmartSliderController
         $this->redirectToSliders();
     }
 }
+

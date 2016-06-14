@@ -106,7 +106,10 @@ class N2SSPluginWidgetFullScreenImage extends N2SSPluginWidgetAbstract {
             } else {
                 $toFull = N2ImageHelper::fixed($toFull);
             }
-            N2CSS::addFile(N2Filesystem::translate(dirname(__FILE__) . DIRECTORY_SEPARATOR . 'image' . DIRECTORY_SEPARATOR . 'style.min.css'), $id);
+
+            N2LESS::addFile(N2Filesystem::translate(dirname(__FILE__) . DIRECTORY_SEPARATOR . 'image' . DIRECTORY_SEPARATOR . 'style.n2less'), $slider->cacheId, array(
+                "sliderid" => $slider->elementId
+            ), NEXTEND_SMARTSLIDER_ASSETS . '/less' . NDS);
             N2JS::addFile(N2Filesystem::translate(dirname(__FILE__) . '/image/fullscreen.min.js'), $id);
         
 
@@ -118,10 +121,10 @@ class N2SSPluginWidgetFullScreenImage extends N2SSPluginWidgetAbstract {
             list($style, $attributes) = self::getPosition($params, self::$key);
 
 
-            N2JS::addInline('new NextendSmartSliderWidgetFullScreenImage("' . $id . '", ' . floatval($params->get(self::$key . 'responsive-desktop')) . ', ' . floatval($params->get(self::$key . 'responsive-tablet')) . ', ' . floatval($params->get(self::$key . 'responsive-mobile')) . ');');
+            N2JS::addInline('new NextendSmartSliderWidgetFullScreenImage("' . $id . '", ' . n2_floatval($params->get(self::$key . 'responsive-desktop')) . ', ' . n2_floatval($params->get(self::$key . 'responsive-tablet')) . ', ' . n2_floatval($params->get(self::$key . 'responsive-mobile')) . ');');
 
             $html = N2Html::tag('div', $displayAttributes + $attributes + array(
-                    'class' => $displayClass . $styleClass . 'n2-full-screen-widget n2-full-screen-widget-image nextend-fullscreen',
+                    'class' => $displayClass . $styleClass . 'n2-full-screen-widget n2-ib n2-full-screen-widget-image nextend-fullscreen',
                     'style' => $style
                 ), N2Html::image($toNormal, 'Full screen', array(
                     'class'        => 'n2-full-screen-widget-to-normal n2-ow',

@@ -77,11 +77,13 @@ input.n2-ow[placeholder] {
 
 .n2-ow::-moz-placeholder {
   text-overflow: clip;
+  color: inherit;
 }
 
 /* firefox 19+ */
 input.n2-ow:-moz-placeholder {
   text-overflow: clip;
+  color: inherit;
 }
 
 table.n2-ow {
@@ -149,7 +151,7 @@ iframe.n2-ow {
   ul, li, img, a, p, ol, textarea, input, button {
     -moz-transition: none 0s;
     -webkit-transition: none 0s;
-    -o-transition: none 0s ;
+    -o-transition: none 0s;
     transition: none 0s;
   }
 
@@ -172,7 +174,7 @@ iframe.n2-ow {
     height: 100%;
   }
 
-  .n2-ss-slide-background img {
+  .n2-ss-slide .n2-ss-slide-background img {
     max-width: none;
   }
 
@@ -201,6 +203,11 @@ iframe.n2-ow {
 
   .n2-ss-slide-tile {
     background-repeat: repeat;
+    background-position: 50% 50%;
+  }
+
+  .n2-ss-slide-fixed {
+    background-size: cover;
     background-position: 50% 50%;
   }
 

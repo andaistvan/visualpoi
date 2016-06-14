@@ -1,8 +1,7 @@
 <?php
 
 
-class N2SmartsliderInstallModel extends N2Model
-{
+class N2SmartsliderInstallModel extends N2Model {
 
     private static $sql = array(
         "CREATE TABLE IF NOT EXISTS `#__nextend2_smartslider3_generators` (

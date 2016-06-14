@@ -49,6 +49,10 @@ class N2SSPluginWidgetShadowShadow extends N2SSPluginWidgetAbstract
         if (!$shadow) {
             return '';
         }
+
+        N2LESS::addFile(N2Filesystem::translate(dirname(__FILE__) . DIRECTORY_SEPARATOR . 'shadow' . DIRECTORY_SEPARATOR . 'style.n2less'), $slider->cacheId, array(
+            "sliderid" => $slider->elementId
+        ), NEXTEND_SMARTSLIDER_ASSETS . '/less' . NDS);
         N2JS::addFile(N2Filesystem::translate(dirname(__FILE__) . '/shadow/shadow.min.js'), $id);
     
 

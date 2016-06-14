@@ -29,7 +29,6 @@
     position: relative;
     width: 100%;
     height: 100%;
-    .border-radius(@tr, @br, @bl, @tl);
     overflow: visible;
 
     -moz-perspective: @perspective;

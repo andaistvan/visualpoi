@@ -14,6 +14,7 @@ class N2Settings
             'combine-js'        => 0,
             'minify-js'         => 0,
             'protocol-relative' => 1,
+            'show-joomla-admin-footer' => 0,
             'curl'              => 1,
             'curl-clean-proxy'  => 0
         );

@@ -1,8 +1,7 @@
 <?php
 
 
-class N2ImageHelperAbstract
-{
+class N2ImageHelperAbstract {
 
     public static $imagePaths = array();
     public static $imageUrls = array();
@@ -103,8 +102,13 @@ class N2ImageHelperAbstract
         }
         return N2ImageHelper::fixed($image);
     }
+
+    public static function onImageUploaded($filename) {
+    }
 }
 
 N2Loader::import('libraries.image.helper', 'platform');
 N2ImageHelper::$protocolRelative = N2Settings::get('protocol-relative', '1');
 N2ImageHelper::addKeyword('$', N2Filesystem::getBasePath(), N2Uri::getBaseUri());
+$wp_upload_dir = wp_upload_dir();
+N2ImageHelper::addKeyword('$upload$', rtrim($wp_upload_dir['basedir'], "/\\"), rtrim($wp_upload_dir['baseurl'], "/\\"));

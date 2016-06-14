@@ -75,7 +75,7 @@ class N2SSPluginItemText extends N2SSPluginItemAbstract
 
     private function getHTML($data, $slider, $slide) {
 
-        $font  = N2FontRenderer::render($data->get('font'), 'paragraph', $slider->elementId, 'div#' . $slider->elementId . ' ', $slider->fontSize);
+        $font  = N2FontRenderer::render($data->get('font'), 'paragraph', $slider->elementId, 'div#' . $slider->elementId . ' .n2-ss-layer ', $slider->fontSize);
         $style = N2StyleRenderer::render($data->get('style'), 'heading', $slider->elementId, 'div#' . $slider->elementId . ' ');
 
 

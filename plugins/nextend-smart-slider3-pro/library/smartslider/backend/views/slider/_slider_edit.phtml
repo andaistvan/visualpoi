@@ -75,13 +75,18 @@ $this->widget->init('heading', array(
 
             var form = $('#smartslider-form'),
                 formAction = form.attr('action'),
-                headings = $('.n2-top-bar-menu .n2-tab-heading');
+                headings = $('.n2-top-bar-menu .n2-tab-heading'),
+                newWindow = <?php echo intval(N2SmartSliderSettings::get('preview-new-window', 0)); ?>;
 
-            var modal = new NextendSimpleModal('<iframe name="n2-tab-preview" src="about:blank" style="width: 100%;height:100%;"></iframe>');
-            modal.modal.on('ModalHide', function () {
-                modal.modal.find('iframe').attr('src', 'about:blank');
-                $(window).trigger('SSPreviewHide');
-            });
+            if (!newWindow) {
+                var modal = new NextendSimpleModal('<iframe name="n2-tab-preview" src="about:blank" style="width: 100%;height:100%;"></iframe>', {
+                    class: 'n2-ss-preview-modal'
+                });
+                modal.modal.on('ModalHide', function () {
+                    modal.modal.find('iframe').attr('src', 'about:blank');
+                    $(window).trigger('SSPreviewHide');
+                });
+            }
 
             var isPreview = false;
 
@@ -106,7 +111,11 @@ $this->widget->init('heading', array(
             $('#n2-ss-preview').on('click', function (e) {
                 isPreview = true;
                 e.preventDefault();
-                modal.show();
+                if (!newWindow) {
+                    modal.show();
+                } else {
+                    NextendNewFullWindow('', 'n2-tab-preview');
+                }
                 form.attr({
                     action: '<?php echo $this->appType->router->createUrl(array("preview/index", N2Form::tokenizeUrl() + array('sliderid' => $slider['id'])))?>',
                     target: 'n2-tab-preview'

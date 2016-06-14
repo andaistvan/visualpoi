@@ -117,6 +117,9 @@ class N2GeneratorAllinOneEventCalendarEvents extends N2GeneratorAbstract
 
             $data[$i]['end_date'] = date_i18n(get_option('date_format'), $event->end);
             $data[$i]['end_time'] = date_i18n(get_option('time_format'), $event->end);
+                        
+            $data[$i]['start'] = date("Y-m-d h:i:s", $event->start);
+            $data[$i]['end']   = date("Y-m-d h:i:s", $event->end);
 
             $data[$i]['ID'] = $event->ID;
 

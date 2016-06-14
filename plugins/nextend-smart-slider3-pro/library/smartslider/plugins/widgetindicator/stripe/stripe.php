@@ -39,7 +39,10 @@ class N2SSPluginWidgetIndicatorStripe extends N2SSPluginWidgetAbstract {
     }
 
     static function render($slider, $id, $params) {
-        N2CSS::addFile(N2Filesystem::translate(dirname(__FILE__) . DIRECTORY_SEPARATOR . 'stripe' . DIRECTORY_SEPARATOR . 'style.min.css'), $id);
+
+        N2LESS::addFile(N2Filesystem::translate(dirname(__FILE__) . DIRECTORY_SEPARATOR . 'stripe' . DIRECTORY_SEPARATOR . 'style.n2less'), $slider->cacheId, array(
+            "sliderid" => $slider->elementId
+        ), NEXTEND_SMARTSLIDER_ASSETS . '/less' . NDS);
         N2JS::addFile(N2Filesystem::translate(dirname(__FILE__) . '/stripe/indicator.min.js'), $id);
     
 

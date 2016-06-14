@@ -13,7 +13,7 @@
                 <option value="0">None</option>
                 <option value="a.id">ID</option>
                 <option value="a.filename">Filename</option>
-                <option value="a.alt">Alt text</option>
+                <option value="a.alt">Alt tag</option>
                 <option value="STR_TO_DATE(a.date, '%d %m %Y, %h:%i')">Upload date</option>
                 <option value="a.order">Order</option>
                 <option value="a.comment_count">Comment count</option>

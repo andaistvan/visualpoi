@@ -1,7 +1,6 @@
 <?php
 
-class N2SmartsliderBackendSliderController extends N2SmartSliderController
-{
+class N2SmartsliderBackendSliderController extends N2SmartSliderController {
 
     public $sliderId = 0;
 
@@ -102,6 +101,7 @@ class N2SmartsliderBackendSliderController extends N2SmartSliderController
             $export = new N2SmartSliderExport($this->sliderId);
             $export->create();
         }
+    
     }
 
     public function actionExportHTML() {
@@ -110,6 +110,7 @@ class N2SmartsliderBackendSliderController extends N2SmartSliderController
             $export = new N2SmartSliderExport($this->sliderId);
             $export->createHTML();
         }
+    
     }
 
     public function actionPublishHTML() {

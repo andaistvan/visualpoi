@@ -105,7 +105,7 @@ class N2SSPluginItemHeading extends N2SSPluginItemAbstract
         }
     
 
-        $font  = N2FontRenderer::render($data->get('font'), 'hover', $slider->elementId, 'div#' . $slider->elementId . ' ', $slider->fontSize);
+        $font  = N2FontRenderer::render($data->get('font'), 'hover', $slider->elementId, 'div#' . $slider->elementId . ' .n2-ss-layer ', $slider->fontSize);
         $style = N2StyleRenderer::render($data->get('style'), 'heading', $slider->elementId, 'div#' . $slider->elementId . ' ');
 
         $linkAttributes = array();

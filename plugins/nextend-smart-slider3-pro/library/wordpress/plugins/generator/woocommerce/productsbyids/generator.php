@@ -26,7 +26,8 @@ class N2GeneratorWooCommerceProductsByIds extends N2GeneratorAbstract
                     'image'         => N2ImageHelper::dynamic($image),
                     'thumbnail'     => N2ImageHelper::dynamic($thumbnail),
                     'price'         => wc_price($product->get_price()),
-                    'regular_price' => wc_price($product->get_regular_price())
+                    'regular_price' => wc_price($product->get_regular_price()),
+                    'rating'        => $product->get_average_rating()
                 );
 
                 if ($product->is_on_sale()) {

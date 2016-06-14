@@ -6,8 +6,10 @@ class N2GeneratorPostsCustomPosts extends N2GeneratorAbstract
 {
 
     protected function _getData($count, $startIndex) {
-        global $post;
-        $tmpPost = $post;
+        global $post, $wp_the_query;
+        $tmpPost         = $post;
+        $tmpWp_the_query = $wp_the_query;
+        $wp_the_query = null;
 
         $taxonomies = explode('||', $this->data->get('taxonomies', ''));
         if (!in_array('0', $taxonomies)) {
@@ -34,43 +36,32 @@ class N2GeneratorPostsCustomPosts extends N2GeneratorAbstract
 
         list($orderBy, $order) = N2Parse::parse($this->data->get('postsorder', 'post_date|*|desc'));
 
+        $getPosts = array(
+            'include'          => '',
+            'exclude'          => '',
+            'meta_key'         => '',
+            'meta_value'       => '',
+            'post_type'        => $this->info->post_type,
+            'post_mime_type'   => '',
+            'post_parent'      => '',
+            'post_status'      => 'publish',
+            'suppress_filters' => false,
+            'offset'           => $startIndex,
+            'posts_per_page'   => $count,
+            'orderby'          => $orderBy,
+            'order'            => $order,
+            'tax_query'        => $tax_query
+        );
+
         $ids = $this->getIDs();
-        if (count($ids) == 1 && $ids[0] == 0) {
-            $posts = get_posts(array(
-                'include'          => '',
-                'exclude'          => '',
-                'meta_key'         => '',
-                'meta_value'       => '',
-                'post_type'        => $this->info->post_type,
-                'post_mime_type'   => '',
-                'post_parent'      => '',
-                'post_status'      => 'publish',
-                'suppress_filters' => false,
-                'offset'           => $startIndex,
-                'posts_per_page'   => $count,
-                'orderby'          => $orderBy,
-                'order'            => $order,
-                'tax_query'        => $tax_query
-            ));
-        } else {
-            $posts = get_posts(array(
-                'include'          => '',
-                'exclude'          => '',
-                'meta_key'         => '',
-                'meta_value'       => '',
-                'post_type'        => $this->info->post_type,
-                'post_mime_type'   => '',
-                'post_parent'      => '',
-                'post_status'      => 'publish',
-                'suppress_filters' => false,
-                'offset'           => $startIndex,
-                'posts_per_page'   => $count,
-                'orderby'          => $orderBy,
-                'order'            => $order,
-                'tax_query'        => $tax_query,
-                'post__in'         => $ids
-            ));
+
+        if (count($ids) <> 1 || $ids[0] <> 0) {
+            $getPosts += array(
+                'post__in' => $ids
+            );
         }
+
+        $posts = get_posts($getPosts);
 
         $data = array();
 
@@ -118,9 +109,14 @@ class N2GeneratorPostsCustomPosts extends N2GeneratorAbstract
 
             if (class_exists('acf')) {
                 $fields = get_fields($post->ID);
-                if (count($fields) && !empty($fields)) {
+                if (count($fields) && is_array($fields) && !empty($fields)) {
                     foreach ($fields AS $k => $v) {
-                        $record[$k] = $v;
+                        $k = str_replace('-', '', $k);
+                        if (!is_array($v) && !is_object($v)) {
+                            $record[$k] = $v;
+                        } else if (!is_object($v) && isset($v['url'])) {
+                            $record[$k] = $v['url'];
+                        }
                     }
                 }
             }
@@ -128,6 +124,8 @@ class N2GeneratorPostsCustomPosts extends N2GeneratorAbstract
             $data[$i] = &$record;
             unset($record);
         }
+
+        $wp_the_query = $tmpWp_the_query;
 
         wp_reset_postdata();
         $post = $tmpPost;

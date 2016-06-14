@@ -16,6 +16,15 @@ class N2AssetsPredefined {
 
         N2CSS::addInline('.n2,html[dir="rtl"] .n2,.n2 td,.n2 th,.n2 select, .n2 textarea, .n2 input{font-family: "' . $family . '", Arial, sans-serif;}');
         N2CSS::addStaticGroup(N2LIBRARYASSETS . '/dist/nextend-backend.min.css', 'nextend-backend');
+    
+
+        N2Localization::addJS(array(
+            'Cancel',
+            'Delete',
+            'Delete and never show again',
+            'Are you sure you want to delete?',
+            'Documentation'
+        ));
         N2JS::addStaticGroup(N2LIBRARYASSETS . '/dist/nextend-backend.min.js', 'nextend-backend');
     
 

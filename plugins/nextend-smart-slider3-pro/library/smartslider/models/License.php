@@ -1,12 +1,12 @@
 <?php
 
-class N2SmartsliderLicenseModel
-{
+class N2SmartsliderLicenseModel {
 
     private $key;
 
     public function __construct() {
         $this->key = N2Base::getApplication('smartslider')->storage->get('license', 'key');
+    
     }
 
     public static function getInstance() {
@@ -36,6 +36,7 @@ class N2SmartsliderLicenseModel
     public function setKey($licenseKey) {
         N2Base::getApplication('smartslider')->storage->set('license', 'key', $licenseKey);
         $this->key = $licenseKey;
+    
     }
 
     public function checkKey($license, $action = 'licensecheck') {

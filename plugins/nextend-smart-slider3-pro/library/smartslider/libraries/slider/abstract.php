@@ -6,7 +6,6 @@ N2Loader::import('libraries.parse.font');
 N2Loader::import('libraries.slider.type', 'smartslider');
 N2Loader::import('libraries.slider.css', 'smartslider');
 N2Loader::importAll('libraries.slider.features', 'smartslider');
-N2Loader::import('libraries.slider.javascript', 'smartslider');
 N2Loader::importAll('libraries.slider.slide', 'smartslider');
 N2Loader::import('libraries.settings.settings', 'smartslider');
 N2Loader::import('libraries.slider.widget.widgets', 'smartslider');

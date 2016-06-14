@@ -1,7 +1,6 @@
 <?php
 
-class N2ImageAviary
-{
+class N2ImageAviary {
 
     private static $config = array(
         'public' => '',
@@ -95,6 +94,7 @@ class N2ImageAviary
     }
 
     public static function getHighResolutionAuth() {
+        self::loadSettings();
         $timestamp = time();
         $salt      = uniqid(mt_rand(), true);
         $signature = sha1(self::$config['public'] . self::$config['secret'] . $timestamp . $salt);

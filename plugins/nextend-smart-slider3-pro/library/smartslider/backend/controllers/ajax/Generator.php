@@ -79,7 +79,7 @@ class N2SmartsliderBackendGeneratorControllerAjax extends N2SmartSliderControlle
                 foreach ($records AS $g => $record) {
                     $rows[$i][] = $i + 1;
                     foreach ($record AS $k => $v) {
-                        $rows[$i][] = N2Html::tag('div', array(), htmlentities($v));
+                        $rows[$i][] = N2Html::tag('div', array(), htmlspecialchars($v, ENT_QUOTES, "UTF-8"));
                     }
                 }
                 $i++;

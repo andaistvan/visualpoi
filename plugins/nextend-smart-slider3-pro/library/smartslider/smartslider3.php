@@ -2,9 +2,11 @@
 
 class N2SS3 {
 
-    public static $version = '3.0.30';
+    public static $version = '3.0.34';
 
     public static $product = 'smartslider3';
+
+    public static $campaign = 'smartslider3';
 
     public static $source = '';
 
@@ -36,7 +38,7 @@ class N2SS3 {
         );
     }
 
-    public static function api($_posts) {
+    public static function api($_posts, $returnUrl = false) {
 
         $posts = array(
             'product' => self::$product,
@@ -46,7 +48,7 @@ class N2SS3 {
         $posts['license'] = N2SmartsliderLicenseModel::getInstance()
                                                      ->getKey();
     
-        return N2::api($_posts + $posts);
+        return N2::api($_posts + $posts, $returnUrl);
     }
 
     public static function hasApiError($status, $data = array()) {

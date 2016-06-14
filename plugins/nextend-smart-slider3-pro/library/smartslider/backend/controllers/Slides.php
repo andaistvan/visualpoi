@@ -1,7 +1,6 @@
 <?php
 
-class N2SmartsliderBackendSlidesController extends N2SmartSliderController
-{
+class N2SmartsliderBackendSlidesController extends N2SmartSliderController {
 
     public $layoutName = 'default';
 
@@ -11,7 +10,6 @@ class N2SmartsliderBackendSlidesController extends N2SmartSliderController
         N2Loader::import(array(
             'models.Sliders',
             'models.generator',
-            'models.Layouts',
             'models.Layers',
             'models.Item',
             'models.Slides'
@@ -46,7 +44,8 @@ class N2SmartsliderBackendSlidesController extends N2SmartSliderController
                 ), "sidebar");
                 $this->addView("edit", array(
                     "slidesModel" => new N2SmartsliderSlidesModel(),
-                    "sliderId"    => $sliderId
+                    "sliderId"    => $sliderId,
+                    "slider"      => $slider
                 ));
                 $this->render();
 
@@ -73,7 +72,8 @@ class N2SmartsliderBackendSlidesController extends N2SmartSliderController
                 ), "sidebar");
                 $this->addView("edit", array(
                     "slidesModel" => new N2SmartsliderSlidesModel(),
-                    "sliderId"    => $sliderId
+                    "sliderId"    => $sliderId,
+                    "slider"      => $slider
                 ));
                 $this->render();
             }

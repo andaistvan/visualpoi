@@ -127,13 +127,15 @@ class N2GeneratorWooCommerceProductsByFilter extends N2GeneratorAbstract
                 }
 
                 $data[$i] = array(
-                    'title'         => $product->get_title(),
-                    'url'           => $product->get_permalink(),
-                    'description'   => $product->get_post_data()->post_content,
-                    'image'         => N2ImageHelper::dynamic($image),
-                    'thumbnail'     => N2ImageHelper::dynamic($thumbnail),
-                    'price'         => wc_price($product->get_price()),
-                    'regular_price' => wc_price($product->get_regular_price())
+                    'title'                  => $product->get_title(),
+                    'url'                    => $product->get_permalink(),
+                    'description'            => $product->get_post_data()->post_content,
+                    'image'                  => N2ImageHelper::dynamic($image),
+                    'thumbnail'              => N2ImageHelper::dynamic($thumbnail),
+                    'price'                  => wc_price($product->get_price()),
+                    'price_without_currency' => $product->get_price(),
+                    'regular_price'          => wc_price($product->get_regular_price()),
+                    'rating'                 => $product->get_average_rating()
                 );
 
                 if ($product->is_on_sale()) {

@@ -20,6 +20,8 @@ class N2SmartSliderSlide {
 
     protected $underEdit = false;
 
+    public $hasLink = false;
+
     /**
      * @var bool|N2SmartSliderSlidesGenerator
      */
@@ -115,7 +117,7 @@ class N2SmartSliderSlide {
 
         $this->addSlideLink();
 
-        $this->attributes['data-slide-duration'] = floatval($this->parameters->get('slide-duration', 0) / 1000);
+        $this->attributes['data-slide-duration'] = n2_floatval($this->parameters->get('slide-duration', 0) / 1000);
         $this->attributes['data-id']             = $this->id;
 
         $this->classes .= ' n2-ss-slide-' . $this->id;
@@ -155,6 +157,7 @@ class N2SmartSliderSlide {
                 }
             }
             $this->containerAttributes['style'] .= 'cursor:pointer;';
+            $this->hasLink = true;
         }
     }
 

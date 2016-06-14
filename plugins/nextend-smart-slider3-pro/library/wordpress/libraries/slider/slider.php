@@ -1,7 +1,6 @@
 <?php
 
-class N2SmartSlider extends N2SmartSliderAbstract
-{
+class N2SmartSlider extends N2SmartSliderAbstract {
 
     public function __construct($sliderId, $parameters) {
         parent::__construct($sliderId, $parameters);
@@ -14,7 +13,7 @@ class N2SmartSlider extends N2SmartSliderAbstract
 
     public function addCMSFunctions($slider) {
 
-        $slider = do_shortcode(preg_replace('/\[smartslider3 slider=[0-9]+\]/', '', preg_replace('/\[smartslider3 slider="[0-9]+"\]/', '', $slider)));
+        $slider = apply_filters('translate_text', do_shortcode(preg_replace('/\[smartslider3 slider=[0-9]+\]/', '', preg_replace('/\[smartslider3 slider="[0-9]+"\]/', '', $slider))));
 
         return $slider;
     }

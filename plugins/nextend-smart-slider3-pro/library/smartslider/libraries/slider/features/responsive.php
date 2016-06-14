@@ -149,7 +149,8 @@ class N2SmartSliderFeatureResponsive {
             $minimumFontSize['desktopLandscape'] = intval($slider->params->get('desktop-landscape-minimum-font-size', 4));
         }
 
-        if ($slider->params->get('tablet-portrait', 0)) {
+        $tabletPortraitEnabled = $slider->params->get('tablet-portrait', 0);
+        if ($tabletPortraitEnabled) {
             $tabletWidth = intval($slider->params->get('tablet-portrait-width', 800));
         } else {
             $tabletWidth = intval($sliderWidth * N2SmartSliderSettings::get('responsive-default-ratio-tablet-portrait', 70) / 100);
@@ -162,7 +163,7 @@ class N2SmartSliderFeatureResponsive {
                 $modes['tabletPortrait']           = 1;
                 $modeSwitchWidth['tabletPortrait'] = $tabletWidth;
                 $portraitHeight                    = intval($slider->params->get('tablet-portrait-height'));
-                if ($portraitHeight) {
+                if ($tabletPortraitEnabled && $portraitHeight) {
                     $ratioModifiers['tabletPortrait'] = $portraitHeight / ($modeSwitchWidth['tabletPortrait'] / $sliderWidth * $sliderHeight);
                 } else {
                     $ratioModifiers['tabletPortrait'] = $ratioModifiers['desktopPortrait'];
@@ -192,12 +193,13 @@ class N2SmartSliderFeatureResponsive {
             $ratioModifiers['tabletLandscape'] = $ratioModifiers['tabletPortrait'];
         }
 
-
-        if ($slider->params->get('mobile-portrait', 0)) {
+        $mobilePortraitEnabled = $slider->params->get('mobile-portrait', 0);
+        if ($mobilePortraitEnabled) {
             $mobileWidth = intval($slider->params->get('mobile-portrait-width', 440));
         } else {
             $mobileWidth = intval($sliderWidth * N2SmartSliderSettings::get('responsive-default-ratio-mobile-portrait', 50) / 100);
         }
+
         if ($mobileWidth > 0) {
             if ($modeSwitchWidth['tabletPortrait'] > 0) {
                 if ($mobileWidth >= $modeSwitchWidth['tabletPortrait']) {
@@ -212,7 +214,7 @@ class N2SmartSliderFeatureResponsive {
                 $modes['mobilePortrait']           = 1;
                 $modeSwitchWidth['mobilePortrait'] = $mobileWidth;
                 $portraitHeight                    = intval($slider->params->get('mobile-portrait-height'));
-                if ($portraitHeight) {
+                if ($mobilePortraitEnabled && $portraitHeight) {
                     $ratioModifiers['mobilePortrait'] = $portraitHeight / ($modeSwitchWidth['mobilePortrait'] / $sliderWidth * $sliderHeight);
                 } else {
                     $ratioModifiers['mobilePortrait'] = $ratioModifiers['tabletPortrait'];

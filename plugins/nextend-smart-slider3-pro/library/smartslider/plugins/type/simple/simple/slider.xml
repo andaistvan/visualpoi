@@ -5,6 +5,7 @@
       <option value="horizontal">Horizontal</option>
       <option value="vertical">Vertical</option>
       <option value="fade">Fade</option>
+      <option value="crossfade">Crossfade</option>
     </param>
     <param type="group" label="Properties">
       <param name="animation-duration" type="numberautocomplete" label="Duration" style="width:35px;" default="800" values="800,1500,2000">

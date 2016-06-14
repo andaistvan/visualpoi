@@ -1,7 +1,6 @@
 <?php
 
-class N2SmartsliderUpdateModel
-{
+class N2SmartsliderUpdateModel {
 
     private $storage, $version;
 
@@ -73,8 +72,11 @@ class N2SmartsliderUpdateModel
 
         $response = N2SS3::api($posts);
         if (is_string($response)) {
-            if (N2Platform::updateFromZip($response, N2SS3::getUpdateInfo())) {
+            $updateStatus = N2Platform::updateFromZip($response, N2SS3::getUpdateInfo());
+            if ($updateStatus === true) {
                 return 'OK';
+            } else if ($updateStatus != false) {
+                return $updateStatus;
             }
             return 'UPDATE_ERROR';
         }

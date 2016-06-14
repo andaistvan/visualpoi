@@ -1,0 +1,5 @@
+<root>
+    <params name="picasaimages" label="Picasa">
+        <param name="picasaalbums" label="Source album" type="picasaalbums" default="0" multiple="0"/>
+    </params>
+</root>

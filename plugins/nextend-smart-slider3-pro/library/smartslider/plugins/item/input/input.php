@@ -100,14 +100,14 @@ class N2SSPluginItemInput extends N2SSPluginItemAbstract
         $style = N2StyleRenderer::render($data->get('style'), 'heading', $slider->elementId, 'div#' . $slider->elementId . ' ');
 
 
-        $inputFont  = N2FontRenderer::render($data->get('inputfont'), 'paragraph', $slider->elementId, 'div#' . $slider->elementId . ' ', $slider->fontSize);
-        $inputStyle = N2StyleRenderer::render($data->get('inputstyle'), 'heading', $slider->elementId, 'div#' . $slider->elementId . ' ');
+        $inputFont  = N2FontRenderer::render($data->get('inputfont'), 'paragraph', $slider->elementId, 'div#' . $slider->elementId . ' .n2-ss-layer ', $slider->fontSize);
+        $inputStyle = N2StyleRenderer::render($data->get('inputstyle'), 'heading', $slider->elementId, 'div#' . $slider->elementId . ' .n2-ss-layer ');
 
         $td2         = '';
         $buttonLabel = $data->get('buttonlabel');
         if (!empty($buttonLabel)) {
-            $buttonFont  = N2FontRenderer::render($data->get('buttonfont'), 'hover', $slider->elementId, 'div#' . $slider->elementId . ' ', $slider->fontSize);
-            $buttonStyle = N2StyleRenderer::render($data->get('buttonstyle'), 'heading', $slider->elementId, 'div#' . $slider->elementId . ' ');
+            $buttonFont  = N2FontRenderer::render($data->get('buttonfont'), 'hover', $slider->elementId, 'div#' . $slider->elementId . ' .n2-ss-layer ', $slider->fontSize);
+            $buttonStyle = N2StyleRenderer::render($data->get('buttonstyle'), 'heading', $slider->elementId, 'div#' . $slider->elementId . ' .n2-ss-layer');
 
             $td2 = N2Html::tag('td', array(), N2Html::tag('div', array(
                 'style' => 'white-space:nowrap;display:inline-block;',
@@ -135,8 +135,8 @@ class N2SSPluginItemInput extends N2SSPluginItemAbstract
         $style = N2StyleRenderer::render($data->get('style'), 'heading', $slider->elementId, 'div#' . $slider->elementId . ' ');
 
 
-        $inputFont  = N2FontRenderer::render($data->get('inputfont'), 'paragraph', $slider->elementId, 'div#' . $slider->elementId . ' ', $slider->fontSize);
-        $inputStyle = N2StyleRenderer::render($data->get('inputstyle'), 'heading', $slider->elementId, 'div#' . $slider->elementId . ' ');
+        $inputFont  = N2FontRenderer::render($data->get('inputfont'), 'paragraph', $slider->elementId, 'div#' . $slider->elementId . ' .n2-ss-layer ', $slider->fontSize);
+        $inputStyle = N2StyleRenderer::render($data->get('inputstyle'), 'heading', $slider->elementId, 'div#' . $slider->elementId . ' .n2-ss-layer ');
 
         $slider->features->addInitCallback('n2("#' . $id . '").closest(".n2-ss-slide").on("' . $data->get('submit') . '", function(e){n2("#' . $id . '").trigger("submit")})');
 
@@ -159,8 +159,8 @@ class N2SSPluginItemInput extends N2SSPluginItemAbstract
         $buttonLabel = $data->get('buttonlabel');
         if (!empty($buttonLabel)) {
 
-            $buttonFont  = N2FontRenderer::render($data->get('buttonfont'), 'hover', $slider->elementId, 'div#' . $slider->elementId . ' ', $slider->fontSize);
-            $buttonStyle = N2StyleRenderer::render($data->get('buttonstyle'), 'heading', $slider->elementId, 'div#' . $slider->elementId . ' ');
+            $buttonFont  = N2FontRenderer::render($data->get('buttonfont'), 'hover', $slider->elementId, 'div#' . $slider->elementId . ' .n2-ss-layer ', $slider->fontSize);
+            $buttonStyle = N2StyleRenderer::render($data->get('buttonstyle'), 'heading', $slider->elementId, 'div#' . $slider->elementId . ' .n2-ss-layer ');
 
             $td2 = N2Html::tag('td', array(), N2Html::tag('input', array(
                 'style' => 'white-space:nowrap;',

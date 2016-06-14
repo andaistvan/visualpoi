@@ -1,8 +1,7 @@
 <?php
 N2Loader::import('libraries.link.link');
 
-class N2LinkNextSlide
-{
+class N2LinkNextSlide {
 
     public static function parse($argument, &$attributes, $isEditor = false) {
         if (!$isEditor) {
@@ -12,8 +11,7 @@ class N2LinkNextSlide
     }
 }
 
-class N2LinkPreviousSlide
-{
+class N2LinkPreviousSlide {
 
     public static function parse($argument, &$attributes, $isEditor = false) {
         if (!$isEditor) {
@@ -23,8 +21,7 @@ class N2LinkPreviousSlide
     }
 }
 
-class N2LinkGoToSlide
-{
+class N2LinkGoToSlide {
 
     public static function parse($argument, &$attributes, $isEditor = false) {
         if (!$isEditor) {
@@ -34,30 +31,39 @@ class N2LinkGoToSlide
     }
 }
 
-class N2LinkToSlide
-{
+class N2LinkToSlide {
 
     public static function parse($argument, &$attributes, $isEditor = false) {
+
+
         if (!$isEditor) {
-            $attributes['onclick'] = "n2ss.applyAction(this, 'slide', " . (intval($argument) - 1) . "); return false";
+            preg_match('/([0-9]+)(,([0-1]))?/', $argument, $matches);
+            if (!isset($matches[3])) {
+                $attributes['onclick'] = "n2ss.applyAction(this, 'slide', " . (intval($matches[1]) - 1) . "); return false";
+            } else {
+                $attributes['onclick'] = "n2ss.applyAction(this, 'slide', " . (intval($matches[1]) - 1) . ", " . intval($matches[3]) . "); return false";
+            }
         }
         return '#';
     }
 }
 
-class N2LinkToSlideID
-{
+class N2LinkToSlideID {
 
     public static function parse($argument, &$attributes, $isEditor = false) {
         if (!$isEditor) {
-            $attributes['onclick'] = "n2ss.applyAction(this, 'slideToID', " . intval($argument) . "); return false";
+            preg_match('/([0-9]+)(,([0-1]))?/', $argument, $matches);
+            if (!isset($matches[3])) {
+                $attributes['onclick'] = "n2ss.applyAction(this, 'slideToID', " . intval($matches[1]) . "); return false";
+            } else {
+                $attributes['onclick'] = "n2ss.applyAction(this, 'slideToID', " . intval($matches[1]) . ", " . intval($matches[3]) . "); return false";
+            }
         }
         return '#';
     }
 }
 
-class N2LinkSlideEvent
-{
+class N2LinkSlideEvent {
 
     public static function parse($argument, &$attributes, $isEditor = false) {
         if (!$isEditor) {

@@ -2,8 +2,7 @@
 N2Loader::import('libraries.zip.zip_read');
 N2Loader::import('libraries.backup', 'smartslider');
 
-class N2SmartSliderImport
-{
+class N2SmartSliderImport {
 
     /**
      * @var N2SmartSliderBackup
@@ -24,8 +23,8 @@ class N2SmartSliderImport
         $zip        = new N2ZipRead();
         $importData = $zip->read_zip($filePathOrData, $isFilePath);
         if (!isset($importData['data'])) {
-            if(array_key_exists("slider.ss2", $importData)){
-                N2Message::error(n2_('You can\'t import sliders from Smart Slider 2.'));                
+            if (array_key_exists("slider.ss2", $importData)) {
+                N2Message::error(n2_('You can\'t import sliders from Smart Slider 2.'));
             }
             return false;
         }
@@ -58,7 +57,7 @@ class N2SmartSliderImport
                     }
                     if (!$this->imageTranslation[$file]) {
                         $this->imageTranslation[$file] = array_search($file, $this->backup->imageTranslation);
-                    }
+                    }                    
                 }
                 break;
             case 'update':

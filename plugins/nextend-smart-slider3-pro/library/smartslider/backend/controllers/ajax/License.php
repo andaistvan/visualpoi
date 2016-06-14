@@ -1,6 +1,5 @@
 <?php
-class N2SmartsliderBackendLicenseControllerAjax extends N2SmartSliderControllerAjax
-{
+class N2SmartsliderBackendLicenseControllerAjax extends N2SmartSliderControllerAjax {
 
     public function actionAdd() {
         $this->validateToken();
@@ -29,6 +28,7 @@ class N2SmartsliderBackendLicenseControllerAjax extends N2SmartSliderControllerA
         $this->response->respond(array(
             'valid' => true
         ));
+    
     }
 
     public function actionCheck() {
@@ -53,5 +53,6 @@ class N2SmartsliderBackendLicenseControllerAjax extends N2SmartSliderControllerA
             $this->response->respond();
         }
         $this->response->error();
+    
     }
 }

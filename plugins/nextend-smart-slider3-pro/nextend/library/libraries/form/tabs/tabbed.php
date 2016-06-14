@@ -1,13 +1,13 @@
 <?php
 N2Loader::import('libraries.form.tab');
 
-class N2TabTabbed extends N2Tab
-{
+class N2TabTabbed extends N2Tab {
 
     var $_tabs;
 
     function initTabs() {
         if (count($this->_tabs) == 0) {
+
             foreach ($this->_xml->params as $tab) {
                 $test = N2XmlHelper::getAttribute($tab, 'test');
                 if ($test == '' || $this->_form->makeTest($test)) {
@@ -19,7 +19,34 @@ class N2TabTabbed extends N2Tab
                     $this->_tabs[N2XmlHelper::getAttribute($tab, 'name')] = new $class($this->_form, $tab);
                 }
             }
+
+            N2Pluggable::doAction('N2TabTabbed' . N2XmlHelper::getAttribute($this->_xml, 'name'), array(
+                $this
+            ));
         }
+    }
+
+    public function addTabXML($file) {
+        $xml = simplexml_load_string(file_get_contents($file));
+
+        foreach ($xml->params as $tab) {
+            $test = N2XmlHelper::getAttribute($tab, 'test');
+            if ($test == '' || $this->_form->makeTest($test)) {
+                $type = N2XmlHelper::getAttribute($tab, 'type');
+                if ($type == '') $type = 'default';
+                N2Loader::import('libraries.form.tabs.' . $type);
+                $class = 'N2Tab' . ucfirst($type);
+
+                $a                                          = array();
+                $a[N2XmlHelper::getAttribute($tab, 'name')] = new $class($this->_form, $tab);
+                $this->_tabs                                = self::array_insert($this->_tabs, $a, 2);
+                //$this->_tabs[N2XmlHelper::getAttribute($tab, 'name')] = new $class($this->_form, $tab);
+            }
+        }
+    }
+
+    private function array_insert($array, $values, $offset) {
+        return array_slice($array, 0, $offset, true) + $values + array_slice($array, $offset, NULL, true);
     }
 
     function render($control_name) {
@@ -86,7 +113,7 @@ class N2TabTabbed extends N2Tab
             })();
         ');
         ?>
-    <?php
+        <?php
     }
 
 }

@@ -6,6 +6,8 @@ N2Localization::addJS(array(
     'Link',
     'Lightbox',
     'Create lightbox from image, video or iframe.',
+    'Actions',
+    'Create action for click or tap.',
     'Content list',
     'One per line',
     'Autoplay duration',

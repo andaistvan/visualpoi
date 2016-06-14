@@ -49,7 +49,10 @@ class N2SSPluginWidgetBarVertical extends N2SSPluginWidgetAbstract {
      * @return string
      */
     static function render($slider, $id, $params) {
-        N2CSS::addFile(N2Filesystem::translate(dirname(__FILE__) . DIRECTORY_SEPARATOR . 'vertical' . DIRECTORY_SEPARATOR . 'style.min.css'), $id);
+
+        N2LESS::addFile(N2Filesystem::translate(dirname(__FILE__) . DIRECTORY_SEPARATOR . 'vertical' . DIRECTORY_SEPARATOR . 'style.n2less'), $slider->cacheId, array(
+            "sliderid" => $slider->elementId
+        ), NEXTEND_SMARTSLIDER_ASSETS . '/less' . NDS);
         N2JS::addFile(N2Filesystem::translate(dirname(__FILE__) . '/vertical/bar.min.js'), $id);
     
 
@@ -83,11 +86,14 @@ class N2SSPluginWidgetBarVertical extends N2SSPluginWidgetAbstract {
 
         $slides = array();
         for ($i = 0; $i < count($slider->slides); $i++) {
-            $slides[$i] = N2Html::tag('div', array('class' => $fontTitle), N2Translation::_($slider->slides[$i]->getTitle()));
+            $slides[$i] = array(
+                'html'    => N2Html::tag('div', array('class' => $fontTitle), N2Translation::_($slider->slides[$i]->getTitle())),
+                'hasLink' => $slider->slides[$i]->hasLink
+            );
 
             $description = $slider->slides[$i]->getDescription();
             if (!empty($description)) {
-                $slides[$i] .= N2Html::tag('div', array('class' => $fontDescription), N2Translation::_($description));
+                $slides[$i]['html'] .= N2Html::tag('div', array('class' => $fontDescription), N2Translation::_($description));
             }
         }
 
@@ -101,11 +107,11 @@ class N2SSPluginWidgetBarVertical extends N2SSPluginWidgetAbstract {
 
         return N2Html::tag("div", $displayAttributes + $attributes + $attributes2 + array(
                 "class" => $displayClass . "nextend-bar nextend-bar-vertical",
-                "style" => $style . $style2
+                "style" => $style . $style2 . ($slides[$slider->_activeSlide]['hasLink'] ? 'cursor:pointer;' : '')
             ), N2Html::tag("div", $attributes2 + array(
                 "class" => $styleClass,
                 "style" => $style2
-            ), N2Html::tag("div", array(), $slides[$slider->_activeSlide])));
+            ), N2Html::tag("div", array(), $slides[$slider->_activeSlide]['html'])));
     }
 
     public static function prepareExport($export, $params) {

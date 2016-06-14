@@ -2,12 +2,17 @@
 
 N2Loader::import('libraries.slider.generator.abstract', 'smartslider');
 
-class N2GeneratorPostsPosts extends N2GeneratorAbstract
-{
+class N2GeneratorPostsPosts extends N2GeneratorAbstract {
+
+    public function filterName($name) {
+        return $name . N2Translation::getCurrentLocale();
+    }
 
     protected function _getData($count, $startIndex) {
-        global $post;
-        $tmpPost = $post;
+        global $post, $wp_the_query;
+        $tmpPost         = $post;
+        $tmpWp_the_query = $wp_the_query;
+        $wp_the_query    = null;
 
         list($orderBy, $order) = N2Parse::parse($this->data->get('postscategoryorder', 'post_date|*|desc'));
 
@@ -59,9 +64,7 @@ class N2GeneratorPostsPosts extends N2GeneratorAbstract
             $post = $posts[$i];
             setup_postdata($post);
 
-            $record['id'] = $post->ID;
-
-
+            $record['id']          = $post->ID;
             $record['url']         = get_permalink();
             $record['title']       = apply_filters('the_title', get_the_title());
             $record['description'] = $record['content'] = get_the_content();
@@ -88,15 +91,13 @@ class N2GeneratorPostsPosts extends N2GeneratorAbstract
 
             if (class_exists('acf')) {
                 $fields = get_fields($post->ID);
-                if (count($fields)) {
-                    if (is_array($fields) && !empty($fields)) {
-                        foreach ($fields AS $k => $v) {
-                        $k = str_replace('-','',$k);
-                            if (!is_array($v)) {
-                                $record[$k] = $v;
-                            } else if (isset($v['url'])) {
-                                $record[$k] = $v['url'];
-                            }
+                if (count($fields) && is_array($fields) && !empty($fields)) {
+                    foreach ($fields AS $k => $v) {
+                        $k = str_replace('-', '', $k);
+                        if (!is_array($v) && !is_object($v)) {
+                            $record[$k] = $v;
+                        } else if (!is_object($v) && isset($v['url'])) {
+                            $record[$k] = $v['url'];
                         }
                     }
                 }
@@ -106,10 +107,11 @@ class N2GeneratorPostsPosts extends N2GeneratorAbstract
             unset($record);
         }
 
+        $wp_the_query = $tmpWp_the_query;
+
         wp_reset_postdata();
         $post = $tmpPost;
         if ($post) setup_postdata($post);
-
         return $data;
     }
 }

@@ -2,8 +2,7 @@
 
 N2Loader::import('libraries.parse.parse');
 
-abstract class N2SSPluginItemAbstract extends N2PluginBase
-{
+abstract class N2SSPluginItemAbstract extends N2PluginBase {
 
     public $_identifier = 'identifier';
 
@@ -189,8 +188,10 @@ abstract class N2SSPluginItemAbstract extends N2PluginBase
             );
         }
 
-        $tablet = N2Image::scaleImage('image', $image, $lazyLoad->layerImageTablet);
-        $mobile = N2Image::scaleImage('image', $image, $lazyLoad->layerImageMobile);
+        $quality = intval($slider->params->get('optimize-quality', 70));
+
+        $tablet = N2Image::scaleImage('image', $image, $lazyLoad->layerImageTablet, false, $quality);
+        $mobile = N2Image::scaleImage('image', $image, $lazyLoad->layerImageMobile, false, $quality);
 
         if ($image == $tablet && $image == $mobile) {
             return array(

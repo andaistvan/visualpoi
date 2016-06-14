@@ -104,7 +104,10 @@ class N2SSPluginWidgetAutoplayImage extends N2SSPluginWidgetAbstract {
         }
 
         if ($play && $pause) {
-            N2CSS::addFile(N2Filesystem::translate(dirname(__FILE__) . DIRECTORY_SEPARATOR . 'image' . DIRECTORY_SEPARATOR . 'style.min.css'), $id);
+
+            N2LESS::addFile(N2Filesystem::translate(dirname(__FILE__) . DIRECTORY_SEPARATOR . 'image' . DIRECTORY_SEPARATOR . 'style.n2less'), $slider->cacheId, array(
+                "sliderid" => $slider->elementId
+            ), NEXTEND_SMARTSLIDER_ASSETS . '/less' . NDS);
             N2JS::addFile(N2Filesystem::translate(dirname(__FILE__) . '/image/autoplay.min.js'), $id);
         
 
@@ -116,10 +119,10 @@ class N2SSPluginWidgetAutoplayImage extends N2SSPluginWidgetAbstract {
             list($style, $attributes) = self::getPosition($params, self::$key);
 
 
-            N2JS::addInline('new NextendSmartSliderWidgetAutoplayImage("' . $id . '", ' . floatval($params->get(self::$key . 'responsive-desktop')) . ', ' . floatval($params->get(self::$key . 'responsive-tablet')) . ', ' . floatval($params->get(self::$key . 'responsive-mobile')) . ');');
+            N2JS::addInline('new NextendSmartSliderWidgetAutoplayImage("' . $id . '", ' . n2_floatval($params->get(self::$key . 'responsive-desktop')) . ', ' . n2_floatval($params->get(self::$key . 'responsive-tablet')) . ', ' . n2_floatval($params->get(self::$key . 'responsive-mobile')) . ');');
 
             $html = N2Html::tag('div', $displayAttributes + $attributes + array(
-                    'class' => $displayClass . $styleClass . 'nextend-autoplay nextend-autoplay-image',
+                    'class' => $displayClass . $styleClass . 'nextend-autoplay n2-ib nextend-autoplay-image',
                     'style' => $style
                 ), N2Html::image($play, 'Play', array(
                     'class'        => 'nextend-autoplay-play n2-ow',

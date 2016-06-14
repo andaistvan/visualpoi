@@ -186,8 +186,16 @@ class N2SmartSliderExport {
     
 
         foreach ($css['files'] AS $file) {
-            $path               = 'css/' . basename($file);
-            $this->files[$path] = file_get_contents($file);
+            $path = 'css/' . basename($file);
+
+            $this->basePath = dirname($file);
+            $this->baseUrl  = N2Filesystem::pathToAbsoluteURL($this->basePath);
+
+            $this->files[$path] = preg_replace_callback('#url\([\'"]?([^"\'\)]+)[\'"]?\)#', array(
+                $this,
+                'replaceCSSImage'
+            ), file_get_contents($file));
+
             $headHTML .= N2Html::style($path, true, array(
                     'media' => 'screen, print'
                 )) . "\n";
@@ -282,6 +290,38 @@ class N2SmartSliderExport {
         } else {
             return $found[0];
         }
+    }
+
+    public function replaceCSSImage($matches) {
+        if (substr($matches[1], 0, 5) == 'data:') return $matches[0];
+        if (substr($matches[1], 0, 4) == 'http') return $matches[0];
+        if (substr($matches[1], 0, 2) == '//') return $matches[0];
+
+        $exploded = explode('?', $matches[1]);
+
+        $path = realpath($this->basePath . '/' . $exploded[0]);
+        if ($path === false) {
+            return 'url(' . str_replace(array(
+                'http://',
+                'https://'
+            ), '//', $this->baseUrl) . '/' . $matches[1] . ')';
+        }
+
+        $path = N2Filesystem::fixPathSeparator($path);
+
+        if (!isset($this->imageTranslation[$path])) {
+            $fileName = strtolower(basename($path));
+            while (in_array($fileName, $this->usedNames)) {
+                $fileName = $this->uniqueCounter . $fileName;
+                $this->uniqueCounter++;
+            }
+            $this->usedNames[]                  = $fileName;
+            $this->files['images/' . $fileName] = file_get_contents($path);
+            $this->imageTranslation[$path]      = $fileName;
+        } else {
+            $fileName = $this->imageTranslation[$path];
+        }
+        return str_replace($matches[1], '../images/' . $fileName, $matches[0]);
     }
 
     public function replaceLightboxImages($found) {

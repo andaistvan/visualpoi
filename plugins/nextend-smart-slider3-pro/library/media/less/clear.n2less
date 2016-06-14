@@ -8,8 +8,8 @@
   [dir="rtl"] & {
     text-align: right;
   }
-  
-  [dir="rtl"] & .n2-ss-slide-background{
+
+  [dir="rtl"] & .n2-ss-slide-background {
     text-align: left;
   }
 
@@ -93,7 +93,7 @@
   ul, li, img, a, p, ol, textarea, input, button {
     -moz-transition: none 0s;
     -webkit-transition: none 0s;
-    -o-transition: none 0s ;
+    -o-transition: none 0s;
     transition: none 0s;
   }
 
@@ -116,7 +116,7 @@
     height: 100%;
   }
 
-  .n2-ss-slide-background img {
+  .n2-ss-slide .n2-ss-slide-background img {
     max-width: none;
   }
 
@@ -145,6 +145,11 @@
 
   .n2-ss-slide-tile {
     background-repeat: repeat;
+    background-position: 50% 50%;
+  }
+
+  .n2-ss-slide-fixed {
+    background-size: cover;
     background-position: 50% 50%;
   }
 
@@ -328,7 +333,7 @@
   }
 
   .n2-fake-input,
-  input {
+  input.n2-ow {
     height: auto;
     width: auto;
     -webkit-box-sizing: border-box;
@@ -349,21 +354,23 @@
     box-shadow: none;
   }
 
-  input:focus {
+  input.n2-ow:focus {
     outline: 0;
   }
 
   .n2-fake-input,
-  input[placeholder] {
+  input.n2-ow[placeholder] {
     overflow: hidden;
     text-overflow: clip;
   }
   ::-moz-placeholder {
     text-overflow: clip;
+    color: inherit;
   }
   /* firefox 19+ */
   input:-moz-placeholder {
     text-overflow: clip;
+    color: inherit;
   }
 
   table {

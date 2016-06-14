@@ -1,8 +1,7 @@
 <?php
 N2Loader::import('libraries.slider.generator.abstract', 'smartslider');
 
-class N2SmartSliderSlidesGenerator
-{
+class N2SmartSliderSlidesGenerator {
 
     private static $localCache = array();
 
@@ -16,6 +15,9 @@ class N2SmartSliderSlidesGenerator
     public $currentGenerator;
 
     private $slider;
+
+    /** @var  N2GeneratorAbstract */
+    private $dataSource;
 
     /**
      * @param $slide N2SmartSliderSlide
@@ -64,8 +66,18 @@ class N2SmartSliderSlidesGenerator
 
     private function getData() {
         if (!isset(self::$localCache[$this->slide->generator_id])) {
-            $cache                                        = new N2CacheManifestGenerator($this->slider, $this);
-            self::$localCache[$this->slide->generator_id] = $cache->makeCache('generator' . $this->currentGenerator['id'], md5(json_encode($this->currentGenerator) . max($this->slide->parameters->get('record-slides'), 1)), array(
+
+
+            $info = $this->generatorModel->getGeneratorInfo($this->currentGenerator['group'], $this->currentGenerator['type']);
+
+            require_once($info->path . '/generator.php');
+            $class = 'N2Generator' . $this->currentGenerator['group'] . $this->currentGenerator['type'];
+            /** @var N2GeneratorAbstract $dataSource */
+            $this->dataSource = new $class($info, $this->currentGenerator['params']);
+
+            $cache = new N2CacheManifestGenerator($this->slider, $this);
+            $name  = $this->dataSource->filterName('generator' . $this->currentGenerator['id']);
+            self::$localCache[$this->slide->generator_id] = $cache->makeCache($name, $this->dataSource->hash(json_encode($this->currentGenerator) . max($this->slide->parameters->get('record-slides'), 1)), array(
                 $this,
                 'getNotCachedData'
             ));
@@ -75,15 +87,7 @@ class N2SmartSliderSlidesGenerator
     }
 
     public function getNotCachedData() {
-
-        $info = $this->generatorModel->getGeneratorInfo($this->currentGenerator['group'], $this->currentGenerator['type']);
-
-        require_once($info->path . '/generator.php');
-        $class = 'N2Generator' . $this->currentGenerator['group'] . $this->currentGenerator['type'];
-        /** @var N2GeneratorAbstract $dataSource */
-        $dataSource = new $class($info, $this->currentGenerator['params']);
-
-        return $dataSource->getData(max($this->slide->parameters->get('record-slides'), 1), max($this->currentGenerator['params']->get('record-start'), 1), $this->getSlideGroup());
+        return $this->dataSource->getData(max($this->slide->parameters->get('record-slides'), 1), max($this->currentGenerator['params']->get('record-start'), 1), $this->getSlideGroup());
     }
 
     public function setNextCacheRefresh($time) {

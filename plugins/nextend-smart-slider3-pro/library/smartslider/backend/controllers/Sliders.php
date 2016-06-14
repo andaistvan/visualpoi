@@ -1,7 +1,6 @@
 <?php
 
-class N2SmartsliderBackendSlidersController extends N2SmartSliderController
-{
+class N2SmartsliderBackendSlidersController extends N2SmartSliderController {
 
     public function initialize() {
         parent::initialize();
@@ -15,7 +14,6 @@ class N2SmartsliderBackendSlidersController extends N2SmartSliderController
 
     public function actionIndex() {
         N2Loader::import(array(
-            'models.Layouts',
             'models.SliderItems'
         ), 'smartslider');
 
@@ -58,6 +56,7 @@ class N2SmartsliderBackendSlidersController extends N2SmartSliderController
         header('Content-type: application/zip');
         echo $zip->file();
         n2_exit(true);
+    
     }
 
     public function actionRestoreByUpload() {
@@ -92,8 +91,8 @@ class N2SmartsliderBackendSlidersController extends N2SmartSliderController
                         $data = new N2Data(N2Request::getVar('slider'));
 
                         N2Loader::import('libraries.import', 'smartslider');
-                        $import   = new N2SmartSliderImport();
-                        if($restore){
+                        $import = new N2SmartSliderImport();
+                        if ($restore) {
                             $import->enableRestore();
                         }
                         $sliderId = $import->import($_FILES['slider']['tmp_name']['import-file'], $data->get('image-mode', 'clone'), $data->get('linked-visuals', 0));
@@ -126,10 +125,12 @@ class N2SmartsliderBackendSlidersController extends N2SmartSliderController
             }
             $this->render();
         }
+    
     }
 
     public function actionRestoreFromServer() {
         $this->actionImportFromServer(true);
+    
     }
 
     public function actionImportFromServer($restore = false) {
@@ -147,8 +148,8 @@ class N2SmartsliderBackendSlidersController extends N2SmartSliderController
                         $dir = N2Platform::getPublicDir();
                         if (N2Filesystem::fileexists($dir . '/' . $file)) {
                             N2Loader::import('libraries.import', 'smartslider');
-                            $import   = new N2SmartSliderImport();
-                            if($restore){
+                            $import = new N2SmartSliderImport();
+                            if ($restore) {
                                 $import->enableRestore();
                             }
                             $sliderId = $import->import($dir . '/' . $file, $data->get('image-mode', 'clone'), $data->get('linked-visuals', 0));
@@ -185,5 +186,6 @@ class N2SmartsliderBackendSlidersController extends N2SmartSliderController
             }
             $this->render();
         }
+    
     }
 }
