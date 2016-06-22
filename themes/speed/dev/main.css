@@ -2332,4 +2332,105 @@ a:focus {
 #section3 {
   background: black; }
 
+#section6 {
+  background: black; }
+
+#rolunk-cont {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row; }
+  #rolunk-cont .left-col {
+    width: 35%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    #rolunk-cont .left-col h3 {
+      font-weight: bold; }
+  #rolunk-cont .right-col {
+    width: 65%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 35px; }
+    #rolunk-cont .right-col p {
+      font-size: 16px; }
+    #rolunk-cont .right-col p.name {
+      font-size: 30px;
+      font-weight: bold; }
+
+@media (max-width: 820px) {
+  #section6 .main-container {
+    padding: 30px 0 0 0; }
+
+  #rolunk-cont {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    #rolunk-cont .left-col {
+      width: 100%; }
+      #rolunk-cont .left-col h3 {
+        text-align: center; }
+    #rolunk-cont .right-col {
+      width: 100%; } }
+#section7 {
+  background: #060608;
+  background-image: url(img/kapcsolat-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover; }
+
+#kapcsolat-cont h3 {
+  padding: 30px 0 0 0; }
+#kapcsolat-cont p {
+  text-align: center; }
+#kapcsolat-cont a {
+  text-align: center;
+  color: white; }
+#kapcsolat-cont a:hover {
+  color: #b8b8b8; }
+
+.ninja-forms-required-items {
+  text-align: center;
+  margin-bottom: 10px; }
+
+#ninja_forms_field_9 {
+  height: 149px;
+  margin-bottom: 10px; }
+
+input#ninja_forms_field_6.ninja-forms-field {
+  box-shadow: none;
+  border: none;
+  padding: 10px;
+  text-align: center;
+  margin: 0 auto;
+  display: table; }
+
 /*# sourceMappingURL=main.css.map */

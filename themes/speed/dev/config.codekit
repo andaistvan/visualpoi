@@ -4203,6 +4203,17 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
+	"\/img\/kapcsolat-bg.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 110455,
+		"inputAbbreviatedPath": "\/img\/kapcsolat-bg.jpg",
+		"outputAbbreviatedPath": "\/img\/kapcsolat-bg.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/visual-poi-logo.png": {
 		"fileType": 32768,
 		"ignore": 0,

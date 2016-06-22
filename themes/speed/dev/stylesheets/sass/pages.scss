@@ -58,3 +58,108 @@
 #section3{
    background: black;
 }
+
+// **************************************
+// section6 - rólunk
+// **************************************
+#section6{
+   background: black;
+}
+
+#rolunk-cont{
+   display: flex;
+   flex-direction: row;
+   .left-col{
+      width: 35%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      h3{
+         font-weight: bold;
+      }
+   }
+   .right-col{
+      width: 65%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 35px;
+      p{
+         font-size: 16px;
+      }
+      p.name{
+         font-size: 30px;
+         font-weight: bold;
+      }
+   }
+}
+
+@media (max-width: 820px) {
+   #section6{
+      .main-container{
+         padding: 30px 0 0 0;
+      }
+   }
+   #rolunk-cont{
+      flex-direction: column;
+      .left-col{
+         width: 100%;
+         h3{
+            text-align: center;
+         }
+      }
+      .right-col{
+         width: 100%;
+      }
+   }
+}
+
+// **************************************
+// section7 - kapcsolat
+// **************************************
+#section7{
+   background: $prod-bg;
+   background-image: url(img/kapcsolat-bg.jpg);
+   background-repeat: no-repeat;
+   background-position: right;
+   background-size: cover;
+}
+
+#kapcsolat-cont{
+   h3{
+      padding: 30px 0 0 0;
+   }
+   p{
+      text-align: center;
+   }
+   a{
+      text-align: center;
+      color: white;
+   }
+   a:hover{
+      color: rgb(184, 184, 184);
+   }
+}
+
+// *************************
+// kapcsolat / ninja form
+// *************************
+
+.ninja-forms-required-items{
+   text-align: center;
+   margin-bottom: 10px;
+}
+
+#ninja_forms_field_9{ //message
+   height: 149px;
+   margin-bottom: 10px;
+}
+
+input#ninja_forms_field_6.ninja-forms-field{ //submnit
+   box-shadow: none;
+   border: none;
+   padding: 10px;
+   text-align: center;
+   margin: 0 auto;
+   display: table;
+}
