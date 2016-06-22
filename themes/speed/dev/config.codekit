@@ -4203,6 +4203,28 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
+	"\/img\/visual-poi-logo.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 13481,
+		"inputAbbreviatedPath": "\/img\/visual-poi-logo.png",
+		"outputAbbreviatedPath": "\/img\/visual-poi-logo.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/visual-poi-product-bg.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 633874,
+		"inputAbbreviatedPath": "\/img\/visual-poi-product-bg.png",
+		"outputAbbreviatedPath": "\/img\/visual-poi-product-bg.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/main.css": {
 		"fileType": 16,
 		"ignore": 1,

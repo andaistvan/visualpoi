@@ -20,55 +20,53 @@
 <body <?php body_class(); ?>>
 <div id="page" class="site">
 
-   <div class="row header">
-      <div id="teszt" class="large-12 columns">
+   <header class="header">
 
          <div class="site-branding">
-   			<?php
-               if (is_front_page() && is_home()) : ?>
-   				<h1 class="site-title"><a href="<?php echo esc_url(home_url('/')); ?>" rel="home"><?php bloginfo('name'); ?></a></h1>
-   			<?php else : ?>
-   				<p class="site-title"><a href="<?php echo esc_url(home_url('/')); ?>" rel="home"><?php bloginfo('name'); ?></a></p>
-   			<?php
-               endif;
-
-               $description = get_bloginfo('description', 'display');
-               if ($description || is_customize_preview()) : ?>
-   				<p class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></p>
-   			<?php
-               endif; ?>
+            <a href="#section_one" rel="m_PageScroll2id">
+               <div class="logo-cont"></div>
+            </a>
    		</div><!-- .site-branding -->
 
-      </div><!-- small-12 columns -->
 
-      <div class="large-12 columns">
-         <div data-sticky-container>
-            <div data-sticky data-margin-top='0' data-top-anchor="teszt:bottom" data-btm-anchor="content:bottom">
+         <!-- <div class="head-right-cont"> -->
+
+
+         <div class="social-cont-lowres">
+            <a href="#"><img src="<?php bloginfo('template_url'); ?>/dev/img/icon-facebook.svg" alt="facebook icon" /></a>
+            <a href="#"><img src="<?php bloginfo('template_url'); ?>/dev/img/icon-instagram.svg" alt="instagram icon" /></a>
+            <a href="#"><img src="<?php bloginfo('template_url'); ?>/dev/img/icon-youtube.svg" alt="youtube icon" /></a>
+         </div>
+
 
             <!-- .site-navigation -->
-               <?php
-               echo'
+            <?php
+            echo'
+            <div class="nav-cont">
+               <div id="top-bar-right">';
+                    wp_nav_menu(array(
+                        'container' => false,
+                        'menu' => __('Top Bar Menu', 'speed'),
+                        'menu_class' => 'dropdown menu',
+                        'theme_location' => 'topbar-menu',
+                        'items_wrap' => '<ul id="%1$s" class="%2$s" data-dropdown-menu>%3$s</ul>',
+                        //Recommend setting this to false, but if you need a fallback...
+                        'fallback_cb' => 'f6_topbar_menu_fallback',
+                        'walker' => new F6_TOPBAR_MENU_WALKER(),
+                    ));
+                echo'
+               </div>
+            </div>'; ?><!-- .site-navigation -->
 
-               <div class="top-bar fluid">
-                  <div class="top-bar-right">';
-                       wp_nav_menu(array(
-                           'container' => false,
-                           'menu' => __('Top Bar Menu', 'speed'),
-                           'menu_class' => 'dropdown menu',
-                           'theme_location' => 'topbar-menu',
-                           'items_wrap' => '<ul id="%1$s" class="%2$s" data-dropdown-menu>%3$s</ul>',
-                           //Recommend setting this to false, but if you need a fallback...
-                           'fallback_cb' => 'f6_topbar_menu_fallback',
-                           'walker' => new F6_TOPBAR_MENU_WALKER(),
-                       ));
-                   echo'
-                  </div>
-               </div>'; ?><!-- .site-navigation -->
-            </div><!-- sticky data.-->
-         </div><!-- data-sticky-container -->
-      </div><!-- small-12 columns sticky cont.-->
+            <div class="social-cont">
+               <a href="#"><img src="<?php bloginfo('template_url'); ?>/dev/img/icon-facebook.svg" alt="facebook icon" /></a>
+               <a href="#"><img src="<?php bloginfo('template_url'); ?>/dev/img/icon-instagram.svg" alt="instagram icon" /></a>
+               <a href="#"><img src="<?php bloginfo('template_url'); ?>/dev/img/icon-youtube.svg" alt="youtube icon" /></a>
+            </div>
 
-   </div><!-- .row -->
+         <!-- </div> -->
+         <!-- head-right-cont -->
+   </header><!-- header -->
 
 	<div id="content" class="site-content">
       <!-- <div class="row"> -->

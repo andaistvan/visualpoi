@@ -4,19 +4,83 @@ body{
    color: white;
    font-size: 16px;
 }
+
+#page{
+   margin-top: -15px;
+}
+
+.clear{
+   clear: both;
+}
 // **************************************
 // header
 // **************************************
-.sticky-container{
-   width: 100%;
-}
-
-.sticky{
-   width: 100%;
-}
 
 .header{
    width: 100%;
+   z-index: 999;
+   position: fixed;
+   padding: 10px 20px 10px 20px;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.site-branding{
+   display: inline-block;
+}
+
+.logo-cont{
+   background-image: url(img/visual-poi-logo.png);
+   background-repeat: no-repeat;
+   background-position: center;
+   display: inline-block;
+   width: 98px;
+   height: 131px;
+   float: left;
+}
+
+
+.nav-cont{
+   display: inline-block;
+   float: right;
+}
+
+.social-cont{
+   a{
+      img{
+         margin: 0 5px;
+      }
+   }
+}
+
+.social-cont-lowres{
+   display: none;
+   a{
+      img{
+         margin: 0 5px;
+      }
+   }
+}
+
+@media (max-width: 980px){
+   .header{
+      display: block;
+      padding: 20px 20px 0 20px;
+   }
+   .nav-cont{
+      position: absolute;
+      right: 0px;
+      margin: 55px 20px 0 0;
+   }
+   .social-cont{
+      display: none;
+   }
+   .social-cont-lowres{
+      display: block;
+      float: right;
+   }
 }
 // **************************************
 // footer
@@ -51,20 +115,10 @@ body{
 #section3,
 #section4,
 #section5,
-#section6{
+#section6,
+#section7{
    width: 100%;
    min-height: 400px;
    height: auto;
-   background: rgb(125, 224, 255);
-   border: 1px solid rgb(0, 194, 255);
-}
-
-// **************************************
-// smooth scrolling
-// **************************************
-.menu-item a.mPS2id-highlight {
-   border: 1px solid rgb(0, 194, 255);}
-
-a:focus {
-	outline: none;
+   // border: 1px solid rgb(0, 194, 255);
 }

@@ -10,6 +10,44 @@ msgstr ""
 "X-Generator: GlotPress/2.1.0-alpha\n"
 "Project-Id-Version: Development (trunk)\n"
 
+#: class.akismet-cli.php:43
+msgid "Failed to connect to Akismet."
+msgstr ""
+
+#: class.akismet.php:454
+msgid "Comment not found."
+msgstr ""
+
+#: class.akismet-cli.php:84
+msgid "Processed %d comment."
+msgid_plural "Processed %d comments."
+msgstr[0] ""
+msgstr[1] ""
+
+#: class.akismet-cli.php:85
+msgid "%d comment moved to Spam."
+msgid_plural "%d comments moved to Spam."
+msgstr[0] ""
+msgstr[1] ""
+
+#: class.akismet-cli.php:88
+msgid "%d comment could not be checked."
+msgid_plural "%d comments could not be checked."
+msgstr[0] ""
+msgstr[1] ""
+
+#: class.akismet-cli.php:36
+msgid "Comment #%d is spam."
+msgstr ""
+
+#: class.akismet-cli.php:39
+msgid "Comment #%d is not spam."
+msgstr ""
+
+#: class.akismet-cli.php:46
+msgid "Comment #%d could not be checked."
+msgstr ""
+
 #: views/config.php:30
 msgid "%s missed spam"
 msgid_plural "%s missed spam"
@@ -94,19 +132,19 @@ msgstr "Az Akismet előfizetési csomag lejárt."
 msgid "<strong>Almost done</strong> - activate Akismet and say goodbye to spam"
 msgstr "<strong>Majdnem készen vagyunk</strong> - kapcsoljuk be az Akismet-et, és bcsúzzunk el a spam-ektől"
 
-#: class.akismet-admin.php:904
+#: class.akismet-admin.php:888
 msgid "Akismet has saved you %d minute!"
 msgid_plural "Akismet has saved you %d minutes!"
 msgstr[0] ""
 msgstr[1] ""
 
-#: class.akismet-admin.php:902
+#: class.akismet-admin.php:886
 msgid "Akismet has saved you %d hour!"
 msgid_plural "Akismet has saved you %d hours!"
 msgstr[0] ""
 msgstr[1] ""
 
-#: class.akismet-admin.php:900
+#: class.akismet-admin.php:884
 msgid "Akismet has saved you %s day!"
 msgid_plural "Akismet has saved you %s days!"
 msgstr[0] ""
@@ -137,51 +175,51 @@ msgstr ""
 msgid "In 2012, Akismet began using subscription plans for all accounts (even free ones). A plan has not been assigned to your account, and we&#8217;d appreciate it if you&#8217;d <a href=\"%s\" target=\"_blank\">sign into your account</a> and choose one."
 msgstr ""
 
-#: class.akismet-admin.php:584
+#: class.akismet-admin.php:568
 msgid "Akismet was unable to recheck this comment (response: %s)."
 msgstr ""
 
-#: class.akismet-admin.php:598
+#: class.akismet-admin.php:582
 msgid "%1$s changed the comment status to %2$s."
 msgstr ""
 
-#: class.akismet-admin.php:579
+#: class.akismet-admin.php:563
 msgid "Akismet was unable to check this comment (response: %s) but will automatically retry later."
 msgstr ""
 
-#: class.akismet-admin.php:565
+#: class.akismet-admin.php:549
 msgid "%s reported this comment as not spam."
 msgstr ""
 
-#: class.akismet-admin.php:568
+#: class.akismet-admin.php:552
 msgid "This comment was reported as not spam."
 msgstr ""
 
-#: class.akismet-admin.php:560
+#: class.akismet-admin.php:544
 msgid "This comment was reported as spam."
 msgstr ""
 
-#: class.akismet-admin.php:557
+#: class.akismet-admin.php:541
 msgid "%s reported this comment as spam."
 msgstr ""
 
-#: class.akismet-admin.php:550
+#: class.akismet-admin.php:534
 msgid "Akismet cleared this comment."
 msgstr "Az Akismet megtisztította ezt a hozzászólást."
 
-#: class.akismet-admin.php:553
+#: class.akismet-admin.php:537
 msgid "Comment was caught by wp_blacklist_check."
 msgstr "A hozzászólás fennakadt a wp_blacklist_check listán."
 
-#: class.akismet-admin.php:541
+#: class.akismet-admin.php:525
 msgid "Akismet re-checked and caught this comment as spam."
 msgstr "Az Akismet megismételte az ellenőrzést, és ezt a hozzászólást spam-nek tartja."
 
-#: class.akismet-admin.php:544
+#: class.akismet-admin.php:528
 msgid "Akismet caught this comment as spam."
 msgstr "Az Akismet ezt a hozzászólást spam-nek tartja."
 
-#: class.akismet-admin.php:547
+#: class.akismet-admin.php:531
 msgid "Akismet re-checked and cleared this comment."
 msgstr "Az Akismet megismételte az ellenőrzést, és ezt a hozzászólást kitakarította."
 
@@ -235,7 +273,7 @@ msgstr ""
 msgid "Used by millions, Akismet is quite possibly the best way in the world to <strong>protect your blog from spam</strong>. It keeps your site protected even while you sleep. To get started: 1) Click the \"Activate\" link to the left of this description, 2) <a href=\"https://akismet.com/get/\">Sign up for an Akismet plan</a> to get an API key, and 3) Go to your Akismet configuration page, and save your API key."
 msgstr ""
 
-#: class.akismet-admin.php:802
+#: class.akismet-admin.php:786
 msgid "Please check your <a href=\"%s\">Akismet configuration</a> and contact your web host if problems persist."
 msgstr "Ellenőrizzük az <a href=\"%s\">Akismet beállításai</a>t, és amennyiben a probléma továbbra is fennáll, lépjünk kapcsolatba a tárhely-szolgáltatónkkal."
 
@@ -413,10 +451,10 @@ msgstr ""
 msgid "Comment History"
 msgstr "Hozzászólás története"
 
-#. #-#-#-#-#  tmp-akismet.pot (Akismet 3.1.11a1)  #-#-#-#-#
+#. #-#-#-#-#  tmp-akismet.pot (Akismet 3.2a1)  #-#-#-#-#
 #. Plugin Name of the plugin/theme
 #: class.akismet-admin.php:93 class.akismet-admin.php:95
-#: class.akismet-admin.php:859 views/config.php:3
+#: class.akismet-admin.php:843 views/config.php:3
 msgid "Akismet"
 msgstr "Akismet"
 
@@ -500,7 +538,7 @@ msgid "On this page, you are able to enter/remove an API key, view account infor
 msgstr "Ezen az oldalon, lehetséges megadni vagy eltávolítani az API kulcsot, megtekinteni a fiók információkat és a statisztikákat."
 
 #: class.akismet-admin.php:86 class.akismet-admin.php:209
-#: class.akismet-admin.php:618 views/config.php:56 views/stats.php:2
+#: class.akismet-admin.php:602 views/config.php:56 views/stats.php:2
 msgid "Settings"
 msgstr "Beállítások"
 
@@ -591,45 +629,45 @@ msgstr "Jelenleg üres a <a href='%s'>kéretlen üzenetek moderációs sora</a>.
 msgid "Check for Spam"
 msgstr "Spam-ellenőrzés"
 
-#: class.akismet-admin.php:472
+#: class.akismet-admin.php:456
 msgid "Awaiting spam check"
 msgstr "Spam ellenőrzésre vár"
 
-#: class.akismet-admin.php:476
+#: class.akismet-admin.php:460
 msgid "Flagged as spam by Akismet"
 msgstr "Akismet által spam-nek jelölve"
 
-#: class.akismet-admin.php:478
+#: class.akismet-admin.php:462
 msgid "Cleared by Akismet"
 msgstr "Akismet által felügyelt"
 
-#: class.akismet-admin.php:482
+#: class.akismet-admin.php:466
 msgid "Flagged as spam by %s"
 msgstr "Spamnak jelölte: %s"
 
-#: class.akismet-admin.php:484
+#: class.akismet-admin.php:468
 msgid "Un-spammed by %s"
 msgstr "Spam-jelölés %s által megszüntetve"
 
-#: class.akismet-admin.php:496 class.akismet-admin.php:504
+#: class.akismet-admin.php:480 class.akismet-admin.php:488
 msgid "View comment history"
 msgstr "Hozzászólás történetének megtekintése"
 
-#: class.akismet-admin.php:496
+#: class.akismet-admin.php:480
 msgid "History"
 msgstr "Előzmények"
 
-#: class.akismet-admin.php:512
+#: class.akismet-admin.php:496
 msgid "%s approved"
 msgid_plural "%s approved"
 msgstr[0] "%s elfogadva"
 msgstr[1] "%s elfogadva"
 
-#: class.akismet-admin.php:606
+#: class.akismet-admin.php:590
 msgid "%s ago"
 msgstr "%s telt el a bejegyzés óta"
 
-#: class.akismet-admin.php:897
+#: class.akismet-admin.php:881
 msgid "Cleaning up spam takes time."
 msgstr "A spam eltakarítása időbe kerül."
 
@@ -655,23 +693,23 @@ msgid_plural "<strong class=\"count\">%1$s spam</strong> blocked by <strong>Akis
 msgstr[0] "<strong class=\"count\">%1$s spam</strong> került az <strong>Akismet</strong> által blokkolásra."
 msgstr[1] "<strong class=\"count\">%1$s spam</strong> került az <strong>Akismet</strong> által blokkolásra."
 
-#: class.akismet-admin.php:592
+#: class.akismet-admin.php:576
 msgid "Comment status was changed to %s"
 msgstr "Hozzászólás állapota erre változott: %s"
 
-#: class.akismet-admin.php:572
+#: class.akismet-admin.php:556
 msgid "Akismet caught this comment as spam during an automatic retry."
 msgstr "Az Akismet ezt a hozzászólást spam-ként érzékelte egy automatikus válaszban."
 
-#: class.akismet-admin.php:575
+#: class.akismet-admin.php:559
 msgid "Akismet cleared this comment during an automatic retry."
 msgstr "A hozzászólást az Akismet tisztította meg egy automatikus ismétlés közben."
 
-#: class.akismet.php:1096
+#: class.akismet.php:1141
 msgid "Akismet %s requires WordPress %s or higher."
 msgstr "Az Akismet %s használatához WordPress %s, vagy frissebb verzió szükséges."
 
-#: class.akismet.php:1096 views/notice.php:24
+#: class.akismet.php:1141 views/notice.php:24
 msgid "Please <a href=\"%1$s\">upgrade WordPress</a> to a current version, or <a href=\"%2$s\">downgrade to version 2.4 of the Akismet plugin</a>."
 msgstr "<a href=\"%1$s\">Frissítsük a WordPress.t</a> az aktuális verzióra, vagy <a href=\"%2$s\">használjuk az Akismet bővítmény 2.4-es verzióját</a>."
 
