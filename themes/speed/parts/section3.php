@@ -1,15 +1,10 @@
 <a id="section_three"></a>
-
+<!-- section3 - galéria video -->
    <div id="section3">
-      <div class="row">
-         <div class="medium-4 columns">
-
-         </div>
-         <div class="medium-4 columns">
-            <h2>section 3</h2>
-         </div>
-         <div class="medium-4 columns">
-
-         </div>
+      <div class="main-container">
+         <?php echo do_shortcode('[smartslider3 slider=3]');?>
       </div>
-   </div>
+         <?php
+         echo do_shortcode('[robo-gallery id="28"]');
+         ?>
+   </div><!-- section3 -->

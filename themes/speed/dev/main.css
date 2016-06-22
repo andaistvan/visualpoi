@@ -2093,6 +2093,31 @@ custom styles
 /*--------------------------------------------------------------
 # typography
 --------------------------------------------------------------*/
+body {
+  background: #203247;
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  font-size: 16px;
+  text-align: left; }
+
+h1 {
+  font-weight: bold;
+  text-align: left;
+  font-size: 50px; }
+
+h2 {
+  font-weight: bold;
+  text-align: center;
+  font-size: 35px; }
+
+h3 {
+  font-weight: normal;
+  text-align: center;
+  font-size: 30px; }
+
+p {
+  font-size: 20px; }
+
 /*--------------------------------------------------------------
 # navigation
 --------------------------------------------------------------*/
@@ -2131,12 +2156,6 @@ a:focus {
 /*--------------------------------------------------------------
 # site modules
 --------------------------------------------------------------*/
-body {
-  background: #203247;
-  font-family: 'Open Sans', sans-serif;
-  color: white;
-  font-size: 16px; }
-
 #page {
   margin-top: -15px; }
 
@@ -2230,8 +2249,16 @@ body {
 #section6,
 #section7 {
   width: 100%;
-  min-height: 400px;
-  height: auto; }
+  min-height: 400px; }
+
+.section-fluid {
+  width: 100%; }
+
+.main-container {
+  width: 90%;
+  max-width: 1040px;
+  margin: 0 auto;
+  display: table; }
 
 /*--------------------------------------------------------------
 # widgets
@@ -2243,6 +2270,66 @@ body {
 # pages
 --------------------------------------------------------------*/
 #section2 {
-  background: #060608; }
+  background: #060608;
+  background-image: url(img/visual-poi-product-bg.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover; }
+
+#visual-poi-cont {
+  width: 60%;
+  height: 600px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  #visual-poi-cont .text-cont {
+    background: #060608;
+    filter: alpha(opacity=60);
+    /* IE */
+    -moz-opacity: 0.6;
+    /* Mozilla */
+    opacity: 0.6;
+    /* CSS3 */
+    padding: 15px; }
+
+@media (max-width: 630px) {
+  #visual-poi-cont {
+    width: 100%; } }
+#milyen-esemenyek {
+  padding: 80px 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  #milyen-esemenyek h2 {
+    margin-bottom: 20px; }
+  #milyen-esemenyek ul {
+    list-style: none; }
+    #milyen-esemenyek ul li {
+      font-weight: normal;
+      text-align: center;
+      font-size: 25px; }
+
+#section3 {
+  background: black; }
 
 /*# sourceMappingURL=main.css.map */
