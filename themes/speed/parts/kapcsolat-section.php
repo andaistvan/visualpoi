@@ -1,6 +1,6 @@
-<a id="section_seven"></a>
+<a id="kapcsolat-section"></a>
 <!-- section7 - kapcsolat -->
-   <div id="section7">
+   <div id="kapcsolat-section-cont">
       <div class="main-container">
          <div id="kapcsolat-cont">
 

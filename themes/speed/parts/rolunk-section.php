@@ -1,6 +1,6 @@
-<a id="section_six"></a>
+<a id="rolunk-section"></a>
 <!-- section6 - rólunk -->
-   <div id="section6">
+   <div id="rolunk-section-cont">
       <div class="main-container">
          <div id="rolunk-cont">
 

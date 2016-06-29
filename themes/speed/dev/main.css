@@ -2121,24 +2121,25 @@ p {
 /*--------------------------------------------------------------
 # navigation
 --------------------------------------------------------------*/
-div#top-bar-right ul {
+#mega-menu-wrap-primary ul {
   padding: 0;
-  margin: 0; }
-  div#top-bar-right ul li a {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
-    font-weight: bold;
-    line-height: 1.5;
-    text-transform: uppercase;
-    color: white;
-    padding: 0 15px 0 15px; }
-  div#top-bar-right ul li a:hover {
-    color: red; }
-  div#top-bar-right ul li:last-child a {
-    padding: 0 0 0 15px; }
+  margin: 0;
+  list-style: none; }
+  #mega-menu-wrap-primary ul li {
+    display: inline-block; }
+    #mega-menu-wrap-primary ul li a {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 14px;
+      font-weight: bold;
+      line-height: 1.5;
+      text-transform: uppercase;
+      color: white;
+      padding: 0 15px 0 15px; }
+    #mega-menu-wrap-primary ul li a:hover {
+      color: red; }
 
-.menu-item a.mPS2id-highlight {
-  color: #ededed; }
+a.mPS2id-highlight {
+  color: red; }
 
 a:focus {
   outline: none; }
@@ -2202,7 +2203,9 @@ a:focus {
   float: right; }
 
 .social-cont a img {
-  margin: 0 5px; }
+  margin: 0 5px;
+  width: 30px;
+  height: 30px; }
 
 .social-cont-lowres {
   display: none; }
@@ -2241,13 +2244,7 @@ a:focus {
     margin-left: 50px;
     padding-top: 50px; }
 
-#section1,
-#section2,
-#section3,
-#section4,
-#section5,
-#section6,
-#section7 {
+#berles-section-cont {
   width: 100%;
   min-height: 400px; }
 
@@ -2269,7 +2266,7 @@ a:focus {
 /*--------------------------------------------------------------
 # pages
 --------------------------------------------------------------*/
-#section2 {
+#visualpoi-section-cont {
   background: #060608;
   background-image: url(img/visual-poi-product-bg.png);
   background-repeat: no-repeat;
@@ -2329,10 +2326,10 @@ a:focus {
       text-align: center;
       font-size: 25px; }
 
-#section3 {
+#gallery-section-cont {
   background: black; }
 
-#section6 {
+#rolunk-section-cont {
   background: black; }
 
 #rolunk-cont {
@@ -2400,7 +2397,7 @@ a:focus {
         text-align: center; }
     #rolunk-cont .right-col {
       width: 100%; } }
-#section7 {
+#kapcsolat-section-cont {
   background: #060608;
   background-image: url(img/kapcsolat-bg.jpg);
   background-repeat: no-repeat;

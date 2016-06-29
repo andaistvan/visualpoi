@@ -1,14 +1,17 @@
 // **************************************
 // main navigation
 // **************************************
-div#top-bar-right{
+
+#mega-menu-wrap-primary{
    ul{
       padding: 0;
       margin: 0;
+      list-style: none;
       li{
+         display: inline-block;
          a{
             font-family: 'Open Sans', sans-serif;
-            font-size: 16px;
+            font-size: 14px;
             font-weight: bold;
             line-height: 1.5;
             text-transform: uppercase;
@@ -19,19 +22,19 @@ div#top-bar-right{
             color: red;
          }
       }
-      li:last-child{
-         a{
-            padding: 0 0 0 15px;
-         }
-      }
+      // li:last-child{
+      //    a{
+      //       padding: 0 0 0 15px;
+      //    }
+      // }
    }
 }
 
 // **************************************
 // smooth scrolling
 // **************************************
-.menu-item a.mPS2id-highlight {
-   color: #ededed;
+a.mPS2id-highlight {
+   color: red;
 }
 a:focus {
 	outline: none;

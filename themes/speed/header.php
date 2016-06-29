@@ -23,7 +23,7 @@
    <header class="header">
 
          <div class="site-branding">
-            <a href="#section_one" rel="m_PageScroll2id">
+            <a href="#slider-section" rel="m_PageScroll2id">
                <div class="logo-cont"></div>
             </a>
    		</div><!-- .site-branding -->
@@ -34,14 +34,14 @@
 
          <div class="social-cont-lowres">
             <a href="#"><img src="<?php bloginfo('template_url'); ?>/dev/img/icon-facebook.svg" alt="facebook icon" /></a>
-            <a href="#"><img src="<?php bloginfo('template_url'); ?>/dev/img/icon-instagram.svg" alt="instagram icon" /></a>
-            <a href="#"><img src="<?php bloginfo('template_url'); ?>/dev/img/icon-youtube.svg" alt="youtube icon" /></a>
+            <a href="https://www.instagram.com/elmostix.visualpoi/"><img src="<?php bloginfo('template_url'); ?>/dev/img/icon-instagram.svg" alt="instagram icon" /></a>
+            <a href="https://www.youtube.com/channel/UCtsmnpTCq4hcguTFJoaJQgA"><img src="<?php bloginfo('template_url'); ?>/dev/img/icon-youtube.svg" alt="youtube icon" /></a>
          </div>
 
 
             <!-- .site-navigation -->
             <nav id="site-navigation" class="main-navigation" role="navigation">
-            			
+
 
             			<?php wp_nav_menu(array('theme_location' => 'primary', 'menu_id' => 'primary-menu')); ?>
             </nav><!-- #site-navigation -->
@@ -49,8 +49,8 @@
 
             <div class="social-cont">
                <a href="#"><img src="<?php bloginfo('template_url'); ?>/dev/img/icon-facebook.svg" alt="facebook icon" /></a>
-               <a href="#"><img src="<?php bloginfo('template_url'); ?>/dev/img/icon-instagram.svg" alt="instagram icon" /></a>
-               <a href="#"><img src="<?php bloginfo('template_url'); ?>/dev/img/icon-youtube.svg" alt="youtube icon" /></a>
+               <a href="https://www.instagram.com/elmostix.visualpoi/"><img src="<?php bloginfo('template_url'); ?>/dev/img/icon-instagram.svg" alt="instagram icon" /></a>
+               <a href="https://www.youtube.com/channel/UCtsmnpTCq4hcguTFJoaJQgA"><img src="<?php bloginfo('template_url'); ?>/dev/img/icon-youtube.svg" alt="youtube icon" /></a>
             </div>
 
          <!-- </div> -->

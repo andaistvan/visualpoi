@@ -1,6 +1,6 @@
-<a id="section_one"></a>
+<a id="slider-section"></a>
 
-   <div id="section1">
+   <div id="slider-section-cont">
       <?php
       echo do_shortcode('[smartslider3 slider=2]');
       ?>

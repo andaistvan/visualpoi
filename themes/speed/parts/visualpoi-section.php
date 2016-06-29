@@ -1,7 +1,7 @@
-<a id="section_two"></a>
+<a id="visualpoi-section"></a>
 <!-- section2 - visual poi -->
 
-   <div id="section2">
+   <div id="visualpoi-section-cont">
       <div class="main-container">
          <div id="visual-poi-cont">
             <div class="text-cont">
