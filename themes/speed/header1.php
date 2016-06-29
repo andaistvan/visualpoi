@@ -40,12 +40,23 @@
 
 
             <!-- .site-navigation -->
-            <nav id="site-navigation" class="main-navigation" role="navigation">
-            			
-
-            			<?php wp_nav_menu(array('theme_location' => 'primary', 'menu_id' => 'primary-menu')); ?>
-            </nav><!-- #site-navigation -->
-
+            <?php
+            echo'
+            <div class="nav-cont">
+               <div id="top-bar-right">';
+                    wp_nav_menu(array(
+                        'container' => false,
+                        'menu' => __('Top Bar Menu', 'speed'),
+                        'menu_class' => 'dropdown menu',
+                        'theme_location' => 'topbar-menu',
+                        'items_wrap' => '<ul id="%1$s" class="%2$s" data-dropdown-menu>%3$s</ul>',
+                        //Recommend setting this to false, but if you need a fallback...
+                        'fallback_cb' => 'f6_topbar_menu_fallback',
+                        'walker' => new F6_TOPBAR_MENU_WALKER(),
+                    ));
+                echo'
+               </div>
+            </div>'; ?><!-- .site-navigation -->
 
             <div class="social-cont">
                <a href="#"><img src="<?php bloginfo('template_url'); ?>/dev/img/icon-facebook.svg" alt="facebook icon" /></a>

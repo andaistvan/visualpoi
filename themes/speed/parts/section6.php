@@ -14,7 +14,7 @@
                   Az ElmoStix Visual Poi bármilyen rendezvényen ideális vizuális kiegészítő lehet, hiszen a komplex üzenetek átadását mellett egy lenyűgöző showelemmel is gazdagítja az eseményt.
                   Emellett hagyományos hulahopp- és zsonglőrszámokat is kínálunk ügyfeleinknek, profi csapatunk előadásában.
                </p>
-               <p class="name">Ricsi</p>
+               <p class="name">Richárd</p>
                <p>
                   2000-ben kezdtem foglalkozni zsonglőrjátékok fejlesztésével, készítésével és értékesítésével. Az önálló ElmoStix márkát 2005-ben hoztam létre, ekkor léptem ki a nemzetközi piacra is. Az elmúlt 15 évben szinte nem volt olyan party, vásár vagy fesztivál, amin ne lettem volna ott. Jelenleg Magyarország egyik legismertebb zsonglőreszköz-készítője vagyok. Az ElmoStix pedig fogalom lett a profik körében.
                </p>
