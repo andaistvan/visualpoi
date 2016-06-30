@@ -1,5 +1,5 @@
 // **************************************
-// section2 - visual poi
+// visual poi section
 // **************************************
 
 #visualpoi-section-cont{
@@ -32,7 +32,7 @@
 }
 
 // **************************************
-// section2 - visual poi BOTTOM
+// visual poi BOTTOM
 // **************************************
 #milyen-esemenyek{
    padding: 80px 0;
@@ -51,6 +51,24 @@
       }
    }
 }
+
+// **************************************
+// műsorunk-section
+// **************************************
+#musorunk-section-cont{
+   background: black;
+   .main-container{
+      h2{
+         margin-top: 25px;
+      }
+   }
+}
+
+div#n2-ss-3 .n2-video-play{
+   width: 150px !important;
+   height: 150px !important;
+}
+
 
 // **************************************
 // gallery-section - galéria
@@ -123,9 +141,13 @@
    background-repeat: no-repeat;
    background-position: right;
    background-size: cover;
+   padding: 30px 0;
 }
 
 #kapcsolat-cont{
+   width: 100%;
+   display: table-row;
+   margin-bottom: 30px;
    h3{
       padding: 30px 0 0 0;
    }
@@ -141,9 +163,19 @@
    }
 }
 
+.kapcsolat-sep{
+   height: 50px;
+   width: 100%;
+}
+
 // *************************
 // kapcsolat / ninja form
 // *************************
+div#kapcsolat-form-cont{
+   display: table-row;
+   padding: 50px 0;
+   width: 100%;
+}
 
 .ninja-forms-required-items{
    text-align: center;
@@ -162,4 +194,5 @@ input#ninja_forms_field_6.ninja-forms-field{ //submnit
    text-align: center;
    margin: 0 auto;
    display: table;
+   background: red;
 }

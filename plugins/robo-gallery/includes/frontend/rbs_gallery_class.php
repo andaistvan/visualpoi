@@ -539,10 +539,11 @@ class roboGallery extends roboGalleryUtils{
 					$newLine = "\t";
 					$lineBrake="\n";
 				}
-				if( get_option( ROBO_GALLERY_PREFIX.'seo', '' ) ){
-					$this->seoContent .= 	'<a href="'.$link.'" alt="'.$lightboxText.'" title="'.$lightboxText.'">'
+				$seo = get_option( ROBO_GALLERY_PREFIX.'seo', '' );
+				if( $seo ){
+					$this->seoContent .= 	($seo==1 ? '<a href="'.$link.'" alt="'.$lightboxText.'" title="'.$lightboxText.'">' : '')
 												.'<img src="'.$img['thumb'].'" title="'.$lightboxText.'" alt="'.$lightboxText.'" >'
-											.'</a>';
+											.($seo==1 ? '</a>' : '' );
 				}
 				$this->returnHtml .= 
 					'<div class="rbs-img category'.$img['catid'].'" '.( isset($img['col']) && $img['col'] ?' data-columns="'.$img['col'].'" ' :'').'>'.$lineBrake.$newLine

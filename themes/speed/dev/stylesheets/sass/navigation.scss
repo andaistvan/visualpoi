@@ -1,12 +1,18 @@
 // **************************************
-// main navigation
+// main navigation  mega-max-menu
 // **************************************
 
 #mega-menu-wrap-primary{
+   float: right;
    ul{
       padding: 0;
       margin: 0;
       list-style: none;
+      background: rgba(105, 105, 105, 0.73);
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
       li{
          display: inline-block;
          a{
@@ -22,13 +28,35 @@
             color: red;
          }
       }
-      // li:last-child{
-      //    a{
-      //       padding: 0 0 0 15px;
-      //    }
-      // }
    }
 }
+
+@media(max-width: 980px){
+   #mega-menu-wrap-primary{
+      ul{
+         li:last-child{
+            a{
+               padding: 0 10px 0 15px;
+            }
+         }
+      }
+   }
+}
+
+
+// **************************************
+// shift nav
+// **************************************
+div.shiftnav-wrap{
+   padding-top: 0px !important;
+}
+// shiftnav bar container
+div#shiftnav-toggle-main{
+   top: 65px !important;
+   background: none !important;
+}
+
+
 
 // **************************************
 // smooth scrolling

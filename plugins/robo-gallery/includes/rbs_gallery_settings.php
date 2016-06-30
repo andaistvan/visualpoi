@@ -116,10 +116,16 @@ wp_enqueue_style ( 	'toolbox-gallery-about', ROBO_GALLERY_URL.'css/admin/about.c
 				<th scope="row"><?php _e('Add SEO content', 'rbs_gallery'); ?></th>
 				<td>
 					<fieldset>
-						<legend class="screen-reader-text"><span><?php _e('Enabled', 'rbs_gallery'); ?></span></legend>
-						<label title='<?php _e('Enabled', 'rbs_gallery'); ?>'>
-							<input type='radio' name='<?php echo ROBO_GALLERY_PREFIX.'seo'; ?>' value='1' <?php if( get_option(ROBO_GALLERY_PREFIX.'seo')=='1' ) echo " checked='checked'"; ?> /> <?php _e('Enabled', 'rbs_gallery'); ?>
+						<legend class="screen-reader-text"><span><?php _e('Enable [thumbs]', 'rbs_gallery'); ?></span></legend>
+						<label title='<?php _e('Enable [thumbs]', 'rbs_gallery'); ?>'>
+							<input type='radio' name='<?php echo ROBO_GALLERY_PREFIX.'seo'; ?>' value='2' <?php if( get_option(ROBO_GALLERY_PREFIX.'seo')=='2' ) echo " checked='checked'"; ?> /> <?php _e('Enable [thumbs]', 'rbs_gallery'); ?>
 						</label><br />
+
+						<legend class="screen-reader-text"><span><?php _e('Enable  [thumbs + link]', 'rbs_gallery'); ?></span></legend>
+						<label title='<?php _e('Enabled  [thumbs + link]', 'rbs_gallery'); ?>'>
+							<input type='radio' name='<?php echo ROBO_GALLERY_PREFIX.'seo'; ?>' value='1' <?php if( get_option(ROBO_GALLERY_PREFIX.'seo')=='1' ) echo " checked='checked'"; ?> /> <?php _e('Enable [thumbs + link]', 'rbs_gallery'); ?>
+						</label><br />
+
 						<label title='<?php _e('Disable', 'rbs_gallery'); ?>'>
 							<input type='radio' name='<?php echo ROBO_GALLERY_PREFIX.'seo'; ?>' value='0' <?php if( !get_option(ROBO_GALLERY_PREFIX.'seo', '') ) echo " checked='checked'"; ?>  /> <?php _e('Disable', 'rbs_gallery'); ?>
 						</label><br />			

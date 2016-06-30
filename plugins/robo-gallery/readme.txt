@@ -4,7 +4,7 @@ Donate link: http://www.robosoft.co/robogallery
 Tags: gallery, add gallery, photo gallery, images gallery, media gallery, responsive gallery, gallery image, gallery lightbox, Polaroid gallery, Gallery Plugin, plugin gallery, video gallery, gallery shortcode, responsive images gallery, website gallery, widget gallery, wordpress gallery, wordpress gallery plugin, wordpress photo gallery plugin, wp gallery, wp gallery plugin, wp gallery plugins, multi categories gallery, add galleries, add picture, add pictures, album, best gallery, best gallery plugin, responsive galleries, mobile gallery, mobile galleries, responsive photo gallery, best portfolio, easy media gallery, filterable gallery, filterable portfolio, foto, fotoalbum, fotogalerie, sortable gallery, sortable galleries, free photo gallery, fullscreen gallery, galary, galeri, galerie, galerij, galery, gallary, Galleria, gallerie, galleries, gallery decription, gallery slider, gelary, gellary, gellery, google, grid gallery, image, image album, image gallery, image gallery plugin, image lightbox, image slider, image slideshow, images, jquery, jquery gallery, links, media, multiple pictures, page, pagination gallery, pagination portfolio, photo, photo album, photo albums, photoalbum, photogallery, photos, photoset, picture, pictures, plugin, plugin for gallery, portfolio, portfolio gallery, portfolio plugin, Post, posts, responsive slideshow, responsive wordpress photo gallery, seo image, slide show, slideshow, thumbnail, upload images, upload photos, batch upload, multiply images upload, view images, view pictures, wordpress portfolio plugin,  multi-categories gallery,  multi categories galleries, robo gallery
 Requires at least: 3.3
 Tested up to: 4.5
-Stable tag: 2.3.0
+Stable tag: 2.3.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -92,8 +92,8 @@ This interface gallery button have wide range of the front end interface customi
 *   **Thumbnails Fade Effect** - in gallery implemented Fade effect for the hover of the gallery thumbnails. With such effect gallery hover animation become more attractive and eye catching.
 *   **Multisite Support** - in gallery implemented multisite support. You can install gallery in admin dashboard and enable plugin for all child blogs.
 *   **Advanced Load more function** - in gallery implemented very attractive navigation mode. Auto pre loading images like endless list of the gallery images. This gallery load more function have alot of customization options to make it work the way you need.
-*   **SEO code optimization** - in gallery implemented few front end code output modes. One simplified mode with all core front end gallery code elements another mode with additional not visible elements.
-
+*   **SEO code optimization** - in gallery implemented few front end code output modes. One simplified mode with all core front end gallery code elements another mode with additional not visible elements. This option have additional modes. This SEO output modes giv you default output mode, thumbnail, thumnails+links mode.
+*   **Template** - in our gallery we have advanced templating engine for galler images description. Every hover text of gallery image could be edit and customized with buildin templating options.
 
 = Gallery Pro Key Features =
  
@@ -156,7 +156,8 @@ This interface gallery button have wide range of the front end interface customi
 *   **Thumbnails Fade Effect** - in gallery implemented Fade effect for the hover of the gallery thumbnails. With such effect gallery hover animation become more attractive and eye catching.
 *   **Multisite Support** - in gallery implemented multisite support. You can install gallery in admin dashboard and enable plugin for all child blogs.
 *   **Advanced Load more function** - in gallery implemented very attractive navigation mode. Auto pre loading images like endless list of the gallery images. This gallery load more function have alot of customization options to make it work the way you need.
-*   **SEO code optimization** - in gallery implemented few front end code output modes. One simplified mode with all core front end gallery code elements another mode with additional not visible elements.
+*   **SEO code optimization** - in gallery implemented few front end code output modes. One simplified mode with all core front end gallery code elements another mode with additional not visible elements. This option have additional modes. This SEO output modes giv you default output mode, thumbnail, thumnails+links mode.
+
 
 = Gallery Advantages =
 
@@ -175,6 +176,8 @@ This interface gallery button have wide range of the front end interface customi
 *  **Advanced gallery columns** -  in gallery implemented advanced customizable thumbnails columns management. In gallery settings you can define different amount of thumbnails columns for different screen size/resolution.
 *  **Advanced gallery menu settings** -  in gallery implemented advanced customizable options for navigation menu. Gallery have advanced structure with ability to customize styles of the gallery menus.
 *  **Thumbnails size** -  in gallery implemented customizable options for thumbnails size definition and complex interface building. Gallery options have source size options where you can easily switch between size of the gallery thumbnails. 
+*  **SEO optimized code** - in gallery implemented few front end code output modes. One simplified mode with all core front end gallery code elements another mode with additional not visible elements. 
+*  **Multi site** - in gallery implemented multisite support. You can install gallery in admin dashboard and enable plugin for all child blogs.
 
 
 > #### Useful Gallery Links 
@@ -274,6 +277,14 @@ When you open gallery settings you can find there gallery lightbox settings bloc
 
 You can use any standard file type in our gallery: png, jpg, jpeg, gif
 
+**Is it possible to use HTML in gallery image description ?**
+
+Yes, you can use HTML tags inside gallery image description field
+
+**Is it possible to customize gallery image caption ?**
+
+In gallery settings you can find gallery images manager where you can change settings of every gallery image, one of the option it's caption of the gallery image
+
 **How to generate shortcode for Wordpress page, post or widget?**
 
 First of all you can copy shortcode inside gallery settings , in separate shortcode block. Another way generate shortcode directly in post or page edit mode. You can find wizard button on top of content editor
@@ -285,6 +296,14 @@ Quality of the gallery thumbnails could be easily changed in gallery size option
 **Is it possible to change transparency of the gallery lightbox background ?**
 
 Yes, you can change gallery lightbox background transparency in gallery settings. Yes, you can change background color of the gallery lightbox. When you open gallery settings you can find there gallery lightbox settings block. When you open color selector for the gallery lightbox background you'll see there additional slider option for transparency value.
+
+**How to crop uploaded gallery image?**
+
+When you open gallery images manager you'll find there image edit mode where you can crop source image
+
+**How to make gallery with no space between thumbnails of the gallery?**
+
+If you wish to make section with gallery without spacing between thumbnails you need just set horizontal and vertical spacing to 0 in gallery thumbnails view options
 
 
 == Installation ==
@@ -698,6 +717,10 @@ Gallery implemented in native Wordpress style. All code implemented based on Wor
 If any problem occurs, please contact us.
 
 == Changelog ==
+
+= 2.3.1 =
+*   Updated gallery front end code
+*   SEO configuration option for thumbnails and links code
 
 = 2.3.0 =
 *   Updated gallery code front end code
@@ -1322,6 +1345,10 @@ If any problem occurs, please contact us.
 *   First release
 
 == Upgrade Notice ==
+
+= 2.3.1 =
+Updated gallery front end code
+SEO configuration option for thumbnails and links code
 
 = 2.3.0 =
 Updated gallery code front end code

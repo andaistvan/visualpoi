@@ -40,11 +40,25 @@
 
 
             <!-- .site-navigation -->
-            <nav id="site-navigation" class="main-navigation" role="navigation">
 
-
+            <div data-sticky-container>
+               <div data-sticky data-margin-top='0' data-top-anchor="slider-section-cont:bottom" data-btm-anchor="content:bottom">
+                  <div class="nav-cont">
+                  <nav id="site-navigation" class="main-navigation" role="navigation">
             			<?php wp_nav_menu(array('theme_location' => 'primary', 'menu_id' => 'primary-menu')); ?>
-            </nav><!-- #site-navigation -->
+                  </nav>
+                  </div> <!-- nav-cont -->
+               </div>
+               <!-- sticky data.-->
+            </div>
+            <!-- data-sticky-container -->
+
+
+
+
+
+
+         <!-- #site-navigation -->
 
 
             <div class="social-cont">

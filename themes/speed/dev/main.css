@@ -2121,22 +2121,52 @@ p {
 /*--------------------------------------------------------------
 # navigation
 --------------------------------------------------------------*/
-#mega-menu-wrap-primary ul {
-  padding: 0;
-  margin: 0;
-  list-style: none; }
-  #mega-menu-wrap-primary ul li {
-    display: inline-block; }
-    #mega-menu-wrap-primary ul li a {
-      font-family: 'Open Sans', sans-serif;
-      font-size: 14px;
-      font-weight: bold;
-      line-height: 1.5;
-      text-transform: uppercase;
-      color: white;
-      padding: 0 15px 0 15px; }
-    #mega-menu-wrap-primary ul li a:hover {
-      color: red; }
+#mega-menu-wrap-primary {
+  float: right; }
+  #mega-menu-wrap-primary ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    background: rgba(105, 105, 105, 0.73);
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    #mega-menu-wrap-primary ul li {
+      display: inline-block; }
+      #mega-menu-wrap-primary ul li a {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 1.5;
+        text-transform: uppercase;
+        color: white;
+        padding: 0 15px 0 15px; }
+      #mega-menu-wrap-primary ul li a:hover {
+        color: red; }
+
+@media (max-width: 980px) {
+  #mega-menu-wrap-primary ul li:last-child a {
+    padding: 0 10px 0 15px; } }
+div.shiftnav-wrap {
+  padding-top: 0px !important; }
+
+div#shiftnav-toggle-main {
+  top: 65px !important;
+  background: none !important; }
 
 a.mPS2id-highlight {
   color: red; }
@@ -2186,6 +2216,12 @@ a:focus {
       -ms-flex-align: center;
           align-items: center; }
 
+.sticky-container {
+  width: 87%; }
+
+.sticky {
+  width: 87%; }
+
 .site-branding {
   display: inline-block; }
 
@@ -2198,14 +2234,12 @@ a:focus {
   height: 131px;
   float: left; }
 
-.nav-cont {
-  display: inline-block;
-  float: right; }
-
-.social-cont a img {
-  margin: 0 5px;
-  width: 30px;
-  height: 30px; }
+.social-cont {
+  min-width: 150px; }
+  .social-cont a img {
+    margin: 0 5px;
+    width: 30px;
+    height: 30px; }
 
 .social-cont-lowres {
   display: none; }
@@ -2217,10 +2251,11 @@ a:focus {
     display: block;
     padding: 20px 20px 0 20px; }
 
-  .nav-cont {
+  #site-navigation {
     position: absolute;
     right: 0px;
-    margin: 55px 20px 0 0; }
+    top: 70px;
+    margin: 5px 20px 0 0; }
 
   .social-cont {
     display: none; }
@@ -2326,6 +2361,15 @@ a:focus {
       text-align: center;
       font-size: 25px; }
 
+#musorunk-section-cont {
+  background: black; }
+  #musorunk-section-cont .main-container h2 {
+    margin-top: 25px; }
+
+div#n2-ss-3 .n2-video-play {
+  width: 150px !important;
+  height: 150px !important; }
+
 #gallery-section-cont {
   background: black; }
 
@@ -2402,17 +2446,31 @@ a:focus {
   background-image: url(img/kapcsolat-bg.jpg);
   background-repeat: no-repeat;
   background-position: right;
-  background-size: cover; }
+  background-size: cover;
+  padding: 30px 0; }
 
-#kapcsolat-cont h3 {
-  padding: 30px 0 0 0; }
-#kapcsolat-cont p {
-  text-align: center; }
-#kapcsolat-cont a {
-  text-align: center;
-  color: white; }
-#kapcsolat-cont a:hover {
-  color: #b8b8b8; }
+#kapcsolat-cont {
+  width: 100%;
+  display: table-row;
+  margin-bottom: 30px; }
+  #kapcsolat-cont h3 {
+    padding: 30px 0 0 0; }
+  #kapcsolat-cont p {
+    text-align: center; }
+  #kapcsolat-cont a {
+    text-align: center;
+    color: white; }
+  #kapcsolat-cont a:hover {
+    color: #b8b8b8; }
+
+.kapcsolat-sep {
+  height: 50px;
+  width: 100%; }
+
+div#kapcsolat-form-cont {
+  display: table-row;
+  padding: 50px 0;
+  width: 100%; }
 
 .ninja-forms-required-items {
   text-align: center;
@@ -2428,6 +2486,7 @@ input#ninja_forms_field_6.ninja-forms-field {
   padding: 10px;
   text-align: center;
   margin: 0 auto;
-  display: table; }
+  display: table;
+  background: red; }
 
 /*# sourceMappingURL=main.css.map */

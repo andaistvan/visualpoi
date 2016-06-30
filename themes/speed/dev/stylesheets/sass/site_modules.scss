@@ -3,6 +3,9 @@
    margin-top: -15px;
 }
 
+@media (max-width: 800px){
+}
+
 .clear{
    clear: both;
 }
@@ -21,6 +24,15 @@
    align-items: center;
 }
 
+.sticky-container{
+   width: 87%;
+}
+
+.sticky{
+   width: 87%;
+}
+
+
 .site-branding{
    display: inline-block;
 }
@@ -37,11 +49,12 @@
 
 
 .nav-cont{
-   display: inline-block;
-   float: right;
+   // display: inline-block;
+
 }
 
 .social-cont{
+   min-width: 150px;
    a{
       img{
          margin: 0 5px;
@@ -65,10 +78,11 @@
       display: block;
       padding: 20px 20px 0 20px;
    }
-   .nav-cont{
+   #site-navigation{
       position: absolute;
       right: 0px;
-      margin: 55px 20px 0 0;
+      top: 70px;
+      margin: 5px 20px 0 0;
    }
    .social-cont{
       display: none;
