@@ -23,7 +23,7 @@
    <header class="header">
 
          <div class="site-branding">
-            <a href="#section_one" rel="m_PageScroll2id">
+            <a href="#slider-section" rel="m_PageScroll2id">
                <div class="logo-cont"></div>
             </a>
    		</div><!-- .site-branding -->
@@ -34,34 +34,26 @@
 
          <div class="social-cont-lowres">
             <a href="#"><img src="<?php bloginfo('template_url'); ?>/dev/img/icon-facebook.svg" alt="facebook icon" /></a>
-            <a href="#"><img src="<?php bloginfo('template_url'); ?>/dev/img/icon-instagram.svg" alt="instagram icon" /></a>
-            <a href="#"><img src="<?php bloginfo('template_url'); ?>/dev/img/icon-youtube.svg" alt="youtube icon" /></a>
+            <a href="https://www.instagram.com/elmostix.visualpoi/"><img src="<?php bloginfo('template_url'); ?>/dev/img/icon-instagram.svg" alt="instagram icon" /></a>
+            <a href="https://www.youtube.com/channel/UCtsmnpTCq4hcguTFJoaJQgA"><img src="<?php bloginfo('template_url'); ?>/dev/img/icon-youtube.svg" alt="youtube icon" /></a>
          </div>
 
 
             <!-- .site-navigation -->
-            <?php
-            echo'
-            <div class="nav-cont">
-               <div id="top-bar-right">';
-                    wp_nav_menu(array(
-                        'container' => false,
-                        'menu' => __('Top Bar Menu', 'speed'),
-                        'menu_class' => 'dropdown menu',
-                        'theme_location' => 'topbar-menu',
-                        'items_wrap' => '<ul id="%1$s" class="%2$s" data-dropdown-menu>%3$s</ul>',
-                        //Recommend setting this to false, but if you need a fallback...
-                        'fallback_cb' => 'f6_topbar_menu_fallback',
-                        'walker' => new F6_TOPBAR_MENU_WALKER(),
-                    ));
-                echo'
-               </div>
-            </div>'; ?><!-- .site-navigation -->
+
+                  <div class="nav-cont">
+                  <nav id="site-navigation" class="main-navigation" role="navigation">
+            			<?php wp_nav_menu(array('theme_location' => 'primary', 'menu_id' => 'primary-menu')); ?>
+                  </nav>
+                  </div> <!-- nav-cont -->
+
+         <!-- #site-navigation -->
+
 
             <div class="social-cont">
                <a href="#"><img src="<?php bloginfo('template_url'); ?>/dev/img/icon-facebook.svg" alt="facebook icon" /></a>
-               <a href="#"><img src="<?php bloginfo('template_url'); ?>/dev/img/icon-instagram.svg" alt="instagram icon" /></a>
-               <a href="#"><img src="<?php bloginfo('template_url'); ?>/dev/img/icon-youtube.svg" alt="youtube icon" /></a>
+               <a href="https://www.instagram.com/elmostix.visualpoi/"><img src="<?php bloginfo('template_url'); ?>/dev/img/icon-instagram.svg" alt="instagram icon" /></a>
+               <a href="https://www.youtube.com/channel/UCtsmnpTCq4hcguTFJoaJQgA"><img src="<?php bloginfo('template_url'); ?>/dev/img/icon-youtube.svg" alt="youtube icon" /></a>
             </div>
 
          <!-- </div> -->

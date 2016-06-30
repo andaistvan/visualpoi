@@ -2121,13 +2121,12 @@ p {
 /*--------------------------------------------------------------
 # navigation
 --------------------------------------------------------------*/
-#mega-menu-wrap-primary {
+#top-bar-right {
   float: right; }
-  #mega-menu-wrap-primary ul {
+  #top-bar-right ul {
     padding: 0;
     margin: 0;
     list-style: none;
-    background: rgba(105, 105, 105, 0.73);
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -2145,9 +2144,9 @@ p {
     -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center; }
-    #mega-menu-wrap-primary ul li {
+    #top-bar-right ul li {
       display: inline-block; }
-      #mega-menu-wrap-primary ul li a {
+      #top-bar-right ul li a {
         font-family: 'Open Sans', sans-serif;
         font-size: 14px;
         font-weight: bold;
@@ -2155,11 +2154,11 @@ p {
         text-transform: uppercase;
         color: white;
         padding: 0 15px 0 15px; }
-      #mega-menu-wrap-primary ul li a:hover {
+      #top-bar-right ul li a:hover {
         color: red; }
 
 @media (max-width: 980px) {
-  #mega-menu-wrap-primary ul li:last-child a {
+  #top-bar-right ul li:last-child a {
     padding: 0 10px 0 15px; } }
 div.shiftnav-wrap {
   padding-top: 0px !important; }
@@ -2196,7 +2195,7 @@ a:focus {
 .header {
   width: 100%;
   z-index: 999;
-  position: fixed;
+  position: absolute;
   padding: 10px 20px 10px 20px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -2215,12 +2214,6 @@ a:focus {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center; }
-
-.sticky-container {
-  width: 87%; }
-
-.sticky {
-  width: 87%; }
 
 .site-branding {
   display: inline-block; }
@@ -2244,14 +2237,16 @@ a:focus {
 .social-cont-lowres {
   display: none; }
   .social-cont-lowres a img {
-    margin: 0 5px; }
+    margin: 0 5px;
+    width: 30px;
+    height: 30px; }
 
 @media (max-width: 980px) {
   .header {
     display: block;
     padding: 20px 20px 0 20px; }
 
-  #site-navigation {
+  #top-bar-right {
     position: absolute;
     right: 0px;
     top: 70px;
@@ -2263,6 +2258,9 @@ a:focus {
   .social-cont-lowres {
     display: block;
     float: right; } }
+@media (max-width: 830px) {
+  #top-bar-right {
+    display: none; } }
 .guide {
   border: 1px solid #008CBA; }
 
